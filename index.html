@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://getbootstrap.com/examples/starter-template/ -->
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>4geeks</title>
+
+  <link rel="shortcut icon" href="./images/icon.ico">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./css/geekies.css" rel="stylesheet">
+  <link href="./css/uslider.css" rel="stylesheet">   
+  <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!--<script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>-->
+  <script type="text/javascript"   src="./js/jquery.js"></script>
+  <script type="text/javascript"   src="./js/skrollr.min.js"></script>
+  <script type="text/javascript" src="./js/unslider.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var originalFontSize = 12;
+      var sectionWidth = $('.content').width();
+
+      $('.content span').each(function(){
+        var spanWidth = $(this).width();
+        var newFontSize = (sectionWidth/spanWidth) * originalFontSize;
+        $(this).css({"font-size" : newFontSize, "line-height" : newFontSize + "px"});
+      });
+    });
+  </script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $(window).on('scroll',function(){
+        var distanceUntilBird = $('.ave').offset().top  - $(window).scrollTop();
+        var distanceUntilPlane = $('.avion').offset().top  - $(window).scrollTop();
+        var distanceUntilBirds = $('.aves').offset().top  - $(window).scrollTop();
+       
+        if(distanceUntilBird > 0){
+          $('.ave').addClass('birdie');
+        }
+        else{
+          $('.ave').removeClass('birdie');
+        }
+        if(distanceUntilPlane > 0){
+          $('.avion').addClass('planie');
+        }
+        else{
+          $('.avion').removeClass('planie');
+        }
+        if(distanceUntilBirds -200> 0){
+          $('.aves').addClass('migrate');
+        }
+        else if(distanceUntilBirds -200 > 0){
+          $('.aves').removeClass('migrate');
+        }
+
+      });
+ 
+   });
+
+  </script>
+</head>
+
+<body>
+  <!-- Barra fija -->
+  <div class="navbar navbar-default navbar-fixed-top" id="navbar-top" role="navigation" data-0="filter: alpha(opacity=1);
+  opacity: 1;" data-1200="filter: alpha(opacity=0);opacity: 0;">
+    <div class="navbar-brand" id="logo-bar-top">
+      <div id="logo-bar-image-static">
+      </div>
+    </div>
+    <div class="container-fluid">
+
+      <div class="collapse navbar-collapse" id="navbar-links">
+        <ul class="nav nav-justified">
+          <li class="active">
+            <a class="nav-button" href="#">Quienes Somos</a>
+          </li>
+          <li><a class="nav-button" href="#">Que Hacemos</a></li>
+          <li><a class="nav-button" href="#">Portafolio</a></li>
+          <li><a class="nav-button" href="#">Comunidad</a></li>
+          <li><a class="nav-button" href="#">Contactanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Fin barra fija -->
+  <!-- Barra movil -->
+  <div class="navbar navbar-default navbar-fixed-top" id="navbar-fix" role="navigation" style="z-index:18;">
+    <div class="navbar-brand" id="logo-bar">
+      <div id="logo-bar-image">
+      </div>
+    </div>
+    <div class="container-fluid">
+
+      <div class="collapse navbar-collapse" id="navbar-links">
+        <ul class="nav nav-justified">
+          <li class="active">
+            <a class="nav-button" href="#">Quienes Somos</a>
+          </li>
+          <li><a class="nav-button" href="#">Que Hacemos</a></li>
+          <li><a class="nav-button" href="#">Portafolio</a></li>
+          <li><a class="nav-button" href="#">Comunidad</a></li>
+          <li><a class="nav-button" href="#">Contactanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Fin barra movil -->
+  <!-- Barra  lateral -->
+
+  <!-- Fin barra lateral -->
+  <!-- Carrusel -->
+  <div class="col-lg-14">
+    <!-- Barra lateral -->
+    <div class="col-md-offset-6 col-md-6" id="side-bar">
+      <div id="redes" class="side-bar-button"><p class="text-sidebar-ml"> Redes de <br>contacto </p></div>
+      <div id="carta" class="side-bar-button"><p class="text-sidebar"> La carta </p></div>
+      <div id="factory" class="side-bar-button"><p class="text-sidebar"> Geek Factory </p></div>
+      <div id="formacion" class="side-bar-button"><p class="text-sidebar"> Formacion</p></div>
+      <div id="meetup" class="side-bar-button"> <p class="text-sidebar-ml"> Caracas <br> Tech Meetup</p></div>
+      <div id="workshops" class="side-bar-button"><p class="text-sidebar-ml"> Hack-a-tons <br> Workshops</p></div>
+    </div>
+    <!-- Fin barra lateral -->  
+    <div id="slider"  class="banner has-dots col-lg-14" style="overflow: hidden; width: 100%;">
+
+      <ul style="width: 400%; position: relative; height: 400px;">
+        <li id="carousel1-back" >
+          <div id="carousel1-mid" data-0="background-position: center 18em;" data-20000="transition: all 0.05s ease-out; background-position: center 500em;">
+            <div id="carousel1-front" data-0=" background-position: center 30em;" data-20000="transition: all 0.5s ease-out; background-position:center -60em;">
+              <div class="container">
+                <div class="col-md-offset-1 col-md-6 content">
+                  <span >CAMBIANDO</span><br />
+                  <span>EL MUNDO</span><br />
+                  <span>UNA LINEA DE CODIGO A LA VEZ.</span><br />
+                  <span>MAS DE 2000 DESARROLLADORES Y 90 PROYECTOS</span><br />
+                  <span>REINVENTANDO 6 INDUSTRIAS.</span><br />
+                  <br>
+                  <div class="col-md-offset-5 yellow-button">
+                    <p>Unete <br>(Solo desarrolladores)</p> </div>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </li>
+          <li id="carousel2-back">
+            <div id="carousel2-mid" data-0="background-position: center 0em;" data-20000="transition: all 0.05s ease;background-position:center -250em;">
+              <div id="carousel2-front" data-0="background-position: center 40em;" data-20000="transition: all 0.05s ease;background-position:center -60em;">
+                <div class="container">
+                  <div class="col-md-offset-1 col-md-6 content" >
+
+                    <span>MAS DE 200</span><br />
+                    <span>DESARROLLADORES</span><br />
+                    <span>LATINOAMERICANOS</span><br />
+                    <span>ESPECIALIZADOS EN DESARROLLO WEB Y MOVIL</span><br />
+                    <span>CREANDO APLICACIONES EN PYTHON, CSS3, HTML5,</span><br />
+                    <span>JAVASCRIPT Y RUBY.</span><br />
+                    <br>
+                    <div class="col-md-offset-5 yellow-button">
+                      <p>Conoce nuestros<br>proyectos.</p> </div>
+                      <br>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="carousel3-back">
+              <div id="carousel3-mid" data-0="background-position: center 40em;" data-20000="transition: all 0.05s ease;background-position: center 100em;">
+                <div id="carousel3-front" data-0="background-position: center 25em;" data-20000="transition: all 0.05s ease;background-position:center -50em;">
+                  <div class="container">
+                    <div class="col-md-offset-1 col-md-6 content">
+
+                      <span>UNA COMUNIDAD </span><br />
+                      <span>PARA SER MÁS</span><br />
+                      <span>Y MEJORES DESARROLLADORES</span><br />
+                      <span>CONOCE A OTROS DEVELOPERS, APRENDE, COLABORA,</span><br />
+                      <span>DESARROLLA.</span><br />
+                      <br>
+                      <div class="col-md-offset-5 yellow-button">
+                        <p>Como ser parte de<br>4 geeks</p> </div>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="carousel4-back">
+                <div id="carousel4-mid" data-0="background-position: center 20em;" data-20000="transition: all 0.05s ease;background-position: center 400em;">
+                  <div id="carousel4-front" data-0="background-position: center 30em;" data-20000="transition: all 0.05s ease;background-position:center -400em;">
+                    <div class="container">
+                      <div class="col-md-offset-1 col-md-6 content">
+                        <span> DESARROLLAMOS</span><br />
+                        <span> PRODUCTOS</span><br />
+                        <span>TECNOLOGICOS</span><br />
+                        <span>DE ALTO IMPACTO PARA EMPRESAS, EMPRENDEDORES Y</span><br />
+                        <span>STARTUPS. DESDE APLICACIONES WEB HASTA</span><br />
+                        <span>APLICACIONES MOVILES.</span><br />
+                        <br>
+                        <div class="col-md-offset-5 yellow-button">
+                          <p class="one-line">¿Que hacemos?</p> </div>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Fin del carrusel -->
+
+          <!-- Barra fija -->
+          <div class="container-fluid" data-800="filter: alpha(opacity=0);
+  opacity: 0;" data-1300="filter: alpha(opacity=100);
+  opacity: 1;">
+            <div class="navbar-fixed-bottom fixed-bar" id="navbar-links">
+              <ul class="nav nav-justified">
+                <li><div id="redes-fixed" class="fixed-bar-button"></div></li>
+                <li><div id="carta-fixed" class="fixed-bar-button"></div></li>
+                <li><div id="factory-fixed" class="fixed-bar-button"></div></li>
+                <li><div id="formacion-fixed" class="fixed-bar-button"></div></li>
+                <li><div id="meetup-fixed" class="fixed-bar-button"></div></li>
+                <li><div id="workshops-fixed" class="fixed-bar-button"></div></li>
+
+              </ul>
+            </div>
+          </div>
+          <!-- Fin barra fija -->
+          <section id="section-aliados">
+            <div class="container"> 
+
+
+              <div class="col-md-offset-0 col-md-6">
+                <!-- <div class="hoja-1"></div><div class="hoja-2"></div>-->
+                <h1 class="header-large-slim"> Aliados </h1>
+                <div class="dark-line"> </div>
+                <div class="dark-circle"></div>
+                <p id="header-medium-slim"><br>Para realizar grandes proyectos contamos con grandes amigos</p>
+              </div>
+              <div class="col-md-offset-6 col-md-5">
+                <img class="image" src="./images/cel.png"/>
+              </div>
+            </div>
+
+            <div class="container"> 
+              <div class="col-md-offset-1 col-md-5">
+               <!-- <div class="hoja-3"></div><div class="hoja-5"></div><div class="hoja-8"></div>-->
+                <img class="logo-left" src="./images/logos/escuela.png"/>
+                <img class="logo-left" src="./images/logos/accede.png"/>
+              </div>
+              <div class="col-md-offset-6 cold-md-5">
+                <!--<div class="hoja-4"></div><div class="hoja-6"></div>-->
+                <img class="logo" src="./images/logos/wayra.png"/>
+                <img class="logo" src="./images/logos/ciudades.png"/>
+                <img class="logo" src="./images/logos/mood.png"/>
+                <!--<div class="hoja-9"></div><div class="hoja-10"></div><div class="hoja-11"></div>-->
+              </div>
+            </div>
+          </section>
+
+          <section id="section-hojas">
+          </section>
+
+          <section id="section-proyectos">
+            <div class="container"> 
+              <div class="avion"></div>
+              <div class="col-md-offset-0 col-md-6">
+                <h1 class="header-large-slim"> Proyectos </h1>
+                <div class="dark-line"> </div>
+                <div class="dark-circle"></div>
+                <p id="header-medium-slim"><br>Dentro del area de desarrollo, hay mucho material que esta creciendo, nosotros somos parte de ese                     crecimiento.</p>
+              </div>
+            </div>
+            <div class="container">
+              <div class=" col-lg-16">
+                <img style="margin-top:100px; margin-left:-100px; width:100%; min-height:616px;" src="./images/proyectos.png"/>
+              </div>
+            </div>
+          </section>
+
+          <section id="section-reunion">
+            <div id="div-reunion">
+              <div class="ave"></div>
+            </div>
+          </section>
+
+          <section id="section-footer">
+            <div id="ciudad-back1" data-0="background-position: center -10em;" data-20000="transition: all 0.05s ease;background-position: center 120em;">
+              <div id="ciudad-back2" data-0="background-position: center 57em;" data-20000="transition: all 0.05s ease;background-position:center -30em;">
+                <div id="ciudad-back3" data-0="background-position: center 67em;" data-20000="transition: all 0.05s ease;background-position:center -60em;">
+
+                  <div id="ciudad-front" data-0="background-position: center 67em;" data-20000="transition: all 0.05s ease;background-position:center -50em;">
+                    <div class="container">
+                      <div class="col-lg-14 col-offset-1 content">
+                      <div class="aves"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+              <div class="col-lg-16 footer-content">
+                <div container>
+                  <div class="col-lg-5 col-lg-offset-1">
+                        <div id="footer-logo"></div>
+                        <p>Caracas Tech Meetup, el primer Meetup oficial de Venezuela, sera el espacio en el que nos reuniremos mensualmente todos los que queramos contribuir a la comunidad de desarrollo de software y emprendimiento en Venezuela.</p>
+                  </div>
+                  <div class="col-lg-4 col-lg-offset-1">
+                    <ul class="footer-links"> 
+                      <li> <a href="#">¿4Geeks?</a></li>
+                      <li> <a href="#"> Que hacemos </a></li>
+                      <li> <a href="#">Portafolio </a></li>
+                    </ul>
+                    <ul class="footer-links">
+                      <li><a href="#">Comunidad</a></li>
+                      <li><a href="#">La Carta</a></li>
+                      <li><a href="#">Formacion</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                      <li><a href="#">Hack-a-ton</a></li>
+                      <li><a href="#">CSS Tech Meetup</a></li>
+                      <li><a href="#">Workshops</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                      <li><a href="#">Contactanos</a></li>
+                    </ul>
+                    <ul class="footer-images">
+                      <li><a href="#"> <img src="./images/footer-google.png"/></a></li>
+                      <li><a href="#"> <img src="./images/footer-twitter.png"/></a></li>
+                      <li><a href="#"> <img src="./images/footer-facebook.png"/></a></li>
+                      <li><a href="#"> <img src="./images/footer-youtube.png"/></a></li>
+                    </ul>
+                  </div>
+              </div>
+            
+          </section>
+
+            <script src="./bootstrap/js/bootstrap.js"></script>
+            <script type="text/javascript" src="js/skrollr.min.js"></script>
+            <script type="text/javascript">
+              skrollr.init({
+                forceHeight: false
+              });
+            </script>
+            <script type="application/javascript">
+
+              $('#slider').unslider({
+                fluid: true,
+                dots: true,
+                speed: 500
+              });
+              //  Find any element starting with a # in the URL
+              //  And listen to any click events it fires
+              $('a[href^="#"]').click(function() {
+              //  Find the target element
+              var target = $($(this).attr('href'));
+              //  And get its position
+              var pos = target.offset(); // fallback to scrolling to top || {left: 0, top: 0};
+              //  jQuery will return false if there's no element
+              //  and your code will throw errors if it tries to do .offset().left;
+              if(pos) {
+              //  Scroll the page
+              $('html, body').animate({
+                scrollTop: pos.top,
+                scrollLeft: pos.left
+              }, 1000);
+            }
+
+              //  Don't let them visit the url, we'll scroll you there
+              return false;
+            });
+            </script>
+          </body>
+          </html>
