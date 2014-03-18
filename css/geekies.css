@@ -1,5 +1,6 @@
 html *{
-	font-family:'Droid Sans', sans-serif;
+	font-family:'Lato', sans-serif;
+
 }
 .justify { text-align: justify }
 
@@ -14,6 +15,7 @@ html *{
 	font-size:5.5em;
 	text-align:justify;
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 }
 .header-medium{
 	font-size:1.75em;
@@ -25,8 +27,8 @@ html *{
 }
 .header-medium-slim{
 	font-size:1.75em;
-	font-weight:bold;
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	padding-right:6em;
 }
 .header-small{
@@ -42,8 +44,6 @@ html *{
 	text-align:center;
 	border-radius: 5px;
 	font-size:1.125em;
-	-webkit-box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
-	-moz-box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
 	box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
 	float:right;
 	padding-top:7px;
@@ -85,9 +85,6 @@ html *{
 	background-position: center center;
 	min-height: 350px;
 	width: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	color:#3d3d3d;
 }
@@ -98,9 +95,6 @@ html *{
 	background-position: center;
 	min-height: 18em;
 	width: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size:cover;
 	color:#fff;
 	margin-bottom:-0.5em;
@@ -113,9 +107,6 @@ html *{
 	background-position: center center;
 	min-height: 800px;
 	width: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	color:#3d3d3d;
 }
@@ -127,9 +118,6 @@ html *{
 	text-align:center;
 	min-height: 700px;
 	width: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	color:#3d3d3d;
 }
@@ -141,24 +129,19 @@ html *{
 	background-position: center 12em;
 	min-height: 700px;
 	width: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	color:#FFF;
 }
 #section-footer{
-	background: url(../images/ciudad_back.png) no-repeat fixed top;
+	background: url(../images/ciudad_back.png) no-repeat scroll top;
 	padding-top:6em;
+	background-position:0px -3em;
 	text-align:center;
 	background-attachment: relative;
-	background-position: center center;
-	min-height: 78em;
+	margin-top:0px;
+	min-height: 58em;
 	width: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-size: contain;
 	color:#FFF;
 }
 
@@ -171,10 +154,6 @@ html *{
 	background-position: center -0.5em;
 	height: 35em;
 	width:100%;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	color:#3d3d3d;
 }
@@ -187,17 +166,12 @@ html *{
 	background-position: center 10em;
 	height: 500px;
 	width:100%;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	color:#3d3d3d;
 }
 
 *:hover> .text-sidebar{
 	color:#FFF;
-	font-weight:bold;
 	background-color:#25495f;
 	width:181px;
 	height:60px;
@@ -207,14 +181,13 @@ html *{
 	border-bottom-right-radius:30px;
 	font-family:Lato;
 	line-height:60px;
-	font-weight:bold;
+	font-weight: 100;
 	font-size:20px;
 	text-align: center;
 	float:left;
 }
 *:hover> .text-sidebar-ml{
 	background-color:#25495f;
-	font-weight:bold;
 	width:181px;
 	height:60px;
 	visibility:visible;
@@ -222,13 +195,14 @@ html *{
 	border-top-right-radius: 30px;
 	border-bottom-right-radius:30px;
 	font-family:Lato;
-	font-weight:bold;
+	font-weight: 100;
 	font-size:20px;
 	text-align: center;
 }
 
 
 #side-bar{
+	font-weight: 100;
 	padding-top:150px;
 	padding-right: 120px;
 	padding-left:200px;
@@ -245,8 +219,6 @@ html *{
 	margin-bottom:10px;
 	clear:both;
 	float:right;
-	-webkit-box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
-	-moz-box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
 	box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
 
 
@@ -261,6 +233,7 @@ html *{
 	height:60px;
 	float:right;
 	clear:both;
+			-webkit-animation: fadein 0.25s;
 			animation: fadein 0.25s;
    	-moz-animation: fadein 0.25s;
    	-webkit-animation: fadein 0.25s;
@@ -342,24 +315,15 @@ html *{
 	background: url(../images/carousel1_back.png) no-repeat fixed top;
 	background-attachment: relative;
 	background-position: center -2em;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	color:#FFF;
 }
 #carousel1-mid{
 	background: url(../images/carousel1_mid.png) no-repeat top;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
 	background-size:contain;
 }
 #carousel1-front{
 	background: url(../images/carousel1_front.png) no-repeat top;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
 	background-size:contain;
 }
 
@@ -368,24 +332,15 @@ html *{
 	background: url(../images/carousel2_back.png) no-repeat fixed top;
 	background-attachment: relative;
 	background-position: center -2em;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	color:#FFF;
 }
 #carousel2-mid{
 	background: url(../images/carousel2_mid.png) no-repeat top;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 }
 #carousel2-front{
 	background: url(../images/carousel2_front.png) no-repeat top;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
 	background-size:contain;
 }
 #carousel3-back{
@@ -393,24 +348,15 @@ html *{
 	background: url(../images/carousel3_back.png) no-repeat fixed top;
 	background-attachment: relative;
 	background-position: center -2em;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	color:#FFF;
 }
 #carousel3-mid{
 	background: url(../images/carousel3_mid.png) no-repeat top;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
 	background-size:contain;
 }
 #carousel3-front{
 	background: url(../images/carousel3_front.png) no-repeat top;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 }
 #carousel4-back{
@@ -418,24 +364,15 @@ html *{
 	background: url(../images/carousel4_back.png) no-repeat fixed top;
 	background-attachment: relative;
 	background-position: center -2em;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	color:#FFF;
 }
 #carousel4-mid{
 	background: url(../images/carousel4_mid.png) no-repeat top;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
 	background-size:contain;
 }
 #carousel4-front{
 	background: url(../images/carousel4_front.png) no-repeat top;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
 	background-size:contain;
 }
 #links ul{
@@ -476,8 +413,6 @@ html *{
 
 }
 .navbar{
-	-webkit-box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
-	-moz-box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
 	box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
 }
 #logo-bar{
@@ -491,8 +426,6 @@ html *{
 	border-radius:100%;
 	/*border-bottom-right-radius: 17% 75%;*/
 	border-right:none;
-	-webkit-box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
-	-moz-box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
 	box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
 }
 #logo-bar-top{
@@ -513,16 +446,22 @@ html *{
 	height:155px;
 	background:url("../images/web_icons.png") -210px -250px;
 	zoom:0.45;
+	-moz-transform: scale(0.45);
+	-moz-transform-origin: -35px -45px;
 	margin-left:35px;
 	margin-top:45px;
+	-ms-transform:translate(-20px, -20px);
 }
 #logo-bar-image-static{
 	width:200px;
 	height:155px;
 	background:url("../images/web_icons.png") 0px -250px;
 	zoom:0.45;
+	-moz-transform: scale(0.45);
+	-moz-transform-origin: -45px -45px;
 	margin-left:45px;
 	margin-top:45px;
+	-ms-transform:translate(-25px, -20px);
 }
 .text-sidebar,
 .text-sidebar-ml{
@@ -538,14 +477,11 @@ html *{
 	margin:auto;
 }
 #slider{
-	
+	font-weight: 600;
 	display:inline-block;
 }
 #navbar-top{
-	z-index:20; 
-	
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
+	z-index:20;
 	box-shadow:none;
 
 }
@@ -557,120 +493,22 @@ html *{
 	top: 800px;
 	width: inherit;
 }
-.fixed-bar{
-	margin-left:27em;
-	margin-right:19em;
-	margin-bottom:40px;
-		z-index:50;
-}
-.fixed-bar-button{
-	width:60px;
-	height:60px;
-	border-radius:100%;
-	-webkit-box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
-	-moz-box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
-	box-shadow: 0 12px 6px -6px rgba(75,75,75,0.5);
-	float:left;
-	display:inline-block;
-}
-.fixed-bar-button:hover{
-	animation: fadein 0.25s;
-   	-moz-animation: fadein 0.25s;
-   	-webkit-animation: fadein 0.25s;
-   	-o-animation: fadein 0.25s;
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-
-
-#redes-fixed{
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:0px 0px;
-}
-#redes-fixed:hover{
-	
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:0px -70px;
-}
-#carta-fixed{
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:-70px 0px;
-}
-#carta-fixed:hover{
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:-70px -70px;
-}
-#factory-fixed{
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:-140px 0px;
-}
-#factory-fixed:hover{
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:-140px -70px;
-}
-#formacion-fixed{
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:-210px 0px;
-}
-#formacion-fixed:hover{
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:-210px -70px;
-}
-#meetup-fixed{
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:-280px 0px;
-}
-#meetup-fixed:hover{
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:-280px -70px;
-}
-#workshops-fixed{
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:-350px 0px;
-}
-#workshops-fixed:hover{
-	background:url("../images/web_icons.png") 0px 0px;
-	background-position:-350px -70px;
-}
-#nav.affix {
-    position: fixed;
-    bottom:0;
-    width: 100%
-}
 
 
 #ciudad-back3{
 	background: url(../images/ciudad_back3.png) no-repeat top;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
 	background-size:contain;
 }
 #ciudad-back2{
 	background: url(../images/ciudad_back2.png) no-repeat top;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
 	background-size:contain;
 }
 #ciudad-back1{
 	background: url(../images/ciudad_back1.png) no-repeat top;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
 	background-size:contain;
 }
 #ciudad-front{
 	background: url(../images/ciudad_front.png) no-repeat top;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
 	background-size:contain;
 	margin-bottom:-15em;
 }
@@ -749,74 +587,92 @@ html *{
 	width:800px;
 	height:710px;
 	zoom:50%;
+	-moz-transform: scale(0.5);
+	-moz-transform-origin: 0px 0px;
 }
-
-@-webkit-keyframes migracion {
-  0%, 100%{background-position:0px -3900px;}
-  50%{background-position:0px -4575;}
+@-webkit-keyframes migracion{
+	from{opacity:1;}
+	to{opacity:0;}
 }
-@-moz-keyframes NAME-YOUR-ANIMATION {
-  0%, 100%{background-position:0px -3900px;}
-  50%{background-position:0px -4575;}
+@-webkit-keyframes migracion-alt{
+	from{opacity:0;}
+	to{opacity:1;}
 }
-@-o-keyframes NAME-YOUR-ANIMATION {
-  0%, 100%{background-position:0px -3900px;}
-  50%{background-position:0px -4575;}
+@-moz-keyframes migracion{
+	from{opacity:1;}
+	to{opacity:0;}
 }
-@keyframes NAME-YOUR-ANIMATION {
-  0%, 100%{background-position:0px -3900px;}
-  50%{background-position:0px -4575;}
+@-moz-keyframes migracion-alt{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+@keyframes migracion{
+	from{opacity:1;}
+	to{opacity:0;}
+}
+@keyframes migracion-alt{
+	from{opacity:0;}
+	to{opacity:1;}
 }
 
 .aves{
-	background:url("../images/flying_sprites.png") 0px 0px;background-position:0px -3900px;
-	margin-left:100%;
+	background:url("../images/flying_sprites.png") 0px 0px;
+	background-position:0px -3930px;
+	margin-left:70%;
 	width:800px;
 	height:500px;
 	zoom:50%;
-	-webkit-animation: migracion 0.5s infinite; /* Safari 4+ */
-	-moz-animation:    migracion 0.5s infinite; /* Fx 5+ */
-	-o-animation:     migracion 0.5s infinite; /* Opera 12+ */
-	animation: migracion 0.5s infinite;
+	-moz-transform: scale(0.5);
+	-moz-transform-origin: 0px 0px;
+	-webkit-animation: migracion 0.75s infinite; /* Opera 12+ */
+	animation: migracion 0.75s infinite;
+}
+.aves-alt{
+	background:url("../images/flying_sprites.png") 0px 0px;
+	background-position:0px -4580px;
+	margin-left:70%;
+	margin-top:-500px;
+	width:800px;
+	height:500px;
+	zoom:50%;
+	-moz-transform: scale(0.5);
+	-moz-transform-origin: 0px 0px;
+	-webkit-animation: migracion-alt 0.75s infinite; /* Opera 12+ */
+	animation: migracion-alt 0.75s infinite;
 }
 .avion{
 	background:url("../images/flying_sprites.png") 0px 0px;
 	background-position:0px -2850px;
-	margin-left:-700px;
-
+	margin-left:-600px;
 	width:800px;
 	height:265px;
 	zoom:50%;
+	-moz-transform: scale(0.5);
+	-moz-transform-origin: 0px 0px;
 }
 .planie{
-	transform:translate(6400px, -400px);	
-	-moz-transform:translate(6400px, 800px);
-	/*Microsoft Internet Explorer*/
-	-ms-transform:translate(6400px, 400px);
-	/*Chrome, Safari*/
-	-webkit-transform:translate(6400px, -400px);
-	/*Opera*/
-	-o-transform:translate(6400px, 400px);
-	/*general version*/
+	-webkit-transform:translate(500%, -400px);
+	transform:translate(500%, -400px);	
+	-moz-transform:translate(300%, -100px);
+	-ms-transform:translate(500%, 400px);
+	-webkit-transform:translate(500%, -400px);
+	-o-transform:translate(500%, 400px);
+	-webkit-transition: all 3s;
 	transition: all 3s;
-	/*browser specific versions*/
 	-moz-transition: all 3s;
 	-ms-transition: all 3s;
 	-webkit-transition: all 3s;
 	-o-transition: all 3s;
 }
 .birdie{
-	transform:translate(6400px, -200px);	
-	-moz-transform:translate(6400px, 400px);
-	/*Microsoft Internet Explorer*/
-	-ms-transform:translate(6400px, 200px);
-	/*Chrome, Safari*/
-	-webkit-transform:translate(6400px, -200px);
-	/*Opera*/
-	-o-transform:translate(6400px, 200px);
-	/*general version*/
+	-webkit-transform:translate(-100%, -200px);
+	transform:translate(-100%, -200px);	
+	-moz-transform:translate(-100%, 400px);
+	-ms-transform:translate(-100%, 200px);
+	-webkit-transform:translate(-100%, -200px);
+	-o-transform:translate(-100%, -200px);
+	-webkit-transition: all 5s;
 	transition: all 5s;
-	/*browser specific versions*/
 	-moz-transition: all 5s;
 	-ms-transition: all 5s;
 	-webkit-transition: all 5s;
@@ -824,21 +680,18 @@ html *{
 }
 
 .migrate{
-	transform:translate(-6400px, 0px);	
-	-moz-transform:translate(-6400px, 0px);
-	/*Microsoft Internet Explorer*/
-	-ms-transform:translate(-6400px, 0px);
-	/*Chrome, Safari*/
-	-webkit-transform:translate(-6400px, 0px);
-	/*Opera*/
-	-o-transform:translate(-6400px, 0px);
-	/*general version*/
-	transition: all 25s ease-in-out;
-	/*browser specific versions*/
-	-moz-transition: all 25s ease-in-out;
-	-ms-transition: all 25s ease-in-out;
-	-webkit-transition: all 25s ease-in-out;
-	-o-transition: all 25s ease-in-out	;
+	-webkit-transform:translate(-500%, 0px);
+	transform:translate(-500%, 0px);	
+	-moz-transform:translate(-500%, 0px);
+	-ms-transform:translate(-500%, 0px);
+	-webkit-transform:translate(-500%, 0px);
+	-o-transform:translate(-500%, 0px);
+	-webkit-transition: all 35s ease-in-out;
+	transition: all 35s ease-in-out;
+	-moz-transition: all 35s ease-in-out;
+	-ms-transition: all 35s ease-in-out;
+	-webkit-transition: all 35s ease-in-out;
+	-o-transition: all 35s ease-in-out	;
 }
 .nav-button{
 	width:160px;
