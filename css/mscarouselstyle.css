@@ -1,0 +1,154 @@
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+}
+.mainGallery {
+  background:transparent;
+  color:#fff;
+  font-family:'Lato', sans-serif;
+  width:1800px%;
+  margin:0 auto
+}
+.mainGallery h2 {
+  font-size:20px;
+  color:#fff;
+  margin:0;
+  padding:3px 0
+}
+.mainGallery h5 {
+  font-size:11px;
+  color:#fff;
+  margin:0;
+  padding:3px 0 0;
+  font-weight:normal
+}
+.mainGallery .left, .mainGallery .right {
+  width:50px;
+  padding:10px;
+}
+.mainGallery .imgCaption {
+  float:right;
+  font-size:14px;
+  width:340px;
+  color:#a5a2a2;
+  padding-top:25px;
+  padding-left:10px
+}
+.mainGallery .imgImage {
+  float:left;
+  width:550px;
+}
+.mainGallery .middleContent {
+  padding:10px 0
+}
+.mainGallery .borderLR {
+  /*border-left:1px solid #333;
+  border-right:1px solid #333;*/
+}
+.mainGallery .message {
+  display:block
+}
+.message {
+  display:none
+}
+.mainGallery .nextPreviousBig {
+  position:relative;
+  height:41px;
+  width:33px;
+  background:url(../images/right-arrow.png) no-repeat;
+  text-indent:-999999px;
+}
+.mainGallery .nextBig {
+  background-position:-33px 0;
+  float:right
+}
+.mainGallery .previousBig {
+  background-position:0 0;
+  float:left;
+}
+.mainGallery .disableBigP {
+  background-position:0 -41px !important;
+  float:left;
+  cursor:default
+}
+.mainGallery .disableBigN {
+  background-position:-33px -41px !important;
+  float:right;
+  cursor:default
+}
+.mainGallery .nextPrevious {
+  position:relative;
+  height:41px;
+  width:33px;
+  
+  text-indent:-999999px;
+}
+.mainGallery .next {
+  background:url(../images/right-arrow.png) no-repeat;
+  background-size:contain;
+  float:right;
+}
+.mainGallery .previous {
+  background:url(../images/left-arrow.png) no-repeat;
+  background-size:contain;
+
+  float:left;
+
+}
+.mainGallery .disableP {
+  background-position:0 -41px !important;
+  float:left;
+  cursor:default
+}
+.mainGallery .disableN {
+  background-position:-33px -41px !important;
+  float:right;
+  cursor:default
+}
+.mainGallery .footer {
+  background:#0990cc;
+  width:100%;
+  height:150px;
+}
+.mainGallery .gallerythumb {
+  list-style:none;
+  list-style-type:none;
+  float:left;
+  padding:0;
+  margin:0
+}
+.mainGallery li {
+  display:inline;
+  margin-right:15px;
+  text-align:center;
+  float:left;
+  position:relative
+}
+.mainGallery li img {
+  margin-bottom:-3px;
+  /*border:1px solid #4a4949;*/
+}
+.mainGallery li.active img {
+  margin-bottom:-3px;
+  /*border:2px solid #000;*/
+}
+:focus {
+  border:none;
+  outline:none
+}
+.clear {
+  clear:both
+}
+/**** override ********/
+.mainGallery .imgImage {
+  text-align:center;
+}
+.mstoplinks{padding:3px; /*border-bottom:2px solid #c3c3c3;*/}
+.mstoplinks a, .mstoplinks a:visited{color:#003366; text-decoration:none; /*border-right:1px solid #c3c3c3;*/ padding:0 10px}
+.mstoplinks a.active, .mstoplinks a.active:visited{color:#003366; text-decoration:none; /*border-right:1px solid #c3c3c3;*/ padding:0 10px;/*border-bottom:1px solid #c3c3c3; border-left:1px solid #c3c3c3;*/ }
+.version{font-size:12px; color:#EE3C95;}
+.imgRightThumb,
+.mainGalery .next{
+  background:url(/images/right-arrow.png) no-repeat;
+}
