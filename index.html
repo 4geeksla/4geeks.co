@@ -26,19 +26,6 @@
   <script type="text/javascript"   src="./js/skrollr.min.js"></script>
   <script type="text/javascript" src="./js/unslider.js"></script>
   <script type="text/javascript" src="./js/jquery.msCarousel.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      var originalFontSize = 12;
-      var sectionWidth = $('.content').width();
-
-      $('.content span').each(function(){
-        var spanWidth = $(this).width();
-        var newFontSize = (sectionWidth/spanWidth) * originalFontSize;
-        $(this).css({"font-size" : newFontSize, "line-height" : newFontSize + "px"});
-      });
-    });
-  </script>
 </head>
 
 <body>
@@ -53,12 +40,12 @@
     </div>
   </div>
   <div class="container-fluid">
-   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
     <span class="sr-only">Toggle navigation</span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
-  </button>
+  </button>-->
   <div class="collapse navbar-collapse" id="navbar-links">
     <ul class="nav nav-justified">
       <li class="active">
@@ -132,20 +119,50 @@
 </div>
 <!-- Fin barra fija -->
 
-<!-- Barra  lateral -->
 
-<!-- Fin barra lateral -->
 <!-- Carrusel -->
 <div class="col-lg-14">
   <!-- Barra lateral -->
-  <div class="col-md-offset-9 col-md-3" id="side-bar">
-    <div id="redes" class="side-bar-button"><p class="text-sidebar-ml"> Redes de <br>contacto </p></div>
-    <div id="carta" class="side-bar-button"><p class="text-sidebar"> La carta </p></div>
-    <div id="factory" class="side-bar-button"><p class="text-sidebar"> Geek Factory </p></div>
-    <div id="formacion" class="side-bar-button"><p class="text-sidebar"> Formacion</p></div>
-    <div id="meetup" class="side-bar-button"> <p class="text-sidebar-ml"> Caracas <br> Tech Meetup</p></div>
-    <div id="workshops" class="side-bar-button"><p class="text-sidebar-ml"> Hack-a-tons <br> Workshops</p></div>
+
+   <div class="col-md-offset-8 col-md-3" id="side-bar">
+      <div id="sidesview">
+        <div class="sides">
+          <div id="redes" class="side-front"></div>
+          <div id="redes-bottom" class="side-bottom"><p class="text-sidebar-ml"> Redes de <br>contacto </p></div>
+        </div>
+      </div>
+      <div id="sidesview">
+        <div class="sides">
+          <div id="carta" class="side-front"></div>
+          <div id="carta-bottom" class="side-bottom"><p class="text-sidebar"> La carta </p></div>
+        </div>
+      </div>
+      <div id="sidesview">
+        <div class="sides">
+          <div id="factory"  class="side-front"></div>
+          <div id="factory-bottom" class="side-bottom"><p class="text-sidebar"> Geek Factory </p></div>
+        </div>
+      </div>
+      <div id="sidesview">
+        <div class="sides">
+          <div id="formacion"  class="side-front"></div>
+          <div id="formacion-bottom" class="side-bottom"><p class="text-sidebar"> Formacion</p></div>
+        </div>
+      </div>
+      <div id="sidesview">
+        <div class="sides">
+          <div id="meetup" class="side-front"></div>
+          <div id="meetup-bottom" class="side-bottom"><p class="text-sidebar-ml"> Caracas <br> Tech Meetup</p></div>
+        </div>
+      </div>
+      <div id="sidesview">
+        <div class="sides">
+          <div id="workshops" class="side-front"></div>
+          <div id="workshops-bottom" class="side-bottom"><p class="text-sidebar-ml"> Hack-a-tons <br> Workshops</p></div>
+        </div>
+      </div>
   </div>
+
   <!-- Fin barra lateral -->  
   <div id="slider"  class="banner has-dots col-lg-14" style="overflow: hidden; width: 100%;">
 
@@ -155,11 +172,11 @@
           <div id="carousel1-front" data-0=" background-position: center 30em;" data-20000="transition: all 0.5s ease-out; background-position:center -60em;">
             <div class="container">
               <div class="col-md-offset-1 col-md-6 content">
-                <span >CAMBIANDO</span><br />
-                <span>EL MUNDO</span><br />
-                <span>UNA LINEA DE CODIGO A LA VEZ.</span><br />
-                <span>MAS DE 2000 DESARROLLADORES Y 90 PROYECTOS</span><br />
-                <span>REINVENTANDO 6 INDUSTRIAS.</span><br />
+                <span style="font-size:79px; line-height:79px;">CAMBIANDO</span><br />
+                <span style="font-size:94px;line-height: 94px;">EL MUNDO</span><br />
+                <span style="font-size:31.4px;line-height: 31.4px;">UNA LINEA DE CODIGO A LA VEZ.</span><br />
+                <span style="font-size:20.1px; line-height:20.1px;">MAS DE 2000 DESARROLLADORES Y 90 PROYECTOS</span><br />
+                <span style="font-size:33.4px; line-height:33.4px">REINVENTANDO 6 INDUSTRIAS.</span><br />
                 <br>
                 <div class="col-md-offset-5 yellow-button">
                   <p>Unete <br>(Solo desarrolladores)</p>
@@ -177,12 +194,12 @@
             <div class="container">
               <div class="col-md-offset-1 col-md-6 content" >
 
-                <span>MAS DE 200</span><br />
-                <span>DESARROLLADORES</span><br />
-                <span>LATINOAMERICANOS</span><br />
-                <span>ESPECIALIZADOS EN DESARROLLO WEB Y MOVIL</span><br />
-                <span>CREANDO APLICACIONES EN PYTHON, CSS3, HTML5,</span><br />
-                <span>JAVASCRIPT Y RUBY.</span><br />
+                <span style="font-size:86px; line-height:86px;">MAS DE 200</span><br />
+                <span style="font-size:49px; line-height:49px;">DESARROLLADORES</span><br />
+                <span style="font-size:46px; line-height:46px;">LATINOAMERICANOS</span><br />
+                <span style="font-size:20.4px; line-height:20.4px;">ESPECIALIZADOS EN DESARROLLO WEB Y MOVIL</span><br />
+                <span style="font-size:19.4px; line-height:19.4px;">CREANDO APLICACIONES EN PYTHON, CSS3, HTML5,</span><br />
+                <span style="font-size:47.5px; line-height:47.5px;">JAVASCRIPT Y RUBY.</span><br />
                 <br>
                 <div class="col-md-offset-5 yellow-button">
                   <p>Conoce nuestros<br>proyectos.</p> 
@@ -200,11 +217,11 @@
             <div class="container">
               <div class="col-md-offset-1 col-md-6 content">
 
-                <span>UNA COMUNIDAD </span><br />
-                <span>PARA SER MÁS</span><br />
-                <span>Y MEJORES DESARROLLADORES</span><br />
-                <span>CONOCE A OTROS DEVELOPERS, APRENDE, COLABORA,</span><br />
-                <span>DESARROLLA.</span><br />
+                <span style="font-size:54.9px; line-height:54.9px;">UNA COMUNIDAD </span><br />
+                <span style="font-size:69.5px; line-height:69.5px;">PARA SER MÁS</span><br />
+                <span style="font-size:32.3px; line-height:32.3px;">Y MEJORES DESARROLLADORES</span><br />
+                <span style="font-size:18.5px; line-height:18.5px;">CONOCE A OTROS DEVELOPERS, APRENDE, COLABORA,</span><br />
+                <span style="font-size:75.1px; line-height:75.1px;">DESARROLLA.</span><br />
                 <br>
                 <div class="col-md-offset-5 yellow-button">
                   <p>Como ser parte de<br>4 geeks</p>
@@ -220,12 +237,12 @@
           <div id="carousel4-front" data-0="background-position: center 20em;" data-20000="transition: all 0.05s ease;background-position:center -400em;">
             <div class="container">
               <div class="col-md-offset-1 col-md-6 content">
-                <span> DESARROLLAMOS</span><br />
-                <span> PRODUCTOS</span><br />
-                <span>TECNOLOGICOS</span><br />
-                <span>DE ALTO IMPACTO PARA EMPRESAS, EMPRENDEDORES Y</span><br />
-                <span>STARTUPS. DESDE APLICACIONES WEB HASTA</span><br />
-                <span>APLICACIONES MOVILES.</span><br />
+                <span style="font-size:55.2px; line-height:55.2px;"> DESARROLLAMOS</span><br />
+                <span style="font-size:77.6px; line-height:77.6px;"> PRODUCTOS</span><br />
+                <span style="font-size:60.5px; line-height:60.5px;">TECNOLOGICOS</span><br />
+                <span style="font-size:17.4px; line-height:17.4px;">DE ALTO IMPACTO PARA EMPRESAS, EMPRENDEDORES Y</span><br />
+                <span style="font-size:21.4px; line-height:21.4px;">STARTUPS. DESDE APLICACIONES WEB HASTA</span><br />
+                <span style="font-size:38.6px; line-height:38.6px;">APLICACIONES MOVILES.</span><br />
                 <br>
                 <div class="col-md-offset-5 yellow-button">
                   <p class="one-line">¿Que hacemos?</p>
@@ -280,9 +297,9 @@
 
 <section id="section-proyectos" style="overflow-x: hidden;
    position: relative;">
-   <div  data-400p="padding-left:-410px" data-485p="padding-left:2000px">
+   <!--<div  data-400p="padding-left:-410px" data-485p="padding-left:2000px">
     <div class="avion" data-400p="margin-top:0px"  data-415p="margin-top:-100px" data-425p="margin-top:100px" data-435p="margin-top:-100px" data-445p="margin-top:-100px"data-465p="margin-top:100px"></div>
-  </div>
+  </div>-->
   <div class="container" > 
     <!--<div class="avion" data-100-bottom-center="background:white;" data-1000-bottom-center="background:black;"></div>-->
     
@@ -439,8 +456,8 @@
           <div class="container">
             <div class="col-lg-14 col-offset-1 content">
               <!--<div class="square" data-725p="background:white" data-750p="background:pink">-->
-              <div class="aves" data-690p="margin-left:70%;" data-790p="margin-left:0px"></div>
-              <div class="aves-alt" data-690p="margin-left:70%;" data-790p="margin-left:0px"></div>
+              <!--<div class="aves" data-690p="margin-left:70%;" data-790p="margin-left:0px"></div>
+              <div class="aves-alt" data-690p="margin-left:70%;" data-790p="margin-left:0px"></div>-->
             </div>
           </div>
         </div>
@@ -509,7 +526,7 @@
     //  and your code will throw errors if it tries to do .offset().left;
     if(pos) {
     //  Scroll the page
-    $('html, body').animate({
+     $('html, body').animate({
       scrollTop: pos.top,
       scrollLeft: pos.left
     }, 1000);
