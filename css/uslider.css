@@ -76,9 +76,22 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: 20px;
+		bottom: 275px;
 		margin-bottom:50px;
+		z-index:11;
 	}
+	@media (max-height:768px){
+		.banner .dots {
+			bottom: 135px;
+		}
+	}
+	@media (min-height:769px){
+		.banner .dots {
+			bottom: 150px;
+		}
+	}
+	
+	
 		.banner .dots li {
 			display: inline-block;
 			width: 10px;
