@@ -1,6 +1,10 @@
 html *{
 	font-family:'Lato', sans-serif;
 }
+body{
+	width:100%;
+	overflow-x:hidden;
+}
 
 .carousel-p{
 	font-weight:400;
@@ -100,9 +104,11 @@ html *{
 #section-first{
 	height:800px;
 }
-
 #section-aliados{
-	padding-top:200px;
+	padding-top:125px;
+}
+#section-aliados2{
+	padding-top:325px;
 	padding-bottom:;
 	background-color:#d4d4d4;
 	text-align:center;
@@ -110,13 +116,13 @@ html *{
 	position:relative;
 }
 #section-proyectos{
-	padding-top:700px;
+	padding-top:625px;
 	position:relative;
 	clear:both;
 }
 #section-comunidad{
 	width:100%;
-	padding-top:200px;
+	padding-top:150px;
 	padding-bottom:400px;
 	background:#0990cc;
 	position:relative;
@@ -125,7 +131,7 @@ html *{
 }
 #section-footer{
 	background: url(../images/city5.png) no-repeat scroll top;
-	padding-top:700px;
+	padding-top:525px;
 	background-position:0 -125px;
 	text-align:center;
 	background-attachment: relative;
@@ -136,7 +142,7 @@ html *{
 }
 #section-4geeks{
 	margin-top:-100px;
-	padding-top:300px;
+	padding-top:125px;
 	padding-bottom:600px;
 	background-color:#d3d3d3;
 	z-index:1;
@@ -147,7 +153,7 @@ html *{
 #div-aliados-footer{
 	background:url(../images/aliados_footer.png) top no-repeat;
 	background-size:cover;
-	min-height:250px;
+	min-height:245px;
 	width:100%;
 	margin-top:400px;
 }
@@ -317,7 +323,7 @@ html *{
 	padding:0;
 	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
-	position:relative; padding-top:100px
+	position:relative;
 }
 #carousel1-back{
 	background-color:#d3d3d3;
@@ -497,7 +503,7 @@ html *{
 	bottom:-5px;
 }
 .footer-content{
-	padding-top:250px;
+	padding-top:175px;
 	padding-right:32px;
 	padding-left:32px;
 	padding-bottom:50px;
@@ -518,7 +524,8 @@ html *{
 	height:110px;
 	margin-right:auto;
 	margin-left:auto;
-	margin-bottom:60px;	
+	margin-top:80px;
+	/*margin-bottom:0px;*/	
 }
 .footer-links {
 	color:white;
@@ -549,7 +556,8 @@ html *{
 .footer-links>li>a:visited {color:#FFF;}  /* visited link */
 .footer-links>li>a:hover{
 	color:#f36f23;
-	text-decoration:none;}  /* mouse over link */
+	text-decoration:none;
+	transition:all 0.2s ease-in-out;}  /* mouse over link */
 .footer-links>li>a:active {color:#0000FF;}
 
 .footer-images{
@@ -646,10 +654,10 @@ html *{
 	z-index:21;
 }
 #hoja1{
-	left:-15%;
+	left:-5%;
 }
 #hoja2{
-	left:55%;
+	left:66%;
 }
 #hoja3{
 	left:5%;
@@ -673,7 +681,8 @@ html *{
 	-moz-transform-origin:0px 0px;
 }
 #hoja7{
-	left:40%;
+	/*right:-5%;*/
+	left:70%;
 }
 #hoja8{
 	left:-12.5%;
@@ -692,7 +701,7 @@ html *{
 	z-index:20;
 }
 #hoja11{
-	left:55%;
+	left:70%;
 	z-index:20;
 }
 @media (min-width:769px){
@@ -880,13 +889,13 @@ html *{
 @media (min-width: 872px){
 	#div-terminal{
 		color:white;
-		margin-left:30%; margin-top:200px; margin-bottom:150px; margin-right:auto; z-index:20;opacity:0; width:575px;
+		margin-left:30%; margin-top:150px; margin-bottom:150px; margin-right:auto; z-index:20;opacity:0; width:575px;
 	}
 }
 @media(max-width:871px){
 	#div-terminal{
 		color:white;
-		margin-left:auto; margin-top:200px; margin-bottom:150px; margin-right:auto; z-index:20;opacity:0; width:100%; font-size:25px;
+		margin-left:auto; margin-top:150px; margin-bottom:150px; margin-right:auto; z-index:20;opacity:0; width:100%; font-size:25px;
 	}
 }
 @media (max-width:991px){
@@ -1148,8 +1157,10 @@ html *{
 	line-height:58.3px;
 }
 .thumb{
+	margin-left:auto;
+	margin-right:auto;
 	display: block;
-	width:200px;
+	width:125px;
 	max-width: 100%;
 	height: 100px;
 	-webkit-transition: all 0.5s ease-in-out;
@@ -1202,12 +1213,12 @@ html *{
 }
 @media (min-width:700px) and (max-width:990px){
 	.info-text, #typed-cursor{
-		font-size:15px;
+		font-size:25px;
 	}
 	#div-terminal{
-		margin-left:100px !important;
-		top:-100px;
-		width:326px;
+		margin-left:33% !important;
+		top:-55px;
+		width:285px;
 	}
 	#meetup-text1{
 		font-size:90px !important;
@@ -1402,7 +1413,7 @@ html *{
 		font-size:35px;
 	}
 	#div-terminal{
-		top:-100px;
+		top:-50px;
 		width:326px;
 	}
 	#meetup-text1{
@@ -1500,6 +1511,15 @@ html *{
 	}
 }
 @media (min-width:1232px) and (max-width:1365px){
+	.info-text, #typed-cursor{
+		font-size:39px;
+		line-height:39px;
+	}
+	#div-terminal{
+		margin-left:33% !important;
+		top:45px;
+		width:450px !important;
+	}
 	#meetup-text1, #typed-cursor{
 		font-size:60px !important;
 	}
@@ -1564,7 +1584,27 @@ html *{
 		font-size:66px !important;
 	}
 }
+@media (min-width:1365px) and (max-width:1500px){
+	.info-text, #typed-cursor{
+		font-size:55px !important;
+		
+	}
+	#div-terminal{
+		margin-left:28% !important;
+		top:25px !important;
+		width:630px !important;
+	}
+}
 @media (min-width:1500px) and (max-width:1600px){
+	.info-text, #typed-cursor{
+		font-size:55px !important;
+		line-height:55px !important;
+	}
+	#div-terminal{
+		margin-left:28% !important;
+		top:80px !important;
+		width:630px !important;
+	}
 	#meetup-text1, #typed-cursor{
 		font-size:77px !important;
 	}
@@ -1658,6 +1698,15 @@ html *{
 	}
 }
 @media (min-width:1601px) and (max-width:1925px){
+	.info-text, #typed-cursor{
+		font-size:55px !important;
+		line-height:55px !important;
+	}
+	#div-terminal{
+		margin-left:32% !important;
+		top:145px !important;
+		width:630px !important;
+	}
 	#meetup-text1{
 		font-size:90px !important;
 	}
@@ -1750,4 +1799,62 @@ html *{
 #link-infografia, #link-infografia:hover{
 	text-decoration:none;
 	color:white;
+}
+button, button:hover, button:active, button:visited, button:focus{
+	border:none !important;
+	box-shadow:none !important;
+	padding: 0 !important;
+	outline:0;
+	/*background: none !important;*/
+}
+
+#flying-rigo{
+	background:url(../images/easteregg02.png);
+	width:253px;
+	height:180px;
+	position:absolute;
+	zoom:0.5;
+	-moz-transform: scale(0.6);
+	-moz-transform-origin: 0px 0px;
+	animation: vuelo 7.5s;
+	-webkit-animation: vuelo 10s;
+	-moz-animation: vuelo 10s;
+	-ms-animation: vuelo 10s;
+	left:-100%;
+	z-index:21;
+
+}
+@-webkit-keyframes vuelo{
+	from{
+		left:-50%;
+	}
+	to{
+		left:200%;
+	}
+}
+
+@-moz-keyframes vuelo{
+	from{
+		left:-100%;
+	}
+	to{
+		left:200%;
+	}
+}
+
+@ms-keyframes vuelo{
+	from{
+		left:-100%;
+	}
+	to{
+		left:200%;
+	}
+}
+@keyframes vuelo{
+	from{
+		left:-100%;
+	}
+	to{
+		left:200%;
+	}
 }
