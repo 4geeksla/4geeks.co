@@ -115,6 +115,7 @@ body{
 }
 #rigoberto{
 	top:80%;
+    left:-100px;
 	zoom:0.5;
     -moz-transform: scale(0.5);
     -moz-transform-origin: 0px 0px;
@@ -369,7 +370,7 @@ body{
 }
 #blueback1, #blueback2{
     width:85%;
-    height:200px;
+    height:300px;
     background:#42bdf7;
     position:absolute;
     top:185%;

@@ -35,7 +35,6 @@
   <link href="./css/geekyDev.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,900' rel='stylesheet' type='text/css'>
   <script type="text/javascript"   src="./js/jquery.js"></script>
-   <script type="text/javascript"   src="./js/skrollr.min.js"></script>
 </head>
 <body>
   <div class="row backgroundBlue" id="header">
@@ -62,9 +61,26 @@
     </div>
     <div class="col-xs-3"></div>
     <div class="col-xs-offset-3 col-xs-6" id="city1">
+      <img class="img-responsive" src="./images/infografia/desarrolladores/city1.png"/>
+      <img id="city2" class="img-responsive  animatedHover" src="./images/infografia/desarrolladores/city2.png"/>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div style="position:relative">
+        <div id="greenCircle"></div>
+      </div>
+      <!-- <div style="position:relative">
+        
+        
+      </div> -->
+    </div>
+   <!--  <div class="col-xs-offset-3 col-xs-6" id="city1">
       <div style="position:relative">
         <img class="img-responsive" src="./images/infografia/desarrolladores/city1.png"/>
-        <img id="city2" class="img-responsive" src="./images/infografia/desarrolladores/city2.png" data-400="top:20px" data-800="top:5px"/>
+        <img id="city2" class="img-responsive  animatedHover" src="./images/infografia/desarrolladores/city2.png"/>
       </div>
       <ul>
         <li></li>
@@ -73,7 +89,7 @@
         <li></li>
       </ul>
       <div style="position:relative"><div class="divCentered"></div></div>
-    </div>
+    </div> -->
     <div class="col-xs-3"></div>
     <div class="col-xs-offset-3 col-xs-6" id="devlab">
       <h1> Dev Lab </h1>
@@ -92,7 +108,7 @@
     <div class="col-xs-3"></div>
     <div class="col-xs-offset-3 col-xs-6" id="encendido">
       <div>
-        <img class="img-responsive" src="./images/infografia/desarrolladores/encendido.png"/>
+        <img id="bulb" class="img-responsive" src="./images/infografia/desarrolladores/apagado.png"/>
       </div>
       <ul>
         <li></li>
@@ -114,22 +130,24 @@
         <div class="mediumCircle"></div>
         <div class="smallCircle"></div>
       </div> 
-      <img class="img-responsive divCentered" style="margin-top:50px" src="./images/infografia/desarrolladores/personastablet.png"/>
+        <div id="tabletDiv">
+          <img id="tablet" class="img-responsive animatedHover" src="./images/infografia/desarrolladores/personastablet.png"/>
+        </div>
     </div>
     <div class="col-xs-3"></div>
     <div class="col-xs-offset-3 col-xs-6">
       <div style="position:relative">
       <img id="chevron" class="img-responsive divCentered" src="./images/infografia/desarrolladores/rayas.png"/>
         <img class="img-responsive divCentered" src="./images/infografia/desarrolladores/personas.png"/>
-        <img id="personas2" class="img-responsive divCentered" src="./images/infografia/desarrolladores/personas2.png" data-2200="top:-50px" data-2800="top:-40px"/>
-        
+        <img id="personas2" class="img-responsive divCentered" src="./images/infografia/desarrolladores/personas2.png" />
+        <img id="personas3" class="img-responsive divCentered" src="./images/infografia/desarrolladores/personas3.png" />
        </div>
     </div>
     <div class="col-xs-3"></div>
     <div class="col-xs-offset-3 col-xs-6" id="meetup">
       <div style="position:relative; margin-bottom:50px">
         <img class="img-responsive divCentered" style="margin-top:50px" src="./images/infografia/desarrolladores/techmeetup.png"/> 
-        <img id="meetup2" class="img-responsive divCentered" style="margin-top:50px" src="./images/infografia/desarrolladores/techmeetup2.png" data-2400="bottom:25px" data-3300="bottom:0"/> 
+        <img id="meetup2" class="img-responsive divCentered  animatedHover" style="margin-top:50px" src="./images/infografia/desarrolladores/techmeetup2.png"/> 
       </div>
       <div style="position:relative">
 
@@ -158,8 +176,8 @@
         <p> STGO TECH <br> meetup </p>
       </div>
       <img class="img-responsive" src="./images/infografia/desarrolladores/montana1.png"/>
-      <div style="position:relative">
-        <img class="img-responsive" id="montana2" src="./images/infografia/desarrolladores/montana2.png" data-3200="bottom:25px" data-4400="bottom:0"/>
+      <div style="position:relative;height:200px; margin-bottom:-200px">
+        <img id="montana2" class="img-responsive animatedHover" src="./images/infografia/desarrolladores/montana2.png"/>
       </div>
       <ul>
         <li></li>
@@ -167,7 +185,7 @@
         <li></li>
         <li></li>
       </ul>
-      <div id="meetupLine" class="divCentered backgroundBlue"></div>
+      <div id="meetupLine" style="margin-top:-50px" class="divCentered backgroundBlue"></div>
       <div id="email" class="divCentered">
         <img class="img-responsive divCentered" style="margin-top:22px" src="./images/infografia/desarrolladores/iconocorreo.png"/>
       </div>
@@ -233,7 +251,7 @@
       </div>
       <div style="position:relative">
         <img class="img-responsive divCentered" src="./images/infografia/desarrolladores/personajes1.png"/>
-        <img id="personajes2" class="img-responsive divCentered" src="./images/infografia/desarrolladores/personajes2.png" data-5800="bottom:25px" data-6700="bottom:0"/>
+        <img id="personajes2" class="img-responsive divCentered animatedHover" src="./images/infografia/desarrolladores/personajes2.png"/>
       </div>
       <div id="meetupLineH" class="divCentered backgroundBlue"></div>
       <div id="headerLine" style="height:100px" class="divCentered backgroundBlue"></div>
@@ -257,15 +275,18 @@
     </div>
 
   </div>
-  <div class="backgroundBlue" style="width:100%; padding:0; margin:0; height:100px"> </div>
+  <div class="backgroundBlue" id="footer">
+     <a href="./contactanos.html"><p> Contáctanos </p></a>
+  </div>
 <body>
 <footer>
   <script>
     onscroll = function() 
     {
-    var distanceUntil = $('.planta').offset().top - $(window).scrollTop();
+    var distanceUntilFlor = $('.planta').offset().top - $(window).scrollTop();
     // console.log(distanceUntil);
-    if(distanceUntil<=700){
+    console.log(distanceUntilFlor);
+    if(distanceUntilFlor<=700 && distanceUntilFlor>=600){
       document.getElementById("flor").className="active";
       document.getElementById("hoja1").className="active";
       document.getElementById("hoja2").className="active";
@@ -277,13 +298,29 @@
         document.getElementById("hoja2").className="final";
       },4900);
     }
-    
+    var distanceUntilBulb = $('#bulb').offset().top - $(window).scrollTop();
+    console.log(distanceUntilBulb);
+    if(distanceUntilBulb<=200 && distanceUntilBulb>=100){
+      document.getElementById("bulb").src = "./images/infografia/desarrolladores/encendido.png";
+    }
+    else if(distanceUntilBulb<-500){
+      document.getElementById("bulb").src = "./images/infografia/desarrolladores/apagado.png";
+    }
+    var distanceUntilText = $('#personastexto').offset().top - $(window).scrollTop();
+    if(distanceUntilText < 400 && distanceUntilText>=300){
+      document.getElementById("texto1").className = "active";
+      document.getElementById("texto2").className = "active";
+      document.getElementById("texto3").className = "active";
+      document.getElementById("texto4").className = "active";
+    }
+    else if(distanceUntilText<-500){
+      document.getElementById("texto1").className = "";
+      document.getElementById("texto2").className = "";
+      document.getElementById("texto3").className = "";
+      document.getElementById("texto4").className = "";
+    }
+     
   };
     
-  </script>
-  <script type="text/javascript">
-    skrollr.init({
-      forceHeight: false
-    });
   </script>
 </footer>

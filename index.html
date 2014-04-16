@@ -312,7 +312,7 @@
       <img data-1700= "opacity:0;  top:-120%;" data-1850="opacity:1; top:35%;" data-2500="top:35%;" data-3300="top:30%;" class="img-responsive hoja" id="hoja6"  src="./images/hojas/hoja06.png"/>
       <img data-1700= "opacity:0;  top:-120%;" data-1850="opacity:1; top:95%;" data-2500="top:95%;" data-3300="top:75%;"class="img-responsive hoja" id="hoja7" src="./images/hojas/hoja07.png"/>
       <img data-1700= "opacity:0;  top:-120%;" data-1850="opacity:1; top:115%;" data-3300="top:115%;" data-3600="top:112%;" class="img-responsive hoja" id="hoja8" src="./images/hojas/hoja08.png"/>
-      <img data-1700= "opacity:0;  top:-120%;" data-1850="opacity:1; top:145%;" data-3200="top:145%;" data-3800="top:120%;" class="img-responsive hoja" id="hoja9" src="./images/hojas/hoja09.png"/>
+      <img data-1700= "opacity:0;  top:-120%;" data-1850="opacity:1; top:125%;" data-2800="top:125%;" data-3600="top:110%;" class="img-responsive hoja" id="hoja9" src="./images/hojas/hoja09.png"/>
       <img data-1700= "opacity:0;  top:-120%;" data-1850="opacity:1; top:115%;" data-3300="top:115%;" data-3800="top:113%;" class="img-responsive hoja" id="hoja10"  src="./images/hojas/hoja10.png"/>
       <img data-1700= "opacity:0;  top:-120%;" data-1850="opacity:1; top:125%;"  data-3300="top:125%;" data-3800="top:120%;" class="img-responsive hoja" id="hoja11"  src="./images/hojas/hoja11.png"/>
       <!-- Fin hojas --> 
@@ -344,8 +344,8 @@
     <div class="container" style="position:relative">
       <div class="col-xs-12">
         <img class="avion" style="left:0%; position:absolute;" class="img-responsive" src="./images/plane01.png"
-        data-3480="left:-25%; top:-500px" data-3540="left:0%; top:-550px;" data-3620="left:25%; top:-600px;" data-3660="left:50%; top:-575px"
-        data-3720="left:75%; top:-625px;" data-3780="left:150%;"/>
+        data-3480="left:-25%; top:-500px" data-3540="left:0%; top:-500px" data-3620="left:25%; top:-500px" data-3660="left:50%; top:-500px"
+        data-3720="left:75%; top:-500px" data-3780="left:150%;top:-500px"/>
       </div>
     </div>
     <div style="margin-bottom:500px; margin-top:-500px;">
@@ -613,11 +613,11 @@
 <footer>
   <script src="./bootstrap/js/bootstrap.js"></script>
   <script type="text/javascript" src="js/skrollr.min.js"></script>
-  <script type="text/javascript">
-    skrollr.init({
-      forceHeight: false
-    });
-  </script>
+  // <script type="text/javascript">
+  //   skrollr.init({
+  //     forceHeight: false
+  //   });
+  // </script>
   <script type="application/javascript">
 
     $('#slider').unslider({
@@ -648,7 +648,16 @@
             strings: ["Mejor que solo leer es interactuar. ^1000 Haz click aquí"],
             typeSpeed: 35
           });  
-      }  
+      }
+       var distanceUntilLogo = $('#footer-logo').offset().top - $(window).scrollTop();
+      // console.log(distanceUntil);
+      console.log(distanceUntilLogo);
+      if(distanceUntilLogo<=1600){
+            document.getElementById("footer-logo").className="active";
+      }
+      else{
+        document.getElementById("footer-logo").className="";
+      }
     };
   </script>
   <script type="text/javascript">

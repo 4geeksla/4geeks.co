@@ -146,7 +146,6 @@ body{
 }
 #section-comunidad{
 	width:100%;
-	padding-top:150px;
 	padding-bottom:400px;
 	background:#0990cc;
 	position:relative;
@@ -554,11 +553,13 @@ body{
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:80px;
-	animation: shake 3s infinite;
-	-webkit-animation: shake 3s infinite;
-	-moz-animation: shake 3s infinite;
-	-ms-animation: shake 3s infinite;
 	/*margin-bottom:0px;*/	
+}
+#footer-logo.active{
+	animation: shake 3s 5s;
+	-webkit-animation: shake 3s 5s;
+	-moz-animation: shake 3s 5s;
+	-ms-animation: shake 3s 5s;
 }
 
 @-moz-keyframes vuelo2{
