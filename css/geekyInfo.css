@@ -2,6 +2,23 @@ body{
     background:#f0eeed;
     font-family:Lato;
 }
+@media (min-width:1400px) and (max-width:1920px) {
+    body{
+        -webkit-transform:scale(0.85);
+        -moz-transform:scale(0.85);
+        -ms-transform:scale(0.85);
+        transform:scale(0.85);
+    }
+    #trees{
+        top:96% !important;
+    }
+    #clouds, #birds{
+        top:66% !important;
+    }
+    #slide1{
+        margin-top:500px !important;
+    }
+}
 .hint {
     /*
         We hide the hint until presentation is started and from browsers not supporting

@@ -2359,6 +2359,9 @@ button, button:hover, button:active, button:visited, button:focus{
 	width:50px;
 	height:50px;
 }
+#divFormacion{
+	margin-top:2.5%;
+}
 #divFormacion h2{
 	font-weight:200;
 	font-size:25px;
@@ -2369,7 +2372,14 @@ button, button:hover, button:active, button:visited, button:focus{
 	margin-left:5%;
 }
 #hack-logo{
-	margin-left:20%;
+	/*margin-left:20%;*/
+	-webkit-transform:scale(0.5);-webkit-transform-origin: 50% 0px;
+	-moz-transform:scale(0.5);-moz-transform-origin: 50% 0px;
+	-ms-transform:scale(0.5);-ms-transform-origin: 50% 0px;
+	transform:scale(0.5);transform-origin: 50% 0px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:-100px;
 }
 #plane-lacarta{
 	margin-top:125px;
@@ -2390,4 +2400,43 @@ input.button{
 	line-height:2;
 	font-size:20px;
 	font-weight:bold;
+}
+.form-control{
+	font-family: Lato !important;
+	background:#007baa;
+	color:white !important;
+	border:none;
+	font-size:20px;
+	font-weight:300;
+	height:50px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    color:white !important;
+}
+input:-moz-placeholder, textarea:-moz-placeholder { 
+    color:white !important;
+}
+input::-moz-placeholder, textarea::-moz-placeholder { 
+    color:white !important;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    color:white !important;
+}
+
+select{
+	-moz-appearance:none;
+	/*text-indent:0.01px;
+	text-overflow:'';*/
+	-webkit-appearance: none;
+	appearance: none;
+}
+@media (min-width:1450px){
+	#section-aliados{
+		padding-top:300px;
+	}
+}
+@media (max-width:1449px){
+	#section-aliados{
+		padding-top:50px;
+	}
 }

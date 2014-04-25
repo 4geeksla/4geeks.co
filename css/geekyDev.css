@@ -294,7 +294,7 @@ body{
 	right:2.6%;
 	position:absolute;
 }
-#csstech{
+#ccstech{
 	width:150px;
 	height:150px;
 	float:left;
@@ -304,14 +304,14 @@ body{
 	margin-left:-75px;
 	box-shadow: 0 12px 6px -6px rgba(75,75,75,0.25);
 }
-#csstech p{
+#ccstech p{
 	padding-top:30px;
-	font-size:1.5em;
+	font-size:20px;
 	font-weight:700;
 }
 #stgotech p{
 	padding-top:40px;
-	font-size:1.25em;
+	font-size:20px;
 	font-weight:700;
 }
 #stgotech{
