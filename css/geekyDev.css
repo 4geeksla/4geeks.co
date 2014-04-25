@@ -107,7 +107,7 @@ body{
 	text-align:center;
 }
 #city1{
-	margin-top:200px;
+	margin-top:100px;
 	/*margin-bottom:100px;*/
 	margin-bottom:200px;
 }
@@ -200,7 +200,7 @@ body{
 	left:37%;
 }
 #redCircle{
-	margin-top:250px;
+	margin-top:75px;
 	border:10px solid #fe7474;
 	width:150px;
 	height:150px;
@@ -251,7 +251,7 @@ body{
     }
 }
 #meetup{
-	margin-top:200px;
+	margin-top:50px;
 	text-align:center;
 }
 #meetup p{
@@ -912,7 +912,7 @@ body{
 	margin-top:50px;position:absolute; left:45%;
 }
 #footer{
-	width:100%; padding:0; padding-top:50px; margin:0; height:150px; color:white; font-size:3em; text-align:center;
+	width:100%; padding:0; padding-top:50px; margin:0; height:200px; color:white; font-size:3em; 
 }
 a, a:hover{
 	color:white !important;
@@ -949,49 +949,470 @@ a, a:hover{
 #m01{
 	left:60%;
 	top:35%;
+	-webkit-animation: movil 2.5s 2.25s;
+	-moz-animation: movil 2.5s 2.25s;
+	-ms-animation: movil 2.5s 2.25s;
+	animation: movil 2.5s 2.25s;
 }
 #m02{
+	-webkit-animation: movil 2s 2s;
+	-moz-animation: movil 2s 2s;
+	-ms-animation: movil 2s 2s;
+	animation: movil 2s 2s;
 	left:45.66%;
 	top:-22%;
 }
 #m03{
 	left:30.66%;
 	top:50%;
+	-webkit-animation: movil 2.75s 2.125s;
+	-moz-animation: movil 2.75s 2.125s;
+	-ms-animation: movil 2.75s 2.125s;
+	animation: movil 2.75s 2.125s;
 }
 #m04{
 	top:5%;
 	left:37.6%;
+	-webkit-animation: movil 2s 2.125s;
+	-moz-animation: movil 2s 2.125s;
+	-ms-animation: movil 2s 2.125s;
+	animation: movil 2s 2.125s;
 }
 #m05{
 	left:71.5%;
 	top:50%;
+	-webkit-animation: movil 2s 2.125s;
+	-moz-animation: movil 2s 2.125s;
+	-ms-animation: movil 2s 2.125s;
+	animation: movil 2s 2.125s;
 }
 #m06{
 	top:0%;
 	left:54.3%;
+	-webkit-animation: movil 1.5s 2.125s;
+	-moz-animation: movil 1.5s 2.125s;
+	-ms-animation: movil 1.5s 2.125s;
+	animation: movil 1.5s 2.125s;
 }
 #m07{
 	left:32.2%;
 	top:28%;
+	-webkit-animation: movil 1.25s 2.075s;
+	-moz-animation: movil 1.25s 2.075s;
+	-ms-animation: movil 1.25s 2.075s;
+	animation: movil 1.25s 2.075s;
 }
 #m08{
 	top:55%;
 	left:16.6%;
+	-webkit-animation: movil 1.5s 2.125s;
+	-moz-animation: movil 1.5s 2.125s;
+	-ms-animation: movil 1.5s 2.125s;
+	animation: movil 1.5s 2.125s;
 }
 #m09{
 	left:22.5%;
 	top:35%;
+	-webkit-animation: movil 1.125s 2.125s;
+	-moz-animation: movil 1.125s 2.125s;
+	-ms-animation: movil 1.125s 2.125s;
+	animation: movil 1.125s 2.125s;
 }
 #m10{
 	left:61%;
 	top:14%;
+	-webkit-animation: movil 1.125s 2.125s;
+	-moz-animation: movil 1.125s 2.125s;
+	-ms-animation: movil 1.125s 2.125s;
+	animation: movil 1.125s 2.125s;
 }
 #m11{
 	left:72%;
 	top:30%;
+	-webkit-animation: movil 1.125s 2.125s;
+	-moz-animation: movil 1.125s 2.125s;
+	-ms-animation: movil 1.125s 2.125s;
+	animation: movil 1.125s 2.125s;
+}
+#m01:hover, #m02:hover, #m03:hover, #m04:hover,
+#m05:hover, #m06:hover, #m07:hover, #m08:hover,
+#m09:hover, #m10:hover, #m11:hover{
+	-webkit-animation: movil2 2s;
+	-moz-animation: movil2 2s;
+	-ms-animation: movil2 2s;
+	animation: movil2 2s;
 }
 #movilLineV{
 	width:1px;
 	height:50px;
 	margin-top:200px;
+}
+.divComo{
+    background:url(../images/infografia/empresas/como.png) no-repeat;
+    background-size:contain;
+    width:255px;
+    height:51px;
+    color:white;
+    text-align:center;
+    margin-top:0px;
+    padding-top:1px;
+}
+.divComo h2{
+	font-size:2em;
+	font-weight:200;
+	margin-left:-15px;
+	margin-top:5px;
+}
+.divLeft{
+	margin-left:15%;
+	
+}
+.divRight{
+	margin-left:85%;
+}
+#circlesLeft{
+	position:absolute;
+	left:0;
+}
+#circlesRight{
+	position:absolute;
+	right:0;
+	margin-top:0px;
+}
+#devLineH{
+	width:96.5%;
+	height:1px;
+	margin-top:35px;
+	box-shadow: 0 12px 6px -6px rgba(75,75,75,0.25);
+}
+#lines{
+	background:url(../images/infografia/empresas/linio.png);
+	width:30px;
+	height:2300px;
+	margin-left:48%;
+	position:absolute;
+	z-index:10;
+}
+#arrows{
+	background:url(../images/infografia/empresas/flechas.png);
+	width:128px;
+	height:83px;
+	top:2300px;
+	margin-left:38.7%;
+	position:absolute;
+}
+#contamos{
+	margin-top:250px;
+}
+#contamos h2{
+	font-weight:200;
+	font-size:3em;
+	text-align: center;
+}
+#contamos h2 b{
+	font-weight:300;
+}
+#contamos p{
+	font-size:0.5em;
+	font-weight:300;
+}
+#contamos #headerSmallCircle{
+	margin-top:50px;
+}
+#contamos #headerLargeCircle{
+	/*margin-top:150px;*/
+}
+#metodologias{
+	margin-top:50px;
+}
+#metodologias > div > div > h2{
+	font-size:3.5em;
+	text-align:center;
+	font-weight: 200;
+}
+#metodologias > div > .divComo> h2{
+	font-size:2.5em;
+	text-align:center;
+	font-weight: 200;
+}
+#divs{
+	height:200px;
+}
+#rapidos{
+	background:url(../images/infografia/empresas/rapidos.png);
+	background:contain;
+	width:230px;
+	height:51px;
+	position:absolute;
+	top:100px;
+	left:25%;
+}
+#rapidos.active{
+	transition: all 0.5s ease-in-out;
+	top:-50px;
+}
+#rapidos p, #coordinados p, #sensibles p, #ligeros p{
+	color:white;
+	font-size:2em;
+	text-align:center;
+}
+#movimiento p{
+	color:white;
+	font-size:1.5em;
+	line-height: 2em;
+	text-align:center;
+}
+#coordinados{
+	background:#5f5f5f;
+	width:260px;
+	height:51px;
+	position:absolute;
+	left:0.5%;
+	top:150px;
+}
+
+#movimiento{
+	background:#55c3f8;
+	width:260px;
+	height:51px;
+	position:absolute;
+	left:46%;
+	top:150;
+}
+#sensibles{
+	background:#F7CF53;
+	margin-left:30px;
+	width:230px;
+	height:51px;
+	position:absolute;
+	top:100px;
+}
+#ligeros{
+	background:#4de592;
+	width:230px;
+	height:51px;
+	position:absolute;
+	left:46%;
+	top:100px;
+}
+#coverdiv{
+	position:absolute;
+	background:white;
+	height:200px;
+	width:600px;
+	left:-50px;
+	top:100px;
+	z-index:2;
+}
+#coordinados.active, #movimiento.active{
+	transition: all 0.5s ease-in-out;
+	top:0;
+}
+#sensibles.active, #ligeros.active{
+	transition: all 0.5s ease-in-out;
+	top:50px;
+}
+#metodologias > p{
+	font-size:1.5em;
+	font-weight:300;
+	text-align: center;
+	margin-bottom:75px;
+	margin-top:-75px;
+	z-index:20;
+	position:absolute;
+	left:15%;
+
+}
+#proyectos h2, #scrum h2, #desarrollado h2{
+	font-size:3.5em;
+	text-align:center;
+	font-weight:200;
+	margin-top:100px;
+	margin-bottom:50px;
+}
+#scrum h2{
+	margin-top:50px;
+}
+#scrum{
+	margin-top:100px;
+}
+#desarrollado{
+	margin-bottom:100px;
+}
+#proyectos > p{
+	text-align: center;
+	margin-top:100px;
+	font-size:1.5em;
+}
+.redDiv{
+	background:#fd6d6d;
+	width:350px;
+	height:60px;
+	color:white;
+	font-size:1.25em;
+	text-align:center;
+	padding:15px;
+	text-decoration: underline;
+	font-weight:400;
+}
+#woman{
+	margin-top:50px;
+	margin-bottom:-35px;
+}
+#lineLeft{
+	height:1px;
+	width:43%;
+	float:left;
+	margin-top:-10px;
+}
+#lineRight{
+	height:1px;
+	width:43%;
+	float:right;
+	margin-top:-10px;
+}
+#arrowContent{
+	text-align:center;
+}
+#arrowContent h2{
+	font-weight:300;
+}
+#arrowContent h2 > b{
+	font-weight:500;
+}
+#yellowLine{
+	position:absolute;  background:transparent; 
+	border-left: 2px solid #fcfd6d; border-bottom:  2px solid #fcfd6d; 
+	top:75%;left:-8%;z-index:2; left:105%; z-index:11;
+	/*height:25%; width:82.5%;*/
+	height:2px; width:0;
+}
+#yellowLine.active{
+	transition: all 0.75s ease-in-out;
+	width:82.5%;
+	left:25%;
+}
+#yellowLine.final{
+	transition:all 0.75s ease-in-out;
+	height:25%;
+	width:82.5%;
+	top:50%;
+	left:25%;
+}
+#blueLine{position:absolute; background:#55c3f8; height:5px; position:absolute;left:110%;top:39%; z-index:11;width:0;}
+#blueLine.active{transition: all 2s ease-in-out;width:55%;left:55%}
+#blueLine.final{width:55%;left:55%}
+
+#yellowLine2{
+	position:absolute; background:transparent; 
+	border-left: 2px solid #fcfd6d; border-bottom:  2px solid #fcfd6d; 
+	z-index:2; top:153.5%; z-index:11; left:109%;
+	height:0; width:0%;
+}
+#yellowLine2.active{
+	transition:all 0.75s ease-in-out;
+	height:2px; width:49.5%;
+	left:58%;	
+	top:153.5%;
+}
+#yellowLine2.final{
+	transition:all 0.75s ease-in-out;
+	height:15%; width:49.5%;
+	left:58%;top:140%
+}
+#redLine{position:absolute; width: 0; height:5px; background:linear-gradient(#fd5d5d,#fd8484); top:95.5%;left:-8%;z-index:2;}
+#redLine.active{width:51.5%;transition: all 1.25s ease-in-out;}
+#redline.final{width:51.5%;}
+
+#greenLine{
+	position:absolute;  background:transparent; 
+	border-right: 2px solid #45e38c; border-bottom:  2px solid #45e38c; 
+	top:82.5%;z-index:11; left:-14.5%;
+	width:1%; height:2px;
+}
+#greenLine.active{
+	transition: all 0.75s ease-in-out;
+	width:39.5%;
+	height:2px;
+}
+#greenLine.final{
+	transition: all 0.75s ease-in-out;
+	width:39.5%;
+	height:15%;
+	top:68%
+}
+#redLine2{position:absolute; height:5px; width:0;  background:#fd5d5d;margin-left:-15%; top:62.5%;}
+#redLine2.active{ transition:  all 1.25s ease-in-out; width:32%;}
+@-webkit-keyframes movil{
+	0%{-webkit-transform:rotateY(0deg);}
+	25%{-webkit-transform:rotateY(270deg);}
+	50%{-webkit-transform:rorateY(180deg);}
+	75%{-webkit-transform:rorateY(90deg);}
+	100%{-webkit-transform:rorateY(0deg);}
+}
+@-moz-keyframes movil{
+	0%{-moz-transform:rotateY(0deg);}
+	25%{-moz-transform:rotateY(270deg);}
+	50%{-moz-transform:rorateY(180deg);}
+	75%{-moz-transform:rorateY(90deg);}
+	100%{-moz-transform:rorateY(0deg);}
+}
+@-ms-keyframes movil{
+	0%{-ms-transform:rotateY(0deg);}
+	25%{-ms-transform:rotateY(270deg);}
+	50%{-ms-transform:rorateY(180deg);}
+	75%{-ms-transform:rorateY(90deg);}
+	100%{-ms-transform:rorateY(0deg);}
+}
+@keyframes movil{
+	0%{transform:rotateY(0deg);}
+	25%{transform:rotateY(270deg);}
+	50%{transform:rorateY(180deg);}
+	75%{transform:rorateY(90deg);}
+	100%{transform:rorateY(0deg);}
+}
+
+@-webkit-keyframes movil2{
+	0%{-webkit-transform:rotateY(0deg);}
+	25%{-webkit-transform:rotateY(270deg);}
+	50%{-webkit-transform:rorateY(180deg);}
+	75%{-webkit-transform:rorateY(90deg);}
+	100%{-webkit-transform:rorateY(0deg);}
+}
+@-moz-keyframes movil2{
+	0%{-moz-transform:rotateY(0deg);}
+	25%{-moz-transform:rotateY(270deg);}
+	50%{-moz-transform:rorateY(180deg);}
+	75%{-moz-transform:rorateY(90deg);}
+	100%{-moz-transform:rorateY(0deg);}
+}
+@-ms-keyframes movil2{
+	0%{-ms-transform:rotateY(0deg);}
+	25%{-ms-transform:rotateY(270deg);}
+	50%{-ms-transform:rorateY(180deg);}
+	75%{-ms-transform:rorateY(90deg);}
+	100%{-ms-transform:rorateY(0deg);}
+}
+@keyframes movil2{
+	0%{transform:rotateY(0deg);}
+	25%{transform:rotateY(270deg);}
+	50%{transform:rorateY(180deg);}
+	75%{transform:rorateY(90deg);}
+	100%{transform:rorateY(0deg);}
+}
+#chipmanos, #bombillo, #reloj, 
+#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8,
+#moneda1, #moneda2, #moneda3, #hoja, #check, #g4, #flecha,
+#python, #php, #java, #javascript, #html5, #ios, #android, #unity, #chrome, #firefox,
+#bcontext, #regala, #ringtu, #trixtrax{
+	transition: all 3s ease-in-out;
+	opacity:0;
+}
+#chipmanos.active, #bombillo.active, #reloj.active, #b1.active, 
+#b2.active, #b3.active, #b4.active, #b5.active, #b6.active, 
+#b7.active, #b8.active, #moneda1.active, #moneda2.active, #moneda3.active, #hoja.active, #check.active, #g4.active, #flecha.active,
+#python.active, #php.active, #java.active, #javascript.active, #html5.active, #ios.active, #android.active, #unity.active, #chrome.active, #firefox.active,
+#bcontext.active, #regala.active, #ringtu.active, #trixtrax.active{
+	transition: all 3s ease-in-out;
+	opacity:1;
 }

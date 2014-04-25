@@ -72,24 +72,7 @@
       <div style="position:relative">
         <div id="greenCircle"></div>
       </div>
-      <!-- <div style="position:relative">
-        
-        
-      </div> -->
     </div>
-   <!--  <div class="col-xs-offset-3 col-xs-6" id="city1">
-      <div style="position:relative">
-        <img class="img-responsive" src="./images/infografia/desarrolladores/city1.png"/>
-        <img id="city2" class="img-responsive  animatedHover" src="./images/infografia/desarrolladores/city2.png"/>
-      </div>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <div style="position:relative"><div class="divCentered"></div></div>
-    </div> -->
     <div class="col-xs-3"></div>
     <div class="col-xs-offset-3 col-xs-6" id="devlab">
       <h1> Dev Lab </h1>
@@ -276,7 +259,15 @@
 
   </div>
   <div class="backgroundBlue" id="footer">
-     <a href="./contactanos.html"><p> Contáctanos </p></a>
+    <a style="display:inline-block; float:left; margin-left:100px" href="./contactanos.html"><p> Contáctanos </p></a>
+    <a style="display:inline-block; float:right; margin-right:100px" href="./empresas.html"><p> Empresas </p></a>
+    <p style="font-style: italic; text-align:center; font-size:15px;padding-top:100px; font-weight:300; color:white">Copyright © 
+      <script type="text/javascript">
+        var d = new Date()
+        document.write(d.getFullYear())
+      </script>
+      4Geeks 
+    </p>
   </div>
 <body>
 <footer>
@@ -286,7 +277,7 @@
     var distanceUntilFlor = $('.planta').offset().top - $(window).scrollTop();
     // console.log(distanceUntil);
     console.log(distanceUntilFlor);
-    if(distanceUntilFlor<=700 && distanceUntilFlor>=600){
+    if(distanceUntilFlor<=1000 && distanceUntilFlor>=500){
       document.getElementById("flor").className="active";
       document.getElementById("hoja1").className="active";
       document.getElementById("hoja2").className="active";

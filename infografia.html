@@ -185,13 +185,16 @@
       </div>
     </div>
   </div>
+  <div class="hint">
+  </div>
+  <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Presiona la tecla derecha para continuar</p>";
+    }
+  </script>
 
 </body>  
-<script>
-if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-}
-</script>
+
 <script src="js/impress.js"></script>
 
 <script>
