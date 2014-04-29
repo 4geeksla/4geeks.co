@@ -47,6 +47,9 @@
   </div>
   <div id="impress">
     <div class="step" id="slide1" data-x="3500" data-y="-850" data-scale="10">
+      <div id="slide-hint" >
+        <h2 style="color:white; text-align:center; font-size:50px; font-weight:300">Presiona la flecha derecha en tu teclado para continuar.</h2>
+      </div>
       <div class="container" id="firstContainer">
         <div class="col-sm-offset-1 col-sm-5">
           <div class="relativeContainer">
@@ -187,12 +190,6 @@
   </div>
   <div class="hint">
   </div>
-  <script>
-    if ("ontouchstart" in document.documentElement) { 
-        document.querySelector(".hint").innerHTML = "<p>Presiona la tecla derecha para continuar</p>";
-    }
-  </script>
-
 </body>  
 
 <script src="js/impress.js"></script>
@@ -228,6 +225,14 @@
           if(currentSlide == 'slide5'){
             document.getElementById("bigrigo").className="active";
             setTimeout(function(){ document.getElementById("bigrigo").className="final";},2230);
+          }
+          if(currentSlide == 'slide1'){
+            setTimeout(function(){ document.getElementById("slide-hint").style.opacity='0.75'},5000);
+            setTimeout(function(){ document.getElementById("slide-hint").style.opacity='0'},10000);
+            
+          }
+          if(currentSlide != 'slide1'){
+            document.getElementById("slide-hint").style.opacity='0';
           }
           // else if (currentSlide === 'slide3') {
             

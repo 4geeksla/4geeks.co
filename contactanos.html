@@ -132,7 +132,7 @@
           +58-212-2386915 <br><br>
           Santiago, Chile <br>
           +56-96-5192390 <br>
-          <div class="divCentered" style="width:350px">
+          <div class="divCentered" style="width:350px; margin-left:22.5%">
             <ul>
               <li class="hangouts-icon"></li>
               <li class="skype-icon"></li>
@@ -143,7 +143,7 @@
             Skype: hola4geeks <br><br>
             Hangouts: a@stcsolutions.com.ve<br><br>
           </div>
-          <div class="divCentered" style="width:620px">
+          <div class="divCentered" style="width:620px; margin-left:5%">
             <ul>  
               <li class="facebook-icon"></li>
               <li class="twitter-icon"></li>
@@ -160,9 +160,10 @@
           O envianos un correo <br>
         </h2>
         <fielset>
-          <input id="name" type="text" class="form-control" placeholder="Nombre">
-          <input id="from" type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          <input id="name" type="text" class="form-control" placeholder="Nombre"></input>
+          <input id="from" type="email" class="form-control" placeholder="Email">
           <input id="pais" type="text" class="form-control" placeholder="País">
+          <input id="empresa" type="text" class="form-control" placeholder="Empresa">
           <select id="negocio" class="form-control">
             <option value="Tipo de negocio que desarrollas...">Tipo de negocio que desarrollas...</option>
             <option value="Empresa privada.">Empresa privada.</option>
@@ -192,10 +193,12 @@
             <option value="Otro.">Otro.</option>
           </select>
           <textarea id="description" class="form-control" rows="3" placeholder="Cuentanos un poco más"></textarea>
-          <input id="sendButton" class="button yellow-button" type="submit" vale="ENVIAR" onclick="_gaq.push(['_trackEvent', 'Contacto', 'Click', 'Contactanos']);" style="margin-top:50px; margin-right:0">
-        </input>
+          <input id="sendButton" class="button yellow-button" type="submit" value="Enviar" onclick="enviar()" style="margin-top:50px; margin-right:0">
+           <p id="confirmacion">Tu correo ha sido enviado!</p>
       </fielset>
-    </div>
+
+    </div> 
+
   </div>
   <div class="row">
     <div class="col-md-5 col-md-offset-1 centered">
@@ -309,10 +312,110 @@
   </div>
 </div>
 </body>
-<script type="text/javascript"   src="./js/skrollr.min.js"></script>
-<script type="text/javascript">
-  skrollr.init({
-    forceHeight: false
-  });
-</script>
-<script src="./bootstrap/js/bootstrap.js"></script>
+<footer>
+  <script type="text/javascript"   src="./js/skrollr.min.js"></script>
+  <script type="text/javascript">
+    skrollr.init({
+      forceHeight: false
+    });
+  </script>
+  <script src="./bootstrap/js/bootstrap.js"></script>
+  <script>
+    function checkContacto(){
+      var ret = true;
+      var error = "";
+      var nombre = /\w+/
+      //var correo = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-z]{2,4}$\i/;
+      var correo =/^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,3})$/;
+       console.log($('#name').attr("placeholder"));
+      console.log($('#name').val());
+      console.log($('#name').val() == $('#name').attr("placeholder"));
+      if($('#name').val() == 'Nombre' || $('#name').val() == ''){
+        $('#name').popover({ content: "Indique su nombre", placement: "left" });
+        $('#name').popover('show');
+        return false;
+      }
+      else{
+        $('#name').popover('hide');
+      }
+      if(!correo.exec($('#from').val())){
+        $('#from').popover({ content: "Formato de correo incorrecto", placement: "left", trigger: "manual"});
+        $('#from').popover('show');
+        return false;
+      }
+      else{
+        $('#from').popover('hide');
+      }
+      if ($('#pais').val() == $('#pais').attr("placeholder") || $('#pais').val() == '') { 
+        $("#pais").popover({ content: "Especifique su pais", placement: "left" });
+        $('#pais').popover('show');
+        return false;
+      } 
+      else{
+        $('#pais').popover('hide');
+      }
+      if ($('#empresa').val() == $('#empresa').attr("placeholder") || $('#empresa').val() == '') { 
+        $("#empresa").popover({ content: "Indique el nombre de su empresa", placement: "left" });
+        $('#empresa').popover('show');
+        return false;
+      }
+      else{
+        $('#empresa').popover('hide');
+      }
+      if ($('#pregunta option:selected').html() == $('#pregunta').attr("placeholder")) { 
+        $("#pregunta").popover({ content: "Seleccione una opcion", placement: "left" });
+        $('#pregunta').popover('show');
+        return false;
+      }
+      else{
+        $('#pregunta').popover('hide');
+      }
+      if ($('#servicio option:selected').html() == $('#pregunta').attr("placeholder")) { 
+        $("#servicio").popover({ content: "Seleccione una opcion", placement: "left" });
+        $('#servicio').popover('show');
+        return false;
+      }
+      else{
+        $('#servicio').popover('hide');
+      }
+      if ($('#description').val() == $('#description').attr("placeholder") || $('#description').val() == '') { 
+        $("#description").popover({ content: "Para poder ofrecer nuestra ayuda necesitamos que nos describa su mensaje.", placement: "left" });
+        $('#description').popover('show');
+        return false;
+      }
+      else{
+        $('#description').popover('hide');
+      }
+      return true;
+  }
+  </script>
+  <script>
+    function enviar(){
+      var validate = checkContacto();
+      if(validate == true){ 
+        var formData = new FormData();
+        formData.append("email", $('#from').val());
+        formData.append("title", "Solicitud de Presupuesto - " + $('#servicio').val());
+        formData.append("message", "El Sr(a) " + $('#name').val()  + " escribio interesado en:\n" + "\nEmpresa: "  + $('#empresa').val() + "\n\nPaís:" + $('#pais').val() +  "\n\nTipo de empresa: " + $('#negocio').val() + "\n\nComo te enteraste: " + $('#pregunta').val() +  "\n\nTipo de servicio: " + $('#servicio').val() + "\n\nDescripcion del mensaje: " + $('#description').val() + "\n\nCorreo: " + $('#from').val());
+
+        var request = new XMLHttpRequest();
+        request.responseType ="application/json";
+        request.addEventListener("load", correoEnviado, false);
+        request.addEventListener("error", correoError, false);
+        request.open("POST", './script.php', true);
+        request.send(formData);
+        
+
+        function correoEnviado(evt){
+          document.getElementById('confirmacion').style.opacity='1';
+        }
+        function correoError(evt){
+          document.getElementById('confirmacion').style.color = '#f85a5a';
+          document.getElementById('confirmacion').style.opacity='1';
+          document.getElementById('confirmacion').innerHTML = "Ha ocurrido un error. Intente mas tarde";
+          
+        }
+      }
+    }
+  </script>
+</footer>

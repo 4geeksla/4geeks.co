@@ -280,7 +280,7 @@ body{
 .header{
     font-size:3em;
     color:#575757;
-    font-weight:100;
+    font-weight:200;
 }
 #headerSlide2{
     text-align:center;
@@ -739,4 +739,10 @@ a, a:hover, a:focus, a:visited{
     to{
         width:64%;
     }
+}
+p{
+    font-weight:300;
+}
+#slide-hint{
+    position:absolute; width:175%; height:500px; margin-left:-35%; padding-top:150px; margin-top:-100px; background:black; z-index:2000; opacity:0; transition: all 0.75s ease-in-out;
 }

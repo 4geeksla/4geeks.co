@@ -1,5 +1,4 @@
-function carrusel(id)
-{
+function carrusel(id){
 	document.getElementById("inmueble").className= "button thumb";
 	document.getElementById("cmo").className= "button thumb";
 	document.getElementById("catalog").className= "button thumb";
