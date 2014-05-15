@@ -387,6 +387,7 @@ body{
     font-weight:200;
     font-size:1em;
     text-align:left;
+    color:#646464;
 }
 #cable1{
     position:absolute;
@@ -565,7 +566,7 @@ a, a:hover, a:focus, a:visited{
     background-size:contain;
     position:absolute;
     left:38%;
-    top:-175%;
+    top:-75%;
     width:400px;
     height:400px;
     z-index:50;
@@ -577,43 +578,43 @@ a, a:hover, a:focus, a:visited{
     -ms-animation:bigrigo 3s;
 }
 #bigrigo.final{
-    background:url(../images/infografia/rigo4.png) no-repeat;background-size:contain;top:-135%;
+    background:url(../images/infografia/rigo4.png) no-repeat;background-size:contain;top:-35%;
 }
 @-webkit-keyframes bigrigo{
-    0%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-175%;}
-    15%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-175%;}
-    25%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-175%;}
-    40%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-175%;}
-    50%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-155%;}
-    65%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-155%;}
-    75%{background:url(../images/infografia/rigo4.png) no-repeat;background-size:contain;top:-135%;}
+    0%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-75%;}
+    15%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-75%;}
+    25%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-75%;}
+    40%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-75%;}
+    50%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-55%;}
+    65%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-55%;}
+    75%{background:url(../images/infografia/rigo4.png) no-repeat;background-size:contain;top:-35%;}
 }
 @-moz-keyframes bigrigo{
-    0%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-175%;}
-    15%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-175%;}
-    25%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-175%;}
-    40%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-175%;}
-    50%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-155%;}
-    65%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-155%;}
-    75%{background:url(../images/infografia/rigo4.png) no-repeat;background-size:contain;top:-135%;}
+    0%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-75%;}
+    15%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-75%;}
+    25%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-75%;}
+    40%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-75%;}
+    50%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-55%;}
+    65%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-55%;}
+    75%{background:url(../images/infografia/rigo4.png) no-repeat;background-size:contain;top:-35%;}
 }
 @-ms-keyframes bigrigo{
-    0%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-175%;}
-    15%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-175%;}
-    25%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-175%;}
-    40%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-175%;}
-    50%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-155%;}
-    65%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-155%;}
-    75%{background:url(../images/infografia/rigo4.png) no-repeat;background-size:contain;top:-135%;}
+    0%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-75%;}
+    15%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-75%;}
+    25%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-75%;}
+    40%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-75%;}
+    50%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-55%;}
+    65%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-55%;}
+    75%{background:url(../images/infografia/rigo4.png) no-repeat;background-size:contain;top:-35%;}
 }
 @keyframes bigrigo{
-    0%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-175%;}
-    15%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-175%;}
-    25%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-175%;}
-    40%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-175%;}
-    50%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-155%;}
-    65%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-155%;}
-    75%{background:url(../images/infografia/rigo4.png) no-repeat;background-size:contain;top:-135%;}
+    0%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-75%;}
+    15%{background:url(../images/infografia/rigo1.png) no-repeat;background-size:contain;top:-75%;}
+    25%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-75%;}
+    40%{background:url(../images/infografia/rigo2.png) no-repeat;background-size:contain;top:-75%;}
+    50%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-55%;}
+    65%{background:url(../images/infografia/rigo3.png) no-repeat;background-size:contain;top:-55%;}
+    75%{background:url(../images/infografia/rigo4.png) no-repeat;background-size:contain;top:-35%;}
 }
 @-webkit-keyframes rigo{
     0%{
@@ -745,4 +746,25 @@ p{
 }
 #slide-hint{
     position:absolute; width:175%; height:500px; margin-left:-35%; padding-top:150px; margin-top:-100px; background:black; z-index:2000; opacity:0; transition: all 0.75s ease-in-out;
+}
+#logo-home{
+    width:300px;
+    height:80px;
+    background:url("../images/sprites-small.png");
+    background-position: -22px -22px;
+    margin-top:39px;
+    margin-left:30px;
+    zoom:0.8;
+}
+#titulo-final{
+    color:#646464;
+    position:absolute;
+    top:-250%;
+    font-size:50px;
+    left:10%;
+}
+#logodev{
+    box-shadow:none;
+    margin-top:25px;
+    margin-left:25px;
 }

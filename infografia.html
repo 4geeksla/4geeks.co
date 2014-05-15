@@ -40,7 +40,8 @@
 
 </head>
 
-<body class="impress-not-supported">
+<body class="impress-not-supported" id="non-scrollable">
+ <a href="./index.html"> <div id="logo-home"></div></a>
   <div class="fallback-message">
     <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
@@ -132,7 +133,7 @@
         </div>
       </div>
     </div>
-    <div class="step" id="slide4" data-x="15000" data-y="-850" data-scale="4">
+    <div class="step" id="slide4" data-x="25000" data-y="-850" data-scale="4">
       <div class="container">
         <div class="col-xs-offset-2 col-xs-4">
           <img class="img-responsive" src="./images/infografia/4geeks.png"/>
@@ -151,7 +152,8 @@
         </div>
       </div>
     </div>
-    <div class="step" id="slide5" data-x="25000" data-y="-850" data-scale="4">
+    <div class="step" id="slide5" data-x="35000" data-y="-850" data-scale="4">
+      <h2 id="titulo-final"> ¿Como te identificas dentro de la comunidad?<br> Haz click en una de las opciones</h2>
       <a href="./empresas.html">
         <div id="arrowsRight">
           <div class="arrowBlue arrowBlue1"></div>
@@ -227,8 +229,8 @@
             setTimeout(function(){ document.getElementById("bigrigo").className="final";},2230);
           }
           if(currentSlide == 'slide1'){
-            setTimeout(function(){ document.getElementById("slide-hint").style.opacity='0.75'},5000);
-            setTimeout(function(){ document.getElementById("slide-hint").style.opacity='0'},10000);
+            setTimeout(function(){ document.getElementById("slide-hint").style.opacity='0.75'},3000);
+            setTimeout(function(){ document.getElementById("slide-hint").style.opacity='0'},8000);
             
           }
           if(currentSlide != 'slide1'){
@@ -239,4 +241,12 @@
           // }
       });
   });
+</script>
+<script>
+(function(e){"use strict";function i(t,n){this.opts=e.extend({handleKeys:!0,scrollEventKeys:[32,33,34,35,36,37,38,39,40]},n);this.$container=t;this.$document=e(document);this.disable()}var t,n=function(e){for(var t=0;t<this.opts.scrollEventKeys.length;t++)if(e.keyCode===this.opts.scrollEventKeys[t]){e.preventDefault();return}},r=function(e){e.preventDefault()};i.prototype={disable:function(){var e=this;e.$container.on("mousewheel.UserScrollDisabler DOMMouseScroll.UserScrollDisabler touchmove.UserScrollDisabler",r);e.opts.handleKeys&&e.$document.on("keydown.UserScrollDisabler",function(t){n.call(e,t)})},undo:function(){var e=this;e.$container.off(".UserScrollDisabler");e.opts.handleKeys&&e.$document.off(".UserScrollDisabler")}};e.fn.disablescroll=function(e){!t&&(typeof e=="object"||!e)?t=new i(this,e):t&&t[e]?t[e].call(t):t&&t.disable.call(t)}})(jQuery);
+
+
+var $nonScrollable = $("#non-scrollable")
+
+$nonScrollable.disablescroll();
 </script>

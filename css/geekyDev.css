@@ -109,7 +109,7 @@ body{
 #city1{
 	margin-top:100px;
 	/*margin-bottom:100px;*/
-	margin-bottom:200px;
+	margin-bottom:150px;
 }
 #city1 ul{
 	width:100%;
@@ -351,8 +351,8 @@ body{
 	width:150px;
 	height:150px;
 	border-radius: 100%;
-	border:10px solid #75cefa;
-	margin-bottom:100px;
+	border:10px solid #75cefa;/*
+	margin-bottom:100px;*/
 	box-shadow: 0 12px 6px -6px rgba(75,75,75,0.25);
 }
 #personastexto{
@@ -494,7 +494,7 @@ body{
 	height:150px;
 	border-radius: 100%;
 	border:10px solid #75cefa;
-	margin-bottom:100px;
+	margin-bottom:30px;
 	box-shadow: 0 12px 6px -6px rgba(75,75,75,0.25);
 }
 #rigo{
@@ -1416,4 +1416,17 @@ a, a:hover{
 #bcontext.active, #regala.active, #ringtu.active, #trixtrax.active{
 	transition: all 3s ease-in-out;
 	opacity:1;
+}
+#logodev{
+    box-shadow:none !important;
+    margin-top:12%;
+    margin-left:12%;
+}
+#email-text h1, #geeks-factory-text h1, #redes-text h1{
+	font-size:4em;
+	font-weight:200;
+	margin-bottom:20px;
+}
+#email-text, #geeks-factory-text, #redes-text{
+	position:relative;
 }
