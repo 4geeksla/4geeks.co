@@ -585,7 +585,7 @@ a:hover{
 	height:110px;
 	margin-right:auto;
 	margin-left:auto;
-	margin-top:80px;
+	/*margin-top:80px;*/
 	/*margin-bottom:0px;*/	
 }
 #footer-logo.active{
@@ -651,7 +651,7 @@ a:hover{
 	margin-right:auto;
 	margin-left:auto;
 }
-.footer-links {
+/*.footer-links {
 	color:white;
 	line-height: 2.5;
 	margin-right:auto;
@@ -676,18 +676,29 @@ a:hover{
 	float:inherit;
 	text-align:center;
 }
-.footer-links>li>a:link {color:#FFF;}      /* unvisited link */
-.footer-links>li>a:visited {color:#FFF;}  /* visited link */
+.footer-links>li>a:link {color:#FFF;}   
+.footer-links>li>a:visited {color:#FFF;}  
 .footer-links>li>a:hover{
 	color:#f36f23;
 	text-decoration:none;
-	transition:all 0.2s ease-in-out;}  /* mouse over link */
+	transition:all 0.2s ease-in-out;} 
 .footer-links>li>a:active {color:#f36f23;;}
+*/
+.footer-link {
+	color:white;
+}
+a>.footer-link:link {color:#FFF;}      /* unvisited link */
+a>.footer-link:visited {color:#FFF;}  /* visited link */
+a>.footer-link:hover{
+	color:#f36f23;
+	text-decoration:none;
+	transition:all 0.2s ease-in-out;}  /* mouse over link */
+a>.footer-link:active {color:#f36f23;;}
 
 .footer-images{
 	list-style:none;
 	margin-left:5%;
-	padding-top:25px;
+	padding-top:35px;
 
 }/*
 .footer-images> li{
@@ -711,35 +722,35 @@ a:hover{
 }
 #footer-gp{
 	background:url("../images/sprites-small.png") 0px 0px;
-	background-position: -70px -411px;
+	background-position: -69px -414px;
 }
 #footer-tw{
 	background:url("../images/sprites-small.png") 0px 0px;
-	background-position: -243px -410px;
+	background-position: -243px -414px;
 }
 #footer-fb{
 	background:url("../images/sprites-small.png") 0px 0px;
-	background-position: -420px -410px;
+	background-position: -423px -414px;
 }
 #footer-yt{
 	background:url("../images/sprites-small.png") 0px 0px;
-	background-position: -598px -410px;
+	background-position: -599px -414px;
 }
 #footer-gp:hover{
 	background:url("../images/sprites-small.png") 0px 0px;
-	background-position: -70px -518px;
+	background-position: -72px -523px;
 }
 #footer-tw:hover{
 	background:url("../images/sprites-small.png") 0px 0px;
-	background-position: -246px -518px;
+	background-position: -246px -523px;
 }
 #footer-fb:hover{
 	background:url("../images/sprites-small.png") 0px 0px;
-	background-position: -425px -518px;
+	background-position: -426px -523px;
 }
 #footer-yt:hover{
 	background:url("../images/sprites-small.png") 0px 0px;
-	background-position: -602px -518px;
+	background-position: -602px -523px;
 }
 .ave{
 	background:url("") 0px 0px;
@@ -2457,67 +2468,115 @@ button, button:hover, button:active, button:visited, button:focus{
 }
 .smartphone-icon{
 	background:url(../images/sprites-small.png);
-	background-position: -168px -1090px;
-	width:90px;
-	height:90px;
+	background-position: -218px -1102px;
+	width:120px;
+	height:120px;
 	margin-top:20px;
+	-webkit-transform:scale(0.75);
+	-moz-transform:scale(0.75);
+	-ms-transform:scale(0.75);
+	transform:scale(0.75);
 }
 .hangouts-icon{
 	background:url(../images/sprites-small.png);
-	background-position: -417px -968px;
-	width:90px;
-	height:90px;
+	background-position: -395px -927px;
+	width:120px;
+	height:120px;
+	-webkit-transform:scale(0.75);
+	-moz-transform:scale(0.75);
+	-ms-transform:scale(0.75);
+	transform:scale(0.75);
 }
 .skype-icon{
 	background:url(../images/sprites-small.png);
-	background-position: -168px -968px;
-	width:90px;
-	height:90px;
+	background-position: -218px -927px;
+	width:120px;
+	height:120px;
+	-webkit-transform:scale(0.75);
+	-moz-transform:scale(0.75);
+	-ms-transform:scale(0.75);
+	transform:scale(0.75);
 }
 .facebook-icon{
 	display:inline-block;
 	float:left;
 	background:url(../images/sprites-small.png);
-	background-position: -541px -968px;
-	width:90px;
-	height:90px;
+	background-position: -747px -927px;
+	width:120px;
+	height:120px;
+	-webkit-transform:scale(0.75);
+	-moz-transform:scale(0.75);
+	-ms-transform:scale(0.75);
+	transform:scale(0.75);
+}
+.facebook-icon:hover{
+	background-position: -760px -517px;
 }
 .twitter-icon{
 	display:inline-block;
 	float:left;
 	background:url(../images/sprites-small.png);
-	background-position: -45px -968px;
-	width:90px;
-	height:90px;
+	background-position: -42px -927px;
+	width:120px;
+	height:120px;
+	-webkit-transform:scale(0.75);
+	-moz-transform:scale(0.75);
+	-ms-transform:scale(0.75);
+	transform:scale(0.75);
+}
+.twitter-icon:hover{
+	background-position: -763px -378px;
 }
 .gplus-icon{
 	display:inline-block;
 	float:left;
 	background:url(../images/sprites-small.png);
-	background-position: -293px -968px;
-	width:90px;
-	height:90px;
+	background-position: -395px -927px;
+	width:120px;
+	height:120px;
+	-webkit-transform:scale(0.75);
+	-moz-transform:scale(0.75);
+	-ms-transform:scale(0.75);
+	transform:scale(0.75);
+}
+.gplus-icon:hover{
+	background-position: -759px -653px;
 }
 .youtube-icon{
 	display:inline-block;
 	float:left;
 	background:url(../images/sprites-small.png);
-	background-position: -45px -1090px;
-	width:90px;
-	height:90px;
+	background-position: -42px -1102px;
+	width:120px;
+	height:120px;
+	-webkit-transform:scale(0.75);
+	-moz-transform:scale(0.75);
+	-ms-transform:scale(0.75);
+	transform:scale(0.75);
+}
+.youtube-icon:hover{
+	background-position: -764px -788px;
 }
 .correo-icon{
 	background:url(../images/sprites-small.png);
-	background-position: -292px -1090px;
-	width:90px;
-	height:90px;
+	background-position: -395px -1102px;
+	width:120px;
+	height:120px;
 	margin-bottom:20px;
+	-webkit-transform:scale(0.75);
+	-moz-transform:scale(0.75);
+	-ms-transform:scale(0.75);
+	transform:scale(0.75);
 }
 .map-icon{
 	background:url(../images/sprites-small.png);
-	background-position: -420px -1090px;
-	width:90px;
-	height:90px;
+	background-position: -576px -1102px;
+	width:120px;
+	height:120px;
+	-webkit-transform:scale(0.75);
+	-moz-transform:scale(0.75);
+	-ms-transform:scale(0.75);
+	transform:scale(0.75);
 }
 .divCentered{
 	text-align:center;
@@ -2868,4 +2927,11 @@ select{
 	/*margin-top:70%;*/
 	margin-top:25%;
 	margin-left:10%;
+}
+#hazclick{
+	text-decoration:underline; color:#3592cf; font-size:40px; font-family:'Courier New' !important; opacity:0; transition: all 1s;
+	padding-top:25px; text-align: center;
+}
+#hazclick.active{
+	opacity:1;
 }

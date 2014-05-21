@@ -276,7 +276,7 @@
     <div class="row geeky-row" >
       <div class="col-sm-12" style="padding-right:0; padding-left:0; margin-left:0;margin-right:0; position:relative">
         <div id="div-terminal" style="position:absolute" data-0= "opacity:0" data-839="opacity:0;"data-840="opacity:1;">
-          <a id="link-infografia" href="./infografia.html" ><span class="info-text"></span></a>
+          <a id="link-infografia" href="./infografia.html" ><span class="info-text"></span><p id="hazclick"> Haz click aquí</p></a>
         </div>
         <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/background.png" 
         data-740="opacity:0;" data-741="opacity:1;"/>
@@ -555,12 +555,30 @@
     </div>
     <div id="section-contacto" class="container footer-content" style="position:relative">
       <div id="super-rigo"></div>
+      <div class="row" style="margin-left:6%; margin-bottom:25px">
+        <a href="http://comunidad.4geeks.co/"><p class="footer-link" style="float:left;margin-right:6.75%">Comunidad</p></a>
+        <a href="./lacarta.html"><p class="footer-link" style="float:left;margin-right:4.5%">La Carta</p></a>
+        <a href="./formacion.html"><p class="footer-link" style="float:left;margin-right:5.5%">Formación</p></a>
+        <a href="./infografia.html"><p class="footer-link" style="float:left;margin-right:5.65%">¿4Geeks?</p></a>
+        <a href=""><p class="footer-link" style="float:left;margin-right:5%">Portafolio</p></a>
+        <a href="./redesdecontacto.html"><p class="footer-link" style="float:left;margin-right:5%">Redes de Contacto</p></a>
+        <a href="./contactanos.html"><p class="footer-link" style="float:left">Contactanos</p></a>
+      </div>
+      <div class="row" style="margin-left:6%; margin-bottom:50px">
+       <a href="./techmeetup.html"><p class="footer-link" style="float:left;margin-right:5.175%">TechMeetup</p></a>
+       <a href="./manifiesto.html"><p class="footer-link" style="float:left;margin-right:5.175%">Manifiesto</p></a>
+       <a href="./equipo.html"><p class="footer-link" style="float:left;margin-right:4.175%">Equipo</p></a>
+       <a href="./desarrollo.html#desarrolladores"><p class="footer-link" style="float:left;margin-right:3.175%">Desarrolladores</p></a>
+       <a href="./desarrollo.html#empresas"><p class="footer-link" style="float:left;margin-right:8.175%">Empresas</p></a>
+       <a href="./techmeetup.html#hackatones-section"><p class="footer-link" style="float:left;margin-right:7.5%">Hackaton</p></a>
+       <a href="./geeksfactory.html"><p class="footer-link" style="float:left">GeeksFactory</p></a>
+      </div>
       <div class="col-md-5 col-md-offset-1">
         <button id="footer-logo" onclick="rigo()"></button>
         <!-- <p>Caracas Tech Meetup, el primer Meetup oficial de Venezuela, será el espacio en el que nos reuniremos mensualmente todos los que queramos contribuir a la comunidad de desarrollo de software y emprendimiento en Venezuela.</p> -->
       </div>
       <div class="col-md-4 col-md-offset-1">
-        <ul class="footer-links"> 
+        <!-- <ul class="footer-links"> 
           <li> <a href="./infografia.html">¿4Geeks?</a></li>
           <li> <a href="./contactanos.html"> Contáctanos </a></li>
           <li> <a href="#">Portafolio </a></li>
@@ -572,7 +590,7 @@
         </ul>
         <ul class="footer-links">
           <li><a href="./redesdecontacto.html">Redes de Contacto </a> </li>
-        </ul>
+        </ul> -->
        
         <div class="row footer-images">
           <div class="col-xs-3">
@@ -645,9 +663,15 @@
       // console.log(distanceUntil);
       if(distanceUntil<=335){
             $(".info-text").typed({
-            strings: ["Mejor que solo leer es interactuar. ^1000 Haz click aquí"],
-            typeSpeed: 35
-          });  
+              strings: ["Mejor que solo leer es interactuar."],
+              typeSpeed: 35
+            }); 
+            setTimeout(function(){ 
+              document.getElementById("hazclick").className="active"
+            
+            },3500);
+            
+
       }
        var distanceUntilLogo = $('#footer-logo').offset().top - $(window).scrollTop();
       // console.log(distanceUntil);
