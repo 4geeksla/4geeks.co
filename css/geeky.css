@@ -2684,6 +2684,7 @@ button, button:hover, button:active, button:visited, button:focus{
 }
 #divFormacion{
 	margin-top:2.5%;
+	margin-bottom:75px;
 }
 #divFormacion h2{
 	font-weight:300;
@@ -2934,4 +2935,13 @@ select{
 }
 #hazclick.active{
 	opacity:1;
+}
+.cuadro{
+	width:85%;
+}
+.marco{
+	margin-right:-5%;
+}
+.cuadrow{
+	margin-top:0%;
 }

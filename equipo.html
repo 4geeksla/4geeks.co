@@ -26,12 +26,18 @@
   <meta name="msapplication-square150x150logo" content="./images/icons/mstile-150x150.png">
   <meta name="msapplication-square310x310logo" content="./images/icons/mstile-310x310.png">
   <meta name="msapplication-wide310x150logo" content="./images/icons/mstile-310x150.png">
-  <title>4geeks - Tech Meetup</title> 
+  <title>4geeks - Equipo</title> 
   <link rel="shortcut icon" href="./images/icon.ico">
   <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="./css/geeky.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>8
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
   <script type="text/javascript"   src="./js/jquery.js"></script>
+  <script src="./js/seearound.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.cuadro').seearound();
+    });
+  </script>
 </head>
 <body>
   <div class="navbar navbar-default navbar-fixed-top" id="navbar-top" role="navigation">
@@ -114,124 +120,92 @@
 <div class="container geeky-container">
   <div id="techmeetup-section" class="row" style="padding-top:150px">
     <div style="margin-left:50px; padding-bottom:100px; font-weight:100 !important; font-family: Lato !important">
-      <p class="header-slim-alt" style="margin-left:110px"> Tech Meetup</p>
+      <p class="header-slim-alt" style="margin-left:110px"> Equipo</p>
       <div class="dark-line-alt"></div>
       <div class="dark-circle-alt"></div>
       
       <div class="row">
         <div id="divFormacion" class="col-md-5 col-md-offset-1">
           <h2>
-            Los <b> Tech Meetup </b> reúnen a la <b> comunidad </b> <br>
-            de <b> emprendimiento tecnológico </b> de cada <b> <br>
-            ciudad </b> para <b> conectar, inspirar, educar </b> y <b> <br> 
-            colaborar </b> con <b> todos </b> sus <b> miembros. </b> <br> 
-            Son <b> espacios </b> para mostrar el <b> trabajo </b> de <br>
-            los <b> desarrolladores </b> y <b> emprendedores, <br>
-            compartir conocimientos </b> y <b> conectar </b><br>
-             con la <b> comunidad </b> para encontrar <b> socios, <br>
-             inspiración, inversionistas </b> y dar a conocer <br>
-             el trabajo del emprendimiento y desarrollo <br> en la <b> ciudad. </b>
+            4Geeks es una gran comunidad de desarrolladores. Este es el equipo que ayuda a entrenar, construir, amplificar, conectar y hacer crecer esta comunidad que cada día tiene más y mejores desarrolladores.
           </h2>
-          <a href="http://lacarta.4geeks.co">
+         <!--  <a href="http://lacarta.4geeks.co">
             <div class="col-md-offset-5 yellow-button-alt" style="margin-top:50px">
               <p class="one-line"><b>Más sobre Tech Meetup</b> </p>
             </div>
-          </a>
+          </a> -->
         </div>
         <div class="col-md-4 col-md-offset-1">
-         <div class="row">
-          <img class="img-responsive divCentered imgMeetup" src="./images/meetup/ccstechmeetup.png"/>
-         </div>
-         <div class="row">
-          <a href="http://www.meetup.com/Caracas-Tech-Meetup/">
-            <div class="col-md-offset-5 yellow-button" style="margin-top:50px">
-              <p class="one-line"><b>Caracas Tech Meetup</b> </p>
-            </div>
-          </a>
-         </div>
-         <div class="row">
-          <img class="img-responsive divCentered imgMeetup" src="./images/meetup/stgotechmeetup.png"/>
-         </div>
-         <div class="row">
-          <a href="http://www.meetup.com/Santiago-Tech-Meetup/">
-            <div class="col-md-offset-5 yellow-button" style="margin-top:50px">
-              <p class="one-line"><b>Santiago Tech Meetup</b> </p>
-            </div>
-          </a>
-         </div>
-         <div class="row">
-          <img class="img-responsive divCentered  imgMeetup" src="./images/meetup/dftechmeetup.png"/>
-         </div>
-         <div class="row">
-          <a href="http://www.meetup.com/DF-Tech-Meetup/">
-            <div class="col-md-offset-5 yellow-button" style="margin-top:50px">
-              <p class="one-line"><b>DF Tech Meetup</b> </p>
-            </div>
-          </a>
-         </div>
+        
        </div>
      </div>
-   </div>
- </div>
-   <div id="hackatones-section" class="row">
-    <div style="margin-left:50px; padding-bottom:100px; font-weight:100 !important; font-family: Lato !important">
-      <p class="header-slim-alt" style="margin-left:60%"> Hackatones</p>
-      <div class="dark-line-alt" style="margin-left:50%"></div>
-      <div class="dark-circle-alt" style="margin-left:50%"></div>
-      
-      <div class="row">
-        <div class="col-md-5 col-md-offset-1">
-           <img class="img-responsive divCentered imgMeetup" style="margin-left:-10%" src="./images/meetup/hackaton.png"/>
+     <div class="row cuadrow">
+      <div class="col-xs-2 col-xs-offset-1 marco" style="margin-left:12%">
+        <img class="cuadro img-responsive" src="./images/equipo/aacosta/Aracelys.png">
+      </div>
+      <div class="col-xs-2 marco">
+         <img class="cuadro img-responsive" src="./images/equipo/aalarcon/Angel.png">
+      </div>
+      <div class="col-xs-2 marco">
+         <img class="cuadro img-responsive" src="./images/equipo/alacret/Lacret.png">
+      </div>
+      <div class="col-xs-2 marco">
+       <img class="cuadro img-responsive" src="./images/equipo/asanchez/Alejandro.png">
+      </div>
+       <div class="col-xs-2 marco">
+        <img class="cuadro img-responsive" src="./images/equipo/ddiaz/Daniela.png">
+      </div>
+       <div class="col-xs-2 marco">
+        <img class="cuadro img-responsive" src="./images/equipo/erueda/Eny.png">
+      </div>
+     </div>
+   <div class="row cuadrow">
+      <div class="col-xs-2 col-xs-offset-1 marco" style="margin-left:12%">
+        <img class="cuadro img-responsive" src="./images/equipo/etirado/Emilio.png">
+      </div>
+      <div class="col-xs-2 marco">
+         <img class="cuadro img-responsive" src="./images/equipo/fdefreitas/Fernando.png">
+      </div>
+      <div class="col-xs-2 marco">
+         <img class="cuadro img-responsive" src="./images/equipo/gguzman/Gerardo.png">
+      </div>
+      <div class="col-xs-2 marco">
+       <img class="cuadro img-responsive" src="./images/equipo/icasado/Isaac.png">
+      </div>
+       <div class="col-xs-2 marco">
+        <img class="cuadro img-responsive" src="./images/equipo/jborrego/Borrego.png">
+      </div>
+       <div class="col-xs-2 marco">
+        <img class="cuadro img-responsive" src="./images/equipo/jfuentes/Jorge.png">
+      </div>
+     </div>
+    <div class="row cuadrow">
+      <div class="col-xs-2 col-xs-offset-1 marco" style="margin-left:12%">
+        <img class="cuadro img-responsive" src="./images/equipo/juca/Juca.png">
+      </div>
+      <div class="col-xs-2 marco">
+         <img class="cuadro img-responsive" src="./images/equipo/kalvarez/Kelvis.png">
+      </div>
+      <div class="col-xs-2 marco">
+         <img class="cuadro img-responsive" src="./images/equipo/khernandez/Kevin.png">
+      </div>
+      <div class="col-xs-2 marco">
+       <img class="cuadro img-responsive" src="./images/equipo/mgomez/Marco.png">
+      </div>
+       <div class="col-xs-2 marco">
+        <img class="cuadro img-responsive" src="./images/equipo/icordoba/Ignacio.png">
+      </div>
+       <div class="col-xs-2 marco">
+        <img class="cuadro img-responsive" src="./images/equipo/rramos/Romer.png">
+      </div>
+     </div>
+     <div class="row">
+      <a href="http://apply.4geeks.co/">
+        <div class="yellow-button-alt divCentered" style="margin-top:50px; margin-right:auto; margin-left:auto; float:none">
+          <p class="one-line"><b>Únete a nosotros</b> </p>
         </div>
-        <div id="divFormacion"  class="col-md-5 col-md-offset-0">
-         <div class="row">
-          <h2>
-            Organizamos y apoyamos eventos para demostrar cómo los desarrolladores podemos cambiar el mundo. 
-
-            Desde Hackatones hasta Game Jams, promovemos todos los eventos que nos ayuden a compartir, colaborar y competir entre desarrolladores.
-
-          </h2>
-          <a href="http://lacarta.4geeks.co">
-            <div class="col-md-offset-5 yellow-button-alt" style="margin-top:50px">
-              <p class="one-line"><b>Próximos eventos</b> </p>
-            </div>
-          </a>
-         
-         </div>
-         
-         
-       </div>
+      </a>
      </div>
-   </div>
- </div>
-   <div id="techshare-section" class="row">
-    <div style="margin-left:50px; padding-bottom:100px; font-weight:100 !important; font-family: Lato !important">
-      <p class="header-slim-alt" style="margin-left:110px"> TechShare</p>
-      <div class="dark-line-alt"></div>
-      <div class="dark-circle-alt"></div>
-      
-      <div class="row">
-        <div id="divFormacion" class="col-md-5 col-md-offset-1">
-          <h2>
-            Cada 15 días nos conectamos para hablar acerca de alguna nueva tecnología, lenguaje o framework y contarte lo que aprendimos de ella.
-
-            Hechos por y para la comunidad, los Tech Share tienen como fin ser una comunidad con más y mejores desarrolladores. 
-          </h2>
-          <a href="http://lacarta.4geeks.co">
-            <div class="col-md-offset-5 yellow-button-alt" style="margin-top:50px">
-              <p class="one-line"><b>Ver más</b> </p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-5 col-md-offset-0">
-         <div class="row">
-          <img class="img-responsive divCentered imgMeetup" src="./images/meetup/techshare.png"/>
-         </div>
-         
-         
-       </div>
-     </div>
-   </div>
  </div>
  <div class="row">
   <div id="div-footer2">
