@@ -294,7 +294,7 @@ body{
     top:5%;
     position:absolute;
     left:-10%;
-}   
+}
 .separatorHorizontal{
     background: linear-gradient(#cac5c0, #575757, #cac5c0);
     height:200%;
@@ -329,7 +329,7 @@ body{
     display:inline-block;
 }
 #headerMini{
-    left:37.5%; position:absolute; 
+    left:37.5%; position:absolute;
     top:70%;
     font-size:0.65em;
     font-weight:300;
@@ -449,7 +449,7 @@ body{
 }
 .cable3.final{
      width:64%;
- } 
+ }
 #usb{
     width:70px;
     height:35px;
@@ -508,21 +508,21 @@ a, a:hover, a:focus, a:visited{
 }
 .arrowblue{
     position:absolute;
-    
+
     width: 0px;
     height: 0px;
     border-style: solid;
     border-width:25px 25px 0 25px;
-    border-color: #42bdf7 transparent transparent transparent; 
+    border-color: #42bdf7 transparent transparent transparent;
 }
 .arrowgray{
     position:absolute;
-   
+
     width: 0px;
     height: 0px;
     border-style: solid;
     border-width: 25px 25px 0 25px;
-    border-color: #f1efed transparent transparent transparent; 
+    border-color: #f1efed transparent transparent transparent;
 }
 .arrowBlue1{
     top:0px;
@@ -565,7 +565,7 @@ a, a:hover, a:focus, a:visited{
     background:url(../images/infografia/rigo1.png) no-repeat;
     background-size:contain;
     position:absolute;
-    left:38%;
+    left:38.5%;
     top:-75%;
     width:400px;
     height:400px;

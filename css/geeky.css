@@ -794,7 +794,7 @@ a>.footer-link:active {color:#f36f23;;}
 	left:-5%;
 }
 #hoja2{
-	left:57%;
+	left:55%;
 }
 #hoja3{
 	left:5%;
@@ -2944,4 +2944,9 @@ select{
 }
 .cuadrow{
 	margin-top:0%;
+}
+#hackatones-section h2{
+	font-weight:300;
+	font-size:25px;
+	line-height:30px;
 }
