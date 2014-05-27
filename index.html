@@ -350,6 +350,12 @@
         <p class="header-slim"> Proyectos </p>
       </div>
       <div class="dark-line"></div><div class="dark-circle"></div>
+      <!-- <div style="background:black; width:25px; height:25px; position:absolute; left:90%; top:25%"></div>
+      <div style="background:blue; width:25px; height:25px; position:absolute; left:5%; top:25%"></div> -->
+      <!-- <div id="arrowleft"></div>
+      <div id="arrowright"></div> -->
+      <button class="button  thumb" id="arrowleft" onClick="carrusel(this.id)"></button>
+      <button class="button  thumb" id="arrowright" onClick="carrusel(this.id)"></button>
       <div class="row" id="geeky-row-carrusel">
         <div class="col-md-offset-1 col-sm-3" style="margin-top:-300px; height:450px !important;">
           <img class="img-responsive" src="./images/carousel/fronteraspecial.png" style="margin-right:auto; margin-left:auto; "/>
@@ -588,6 +594,34 @@
       </div>
     </div>
   </section>
+  <!-- Preloading -->
+  <div id="preload" style="width:0; height:0">
+   <img src="./images/carousel/screenshots/catalog.png" width="0" height="0" >
+   <img src="./images/carousel/screenshots/cmo.png" width="0" height="0" >
+   <img src="./images/carousel/screenshots/frontera.png" width="0" height="0" >
+   <img src="./images/carousel/screenshots/quintodia.png" width="0" height="0" >
+   <img src="./images/carousel/screenshots/todoinmueble.png" width="0" height="0" >
+
+   <img src="./images/carousel/catalog.png" width="0" height="0" >
+   <img src="./images/carousel/catalog_carrousel.png" width="0" height="0" >
+   <img src="./images/carousel/catalog_carrouselhover.png" width="0" height="0" >
+
+   <img src="./images/carousel/cmo.png" width="0" height="0" >
+   <img src="./images/carousel/cmo_carrousel.png" width="0" height="0" >
+   <img src="./images/carousel/cmo_carrouselhover.png" width="0" height="0" >
+
+   <img src="./images/carousel/fronteraspecial.png" width="0" height="0" >
+   <img src="./images/carousel/fronteraspecial_carrousel.png" width="0" height="0" >
+   <img src="./images/carousel/fronteraspecial_carrouselhover.png" width="0" height="0" >
+
+   <img src="./images/carousel/quintodia.png" width="0" height="0" >
+   <img src="./images/carousel/quintodia_carrousel.png" width="0" height="0" >
+   <img src="./images/carousel/quintodia_carrouselhover.png" width="0" height="0" >
+
+   <img src="./images/carousel/todoinmueble.png" width="0" height="0" >
+   <img src="./images/carousel/todoinmueble_carrousel.png" width="0" height="0" >
+   <img src="./images/carousel/todoinmueble_carrouselhover.png" width="0" height="0" >
+  </div>
 </body>
 <footer>
   <script src="./bootstrap/js/bootstrap.js"></script>
@@ -619,7 +653,6 @@
   <script>
     onscroll = function(){
       var distanceUntil = $('.info-text').offset().top - $(window).scrollTop();
-      // console.log(distanceUntil);
       if(distanceUntil<=335){
             $(".info-text").typed({
               strings: ["Mejor que solo leer es interactuar."],
@@ -630,8 +663,6 @@
             },3500);
       }
        var distanceUntilLogo = $('#footer-logo').offset().top - $(window).scrollTop();
-      // console.log(distanceUntil);
-      console.log(distanceUntilLogo);
       if(distanceUntilLogo<=1600){
             document.getElementById("footer-logo").className="active";
       }
