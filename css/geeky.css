@@ -177,7 +177,7 @@ a:hover{
 }
 #section-comunidad{
 	width:100%;
-	padding-bottom:400px;
+	padding-bottom:300px;
 	background:#0990cc;
 	position:relative;
 	text-align:justify;
@@ -2930,7 +2930,7 @@ select{
 	margin-left:10%;
 }
 #hazclick{
-	text-decoration:underline; color:#3592cf; font-size:40px; font-family:'Courier New' !important; opacity:0; transition: all 1s;
+	text-decoration:underline; color:#003DFF; font-size:40px; font-family:'Courier New' !important; opacity:0; transition: all 1s;
 	padding-top:25px; text-align: center;
 }
 #hazclick.active{
