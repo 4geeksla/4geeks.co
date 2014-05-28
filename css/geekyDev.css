@@ -1430,3 +1430,118 @@ a, a:hover{
 #email-text, #geeks-factory-text, #redes-text{
 	position:relative;
 }
+.cw{
+	position:absolute;
+	-webkit-animation: rollcw 10s;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+	-moz-animation: rollcw 10s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count:infinite;
+    -ms-animation: rollcw 10s;
+    -ms-transition-property: -ms-transform;
+    -ms-transition-duration: 1s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count:infinite;
+    animation: rollcw 10s;
+    transition-property: transform;
+    transition-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+}
+.ccw{
+	position:absolute;
+	-webkit-animation: rollccw 3.5s;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation: rollccw 3.5s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count:infinite;
+    -ms-animation: rollccw 3.5s;
+    -ms-transition-property: -ms-transform;
+    -ms-transition-duration: 1s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count:infinite;
+    animation: rollccw 3.5s;
+    transition-property: transform;
+    transition-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+}
+
+
+
+@-webkit-keyframes rollcw{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes rollccw{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(-360deg);
+	}
+}
+@-moz-keyframes rollcw{
+	0%{
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100%{
+		-moz-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@-moz-keyframes rollccw{
+	0%{
+		-moz-transform: rotate(0deg);
+	}
+	100%{
+		-moz-transform: rotate(-360deg);
+	}
+}
+@-ms-keyframes rollcw{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-ms-keyframes rollccw{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(-360deg);
+	}
+}
+@keyframes rollcw{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes rollccw{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}
