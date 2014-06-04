@@ -34,11 +34,13 @@
   <script type="text/javascript"   src="./js/jquery.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top" id="navbar-top" role="navigation">
+  <div class="navbar navbar-default navbar-fixed-top" id="navbar-top" role="navigation">
     <a href="./index.html">
       <div class="navbar-brand" id="logo-bar-top">
-        <div id="logo-bar-image-static"  data-0="filter: alpha(opacity=1);opacity: 1;" data-1200="filter: alpha(opacity=0);opacity: 0;"></div>
-        <div id="logo-bar-image" data-0="filter: alpha(opacity=0);opacity: 0;" data-1000="filter: alpha(opacity=1);opacity: 1;"></div>
+        <div id="logo-bar-image-static"  data-0="opacity:1;" data-800="opacity: 0;">
+        </div>
+        <div id="logo-bar-image" data-0="opacity: 0;" data-700="opacity: 1;">
+        </div>
       </div>
     </a>
     <div class="container-fluid">
@@ -46,78 +48,69 @@
         <ul class="nav nav-justified">
           <li id="li-4geeks">
             <div class="viewport">
-              <a href="#section-4geeks">
-                <div class="links">
-                  <div class="links-front">
-                    Somos 4Geeks
-                  </div>
-                  <div class="links-bottom">
-                    Somos 4Geeks
-                  </div>
+              <a href="./index.html#section-4geeks"><div class="links">
+                <div class="links-front">
+                  Somos 4Geeks
                 </div>
-              </a>
-            </div>
-          </li>
-          <li  id="li-aliados">
-            <div class="viewport">
-              <a href="#section-aliados">
-                <div class="links">
-                  <div class="links-front">
-                   Aliados
-                  </div>
-                  <div class="links-bottom">
-                    Aliados
-                  </div>
+                <div class="links-bottom">
+                  Somos 4Geeks
                 </div>
-              </a>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li  id="li-aliados">
+          <div class="viewport">
+            <a href="./index.html#section-aliados"><div class="links">
+              <div class="links-front">
+               Aliados
+             </div>
+             <div class="links-bottom">
+              Aliados
             </div>
-          </li>
-          <li id="li-proyectos">
-            <div class="viewport">
-              <a href="#section-proyectos">
-                <div class="links">
-                  <div class="links-front">
-                    Proyectos
-                  </div>
-                  <div class="links-bottom">
-                    Proyectos
-                  </div>
-                </div>
-              </a>
+          </div></a>
+        </div>
+      </li>
+      <li id="li-proyectos">
+        <div class="viewport">
+          <a href="./index.html#section-proyectos"><div class="links">
+            <div class="links-front">
+              Proyectos
             </div>
-          </li>
-          <li id="li-comunidad">
-             <div class="viewport">
-              <a href="#section-comunidad">
-                <div class="links">
-                  <div class="links-front">
-                    Comunidad
-                  </div>
-                  <div class="links-bottom">
-                    Comunidad
-                  </div>
-                </div>
-              </a>
+            <div class="links-bottom">
+              Proyectos
             </div>
-          </li>
-          <li class="active"  id="li-contacto">
-            <div class="viewport">
-              <a href="./contactanos.html">
-                <div class="links">
-                  <div class="links-front">
-                   Contáctanos
-                  </div>
-                  <div class="links-bottom">
-                     Contáctanos
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-        </ul>
+          </div></a>
+        </div>
+      </li>
+      <li id="li-comunidad">
+       <div class="viewport">
+        <a href="./index.html#section-comunidad"><div class="links">
+          <div class="links-front">
+            Comunidad
+          </div>
+          <div class="links-bottom">
+            Comunidad
+          </div>
+        </div></a>
       </div>
-    </div>
-  </div>
+    </li>
+    <li id="li-contacto">
+      <div class="viewport">
+        <a href="./contactanos.html"><div class="links">
+          <div class="links-front">
+           Contáctanos
+         </div>
+         <div class="links-bottom">
+           Contáctanos
+         </div>
+       </div></a>
+     </div>
+   </li>
+ </ul>
+</div>
+</div>
+</div>
 <div class="container geeky-container">
   <div class="row" style="padding-top:150px">
     <div style="margin-left:50px; padding-bottom:100px; font-weight:100 !important; font-family: Lato !important">
@@ -133,20 +126,20 @@
     </div>
     <div class="row" style="margin-top:50px">
       <div class="col-md-5 col-md-offset-1 centered" style="text-align:center;">
-        <div class="smartphone-icon divCentered"></div>
+        <!-- <div class="smartphone-icon divCentered"></div> -->
         <h2  class="hairweight">
-          Puedes contactarnos por teléfono <br><br>
+          <!-- Puedes contactarnos por teléfono <br><br>
           Caracas, Venezuela <br><br>
           +58-212-2381051 <br>
-          +58-212-2386915 <br><br>
-          <div class="divCentered" style="width:350px; margin-left:15%">
+          +58-212-2386915 <br><br> -->
+          <div class="divCentered" style="width:350px; margin-left:15%; margin-top:-25px">
             <ul>
               <li class="hangouts-icon"></li>
               <li class="skype-icon"></li>
             </ul>
           </div>
           <div class="divCentered">
-            También por Hangouts o Skype <br><br>
+          Puedes contactarnos por Hangouts o Skype <br><br>
             Skype: hola4geeks <br><br>
             Hangouts: a@stcsolutions.com.ve<br><br>
           </div>
@@ -209,24 +202,22 @@
     </div>
     <div class="row">
       <div class="col-md-5 col-md-offset-1 centered">
-        <div style="width:100%; height:auto%; overflow:hidden;"><iframe width="100%" height="50%" src="https://maps.google.com/maps?q=Avenidad%20Principal%20Los%20Cortijos%2C%204geeks%20%2C%20%20Caracas&t=m&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><iframe src="http://www.embed-google-map.com/embed-map.php?get=map-datas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style=".maps-style_map:initreaction=10false_attempt10-border"><a href="http://www.staubers.de" class="map-data">staubers.de</a>
-        </iframe>
+        <div style="width:100%; height:auto%; overflow:hidden;"><iframe width="100%" height="50%" src="https://maps.google.com/maps?q=Avenidad%20Principal%20Los%20Cortijos%2C%204geeks%20%2C%20%20Caracas&t=m&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
       </div>
-    </div>
-    <div class="col-md-5">
-     <div style="width:100%; height:auto%; overflow:hidden;"><iframe width="100%" height="50%" src="https://maps.google.com/maps?q=Oficinas+IBS+-+Polanco+Masaryk&hl=es&ll=19.432115,-99.189506&spn=0.011898,0.021136&cid=18238167155785337745&gl=VE&t=m&z=16&iwloc=A&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><iframe src="http://www.embed-google-map.com/embed-map.php?get=map-datas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style=".maps-style_map:initreaction=10false_attempt10-border"><a href="http://www.staubers.de" class="map-data">staubers.de</a>
-     </iframe>
+      <div class="col-md-5">
+       <div style="width:100%; height:auto%; overflow:hidden;"><iframe width="100%" height="50%" src="https://maps.google.com/maps?q=Oficinas+IBS+-+Polanco+Masaryk&hl=es&ll=19.432115,-99.189506&spn=0.011898,0.021136&cid=18238167155785337745&gl=VE&t=m&z=16&iwloc=A&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+       </div>
+     </div>
    </div>
- </div>
-</div>
-<div class="row">
-  <div class="col-md-5 col-md-offset-1" style="margin-top:-115px">
-    <div class="map-icon"></div>
-    <h1 class="hairweight" style="margin-top:-75px; margin-left:120px" >Caracas <br></h1>
-    <h2 class="hairweight" style="margin-top:45px">Av. Ppal. de Los Cortijos<br>
-      Torre Bravasol, Oficina 1B<br></h2>
-      <h3 class="hairweight">Los Cortijos, Caracas, Venezuela.<br></h3>
-      <h2 class="hairweight">58 (0212) 238 10 51<br><br>
+   <div class="row">
+    <div class="col-md-5 col-md-offset-1" style="margin-top:-115px">
+      <div class="map-icon"></div>
+      <h1 class="hairweight" style="margin-top:-75px; margin-left:120px" >Caracas <br></h1>
+      <h2 class="hairweight" style="margin-top:45px">Av. Ppal. de Los Cortijos<br>
+        Torre Bravasol, Oficina 1B<br></h2>
+        <h3 class="hairweight">Los Cortijos, Caracas, Venezuela.<br></h3>
+        <h2 class="hairweight">58 (0212) 238 10 51<br><br>
      <!--  Alejandro Sánchez<br>
       Tlf: 58 (0414) 256 39 14<br>
       Correo: a@4geeks.co<br></h2>   -->
@@ -246,45 +237,42 @@
   </div>
   <div class="row">
     <div class="col-md-3 col-md-offset-1">
-      <div style="width:100%; height:auto%; overflow:hidden;"><iframe width="100%" height="50%" src="https://maps.google.com/maps?q=Villa+Africana,+Ciudad+Guayana,+Bol%C3%ADvar&hl=es-419&ie=UTF8&ll=8.277757,-62.721712&spn=0.001598,0.002642&sll=10.692322,-71.649962&sspn=0.003173,0.005284&oq=villa+africana&t=h&hnear=Villa+Africana,+Ciudad+Guayana,+Caron%C3%AD,+Bol%C3%ADvar&z=19&t=m&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><iframe src="http://www.embed-google-map.com/embed-map.php?get=map-datas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style=".maps-style_map:initreaction=10false_attempt10-border"><a href="http://www.staubers.de" class="map-data">staubers.de</a>
-      </iframe>
+      <div style="width:100%; height:auto%; overflow:hidden;"><iframe width="100%" height="50%" src="https://maps.google.com/maps?q=Villa+Africana,+Ciudad+Guayana,+Bol%C3%ADvar&hl=es-419&ie=UTF8&ll=8.277757,-62.721712&spn=0.001598,0.002642&sll=10.692322,-71.649962&sspn=0.003173,0.005284&oq=villa+africana&t=h&hnear=Villa+Africana,+Ciudad+Guayana,+Caron%C3%AD,+Bol%C3%ADvar&z=19&t=m&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+      <div class="map-icon" style="margin-top:-125px"></div>
+      <div style="display:block; float:right; clear:both"> <h1 class="hairweight"  style="margin-top:-75px; margin-left:120px">Guayana <br></h1>
+        <h2 class="hairweight" style="margin-top:45px">Urb Villa Africana, C.C. Buganvillas, oficina 1<br></h2>
+        <h3 class="hairweight">Bolivar, Venezuela.<br></h3>
+        <h2 class="hairweight">58 (0212) 238 10 51</h2>
+      </div>
+    </div>
+    <div class="col-md-3" style="margin-left:3%; margin-right:3%">
+     <div style="width:100%; height:auto%; overflow:hidden;"><iframe width="100%" height="50%" src="https://maps.google.com/maps?q=Ciudad+Comercial+Alto+Chama,+M%C3%A9rida&hl=es-419&ie=UTF8&ll=8.556748,-71.195612&spn=0.051095,0.084543&sll=19.43169,-99.189243&sspn=0.001523,0.002642&oq=Ciudad+Comercial+Alto+Chama&t=h&hq=Ciudad+Comercial+Alto+Chama,&hnear=M%C3%A9rida,+Libertador,+M%C3%A9rida&z=14&t=m&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+     </div>
+     <div class="map-icon" style="margin-top:-125px"></div>
+     <div style="display:block; float:right; clear:both"> <h1 class="hairweight"  style="margin-top:-75px; margin-left:120px">Mérida <br></h1>
+      <h2 class="hairweight" style="margin-top:45px">Nivel mezzanina, oficina 231, Ciudad Comercial Alto Chama, Av. Andrés Bello<br></h2>
+      <h3 class="hairweight">Sector Alto Chama,Merida, Venezuela.<br></h3>
+      <h2 class="hairweight">58 (0274) 935.0372</h2>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div style="width:100%; height:auto%; overflow:hidden;"><iframe width="100%" height="50%" src="https://maps.google.com/maps?q=C.C.+Montielco,+Maracaibo,+Zulia,+Venezuela&hl=es-419&ll=10.661494,-71.620581&spn=0.01318,0.019913&sll=10.620376,-71.67842&sspn=0.003295,0.004978&oq=montielco+ma&t=m&hq=cc+montielco&hnear=Maracaibo,+Zulia,+Venezuela&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </div>
     <div class="map-icon" style="margin-top:-125px"></div>
-    <div style="display:block; float:right; clear:both"> <h1 class="hairweight"  style="margin-top:-75px; margin-left:120px">Guayana <br></h1>
-      <h2 class="hairweight" style="margin-top:45px">Urb Villa Africana, C.C. Buganvillas, oficina 1<br></h2>
-      <h3 class="hairweight">Bolivar, Venezuela.<br></h3>
-      <h2 class="hairweight">58 (0212) 238 10 51</h2>
+    <div style="display:block; float:right; clear:both"> <h1 class="hairweight"  style="margin-top:-75px; margin-left:120px">Maracaibo <br></h1>
+      <h2 class="hairweight" style="margin-top:45px">Av. 5  de Julio con calle 72 frente a Wendys, Edificio Montielco, piso 7 dep. 12..<br></h2>
+      <h3 class="hairweight">Zulia, Venezuela.<br></h3>
+      <h2 class="hairweight">58 (0212) 238 10 51<br><br>
+      </div>
     </div>
   </div>
-  <div class="col-md-3" style="margin-left:3%; margin-right:3%">
-   <div style="width:100%; height:auto%; overflow:hidden;"><iframe width="100%" height="50%" src="https://maps.google.com/maps?q=Ciudad+Comercial+Alto+Chama,+M%C3%A9rida&hl=es-419&ie=UTF8&ll=8.556748,-71.195612&spn=0.051095,0.084543&sll=19.43169,-99.189243&sspn=0.001523,0.002642&oq=Ciudad+Comercial+Alto+Chama&t=h&hq=Ciudad+Comercial+Alto+Chama,&hnear=M%C3%A9rida,+Libertador,+M%C3%A9rida&z=14&t=m&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><iframe src="http://www.embed-google-map.com/embed-map.php?get=map-datas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style=".maps-style_map:initreaction=10false_attempt10-border"><a href="http://www.staubers.de" class="map-data">staubers.de</a>
-   </iframe>
- </div>
- <div class="map-icon" style="margin-top:-125px"></div>
- <div style="display:block; float:right; clear:both"> <h1 class="hairweight"  style="margin-top:-75px; margin-left:120px">Mérida <br></h1>
-  <h2 class="hairweight" style="margin-top:45px">Nivel mezzanina, oficina 231, Ciudad Comercial Alto Chama, Av. Andrés Bello<br></h2>
-  <h3 class="hairweight">Sector Alto Chama,Merida, Venezuela.<br></h3>
-  <h2 class="hairweight">58 (0274) 935.0372</h2>
-</div>
-</div>
-<div class="col-md-3">
-  <div style="width:100%; height:auto%; overflow:hidden;"><iframe width="100%" height="50%" src="https://maps.google.com/maps?q=C.C.+Montielco,+Maracaibo,+Zulia,+Venezuela&hl=es-419&ll=10.661494,-71.620581&spn=0.01318,0.019913&sll=10.620376,-71.67842&sspn=0.003295,0.004978&oq=montielco+ma&t=m&hq=cc+montielco&hnear=Maracaibo,+Zulia,+Venezuela&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><iframe src="http://www.embed-google-map.com/embed-map.php?get=map-datas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style=".maps-style_map:initreaction=10false_attempt10-border"><a href="http://www.staubers.de" class="map-data">staubers.de</a>
-  </iframe>
-</div>
-<div class="map-icon" style="margin-top:-125px"></div>
-<div style="display:block; float:right; clear:both"> <h1 class="hairweight"  style="margin-top:-75px; margin-left:120px">Maracaibo <br></h1>
-  <h2 class="hairweight" style="margin-top:45px">Av. 5  de Julio con calle 72 frente a Wendys, Edificio Montielco, piso 7 dep. 12..<br></h2>
-  <h3 class="hairweight">Zulia, Venezuela.<br></h3>
-  <h2 class="hairweight">58 (0212) 238 10 51<br><br>
-  </div>
-</div>
-</div>
 
-<div class="row">
-  <div class="col-md-5 col-md-offset-1" style="margin-top:50px">
-    <div class="smartphone-icon"></div>
-    <h1 class="hairweight" style="margin-top:-75px; margin-left:120px" >Calgary <br></h1>
-    <h2 class="hairweight" style="margin-top:45px">1 (403) 926 17 54<br><br>
+  <div class="row">
+    <div class="col-md-5 col-md-offset-1" style="margin-top:50px">
+      <div class="smartphone-icon"></div>
+      <h1 class="hairweight" style="margin-top:-75px; margin-left:120px" >Calgary <br></h1>
+      <h2 class="hairweight" style="margin-top:45px">1 (403) 926 17 54<br><br>
      <!--  Alejandro Sánchez<br>
       Tlf: 58 (0414) 256 39 14<br>
       Correo: a@4geeks.co<br></h2>   -->

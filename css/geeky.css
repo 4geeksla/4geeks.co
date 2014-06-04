@@ -2930,7 +2930,8 @@ select{
 	margin-left:10%;
 }
 #hazclick{
-	text-decoration:underline; color:#003DFF; font-size:40px; font-family:'Courier New' !important; opacity:0; transition: all 1s;
+	/*text-decoration:underline; color:#003DFF; font-size:40px; font-family:'Courier New' !important;*/
+	opacity:0; transition: all 1s;
 	padding-top:25px; text-align: center;
 }
 #hazclick.active{
@@ -2964,3 +2965,55 @@ select{
 }
 // Preloading
 #preload { display: none;width:0px; height:0px}
+.flex-video {
+	position: relative;
+	padding-top: 25px;
+	padding-bottom: 67.5%;
+	height: 0;
+	margin-bottom: 16px;
+	overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+.flex-video { padding-top: 0; }
+}
+
+.white-button-alt{
+	width:300px;
+	height:60px;
+	background-color:#f36f23;
+	color:white;
+	text-align:center;
+	border-radius: 5px;
+	font-size:1.125em;
+	box-shadow: 0 12px 6px -6px rgba(75,75,75,0.25);
+	border-color:#C3591B;
+	border-with: 3px;
+	border-bottom-style:solid;
+
+	float:right;
+	padding-top:7px;
+	padding-bottom:7px;
+	margin-right:75px;
+	font-weight:400;
+	z-index:20;
+}
+.white-button-alt:hover{
+	border-color:#C3591B;
+	border-with: 3px;
+	border-top-style:solid;
+	border-bottom-style:none;
+	box-shadow:none;
+}
