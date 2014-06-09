@@ -1274,7 +1274,11 @@ a, a:hover{
 }
 #arrowContent{
 	text-align:center;
+	font-size:20px;
 }
+/*#arrowContent>p{
+	font-size:20px;
+}*/
 #arrowContent h2{
 	font-weight:300;
 }
