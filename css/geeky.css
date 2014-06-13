@@ -2993,13 +2993,13 @@ position: absolute;
 .white-button-alt{
 	width:300px;
 	height:60px;
-	background-color:#f36f23;
 	color:white;
 	text-align:center;
 	border-radius: 5px;
 	font-size:1.125em;
 	box-shadow: 0 12px 6px -6px rgba(75,75,75,0.25);
-	border-color:#C3591B;
+	background-color:#efae1d;
+	border-color:#ce8B1a;
 	border-with: 3px;
 	border-bottom-style:solid;
 
@@ -3011,9 +3011,12 @@ position: absolute;
 	z-index:20;
 }
 .white-button-alt:hover{
-	border-color:#C3591B;
+	border-color:#ce8B1a;
 	border-with: 3px;
 	border-top-style:solid;
 	border-bottom-style:none;
 	box-shadow:none;
+}
+#skrollr-body{
+	margin-bottom:-500px;
 }

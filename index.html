@@ -266,26 +266,28 @@
       </div>
     </div>
   </section>
-  <section id="section-4geeks">
+<div id="skrollr-body">  <section id="section-4geeks">
     <div style="margin-left:50px">
       <p class="header-slim"> ¿Que es 4Geeks?</p>
     </div>
     <div class="dark-line"></div><div class="dark-circle"></div>
     <div class="row geeky-row" >
       <div class="col-sm-12" style="padding-right:0; padding-left:0; margin-left:0;margin-right:0; position:relative">
-        <div id="div-terminal" style="position:absolute" data-0= "opacity:0" data-839="opacity:0;"data-840="opacity:1;">
-          <a id="link-infografia" href="./infografia.html" >
+        <a id="link-infografia" href="./infografia.html" >
+          <div id="div-terminal" style="position:absolute" data-0= "opacity:0" data-839="opacity:0;"data-840="opacity:1;">
+            
             <span class="info-text"></span>
            <!--  <p > Haz click aquí</p> -->
             <div id="hazclick" class="col-xs-12">
-              <a href="./infografia/html">
+              
                     <div class="col-md-offset-0 white-button-alt" style="margin-right:auto; margin-left:auto; float:none">
                       <p class="one-line"><b>Haz click aquí</b> </p>
                     </div>
-                  </a>
+
             </div>
-          </a>
-        </div>
+          
+          </div>
+        </a>
         <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/background.png"
         data-740="opacity:0;" data-741="opacity:1;"/>
         <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/header.png"
@@ -613,7 +615,7 @@
         </p>
       </div>
     </div>
-  </section>
+  </section></div>
   <!-- Preloading -->
   <div id="preload" style="width:0; height:0">
    <img src="./images/carousel/screenshots/catalog.png" width="0" height="0" >
@@ -648,7 +650,10 @@
   <script type="text/javascript" src="js/skrollr.min.js"></script>
    <script type="text/javascript">
     skrollr.init({
-      forceHeight: false
+      forceHeight: false,
+      smoothScrolling: true,
+      smoothScrollingDuration: 350,
+      mobileDeceleration: 0.004
     });
    </script>
   <script type="application/javascript">
