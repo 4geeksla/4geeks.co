@@ -8,6 +8,9 @@ body{
 a:hover{
 	text-decoration: none !important;
 }
+.row{
+	margin:0;
+}
 .carousel-p{
 	font-weight:400;
 	font-size:25px;
@@ -184,6 +187,7 @@ a:hover{
 	text-align-last:justify;
 	color:white;
 	overflow-x:hidden;
+	margin-top:-5px;
 }
 #section-footer{
 	background: url(../images/city5.png) no-repeat scroll top;
@@ -341,7 +345,7 @@ a:hover{
 #div-reunion-front{
 	background: url(../images/reunion1.png) no-repeat bottom;
 	background-size:contain;
-	min-height:625px;
+	min-height:734px;
 	width:100%;
 	position:absolute;
 	bottom:0px;
@@ -2163,7 +2167,58 @@ a>.footer-link:active {color:#f36f23;;}
 	#meetup-text25{
 		font-size:71px !important;
 	}
+	.footer-centered{
+		width:65%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.footer-images{
+		margin-right:20%;
+		margin-left:-5%;
+	}
+	#footer-logo{
+		margin-left:30%;
+	}
+	#div-principal{
+		background: url(../images/capa_principal.png) no-repeat top;
+		background-attachment: relative;
+		background-size: cover;
+		height: 300px;
+		width: 100%;
+	}
 }
+#call-img-comunidad{
+	margin-top:15px;
+}
+@media (min-width:1650px){
+	#meetup-text1{	font-size:76px !important;}
+	#meetup-text25{	font-size:78px !important;}
+	#meetup-text26{	font-size:71px !important;}
+	#meetup-text3{ 	font-size:79px !important;}
+	#meetup-text4{ 	font-size:40px !important;}
+	#meetup-text6{ 	font-size:81px !important;}
+	#meetup-text20{ font-size:41px !important;}
+	#meetup-text21{ font-size:93px !important;}
+	#meetup-text22{ font-size:53px !important;}
+	#meetup-text19{ font-size:86px !important;}
+	#meetup-text8{ 	font-size:61px !important; line-height:47px !important;}
+	#meetup-text9{ 	font-size:110px !important;}
+	#meetup-text5, #meetup-text20, #meetup-text21, #meetup-text22, #meetup-text23, #meetup-text24{
+		text-align:left;
+	}
+	#call-img-comunidad{
+		margin-top:10px;
+	}
+	#div-te-unes{ 					margin-top:20px}
+	#div-redes-de{ 					margin-top:5px}
+	#div-mas-importantes{		margin-bottom:10px;	}
+	#div-es-el{
+		margin-left:-90px !important;
+		margin-top:15px !important;
+		margin-bottom:-15px !important;
+	}
+}
+
 #link-infografia, #link-infografia:hover{
 	text-decoration:none;
 	color:white;
@@ -2787,9 +2842,7 @@ select{
 	/*overflow-x: hidden !important;
 	overflow-y: visible !important;*/
 }
-.row{
-	margin:0;
-}
+
 .imgMeetup{
 	margin-bottom:-15px;
 	margin-top:50px;
@@ -2973,10 +3026,10 @@ select{
 	margin-bottom: 16px;
 	overflow: hidden;
 }
- 
+
 .flex-video.widescreen { padding-bottom: 57.25%; }
 .flex-video.vimeo { padding-top: 0; }
- 
+
 .flex-video iframe,
 .flex-video object,
 .flex-video embed {
@@ -3019,4 +3072,7 @@ position: absolute;
 }
 #skrollr-body{
 	margin-bottom:-500px;
+}
+#button-forma-parte{
+	margin-top:10px;
 }

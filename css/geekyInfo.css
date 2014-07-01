@@ -768,3 +768,19 @@ p{
     margin-top:25px;
     margin-left:25px;
 }
+@media (min-width:1650px){
+  #slide-hint{
+    width:183%;
+    margin-left:-46%;
+  }
+  #blueback2{
+    left:-49%;
+  }
+  #blueback1{
+    right:-49%;
+  }
+  #blueback1, #blueback2{
+    width:122%;
+  }
+
+}
