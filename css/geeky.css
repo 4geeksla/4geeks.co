@@ -1853,7 +1853,10 @@ a>.footer-link:active {color:#f36f23;;}
 		width:450px !important;
 	}
 	#meetup-text1, #typed-cursor{
-		font-size:51px !important;
+		font-size:52px !important;
+	}
+	#meetup-text1{
+		padding-left:5px;
 	}
 	#meetup-text2{
 		font-size:43px !important;
@@ -1869,6 +1872,7 @@ a>.footer-link:active {color:#f36f23;;}
 	}
 	#meetup-text6{
 		font-size:53px !important;
+		padding-left:5px;
 	}
 
 	#meetup-text11{
@@ -1886,25 +1890,29 @@ a>.footer-link:active {color:#f36f23;;}
 	#meetup-text14{
 		font-size:55px !important;
 		line-height:70px !important;
+		padding-left:5px;
 	}
 	#meetup-text15{
-		font-size:60px !important;
-		line-height:70px !important;
+		font-size:59px !important;
+		line-height:60px !important;
 	}
 	#meetup-text16{
-		font-size:57px !important;
+		font-size:56px !important;
+		text-align:left;
 	}
 	#meetup-text17{
 		font-size: 124px !important;
-		line-height:100px !important;
+		line-height:80px !important;
+		text-align:left;
 	}
 	#meetup-text18{
-		font-size:114px !important;
+		font-size:118px !important;
 		line-height:35px !important;
+		text-align:left;
 	}
 	#meetup-text19{
-		font-size:62px !important;
-		line-height:90px !important;
+		font-size:64px !important;
+		line-height:83px !important;
 	}
 
 	#meetup-text25{
