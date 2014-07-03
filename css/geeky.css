@@ -2225,6 +2225,12 @@ a>.footer-link:active {color:#f36f23;;}
 		margin-top:15px !important;
 		margin-bottom:-15px !important;
 	}
+	#ciudad-front{
+		height: 415px;
+	}
+	#div-reunion-front{
+		bottom: -250px;
+	}
 }
 
 #link-infografia, #link-infografia:hover{
@@ -3083,4 +3089,7 @@ position: absolute;
 }
 #button-forma-parte{
 	margin-top:10px;
+}
+#mobile-view{
+	display:none;
 }

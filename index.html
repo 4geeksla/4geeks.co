@@ -31,693 +31,823 @@
   <link rel="shortcut icon" href="./images/icon.ico">
   <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="./css/geeky.css" rel="stylesheet">
+  <link href="./css/geekyMobile.css" rel="stylesheet">
   <link href="./css/uslider.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
   <script type="text/javascript"   src="./js/jquery.js"></script>
   <script type="text/javascript"   src="./js/skrollr.min.js"></script>
   <script type="text/javascript" src="./js/unslider.js"></script>
   <script type="text/javascript" src="./js/typed.js"></script>
-   <script type="text/javascript" src="./js/carrusel.js"></script>
+  <script type="text/javascript" src="./js/carrusel.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
-  <div class="navbar navbar-default navbar-fixed-top" id="navbar-top" role="navigation">
-    <a href="#slider">
-      <div class="navbar-brand" id="logo-bar-top">
-        <div id="logo-bar-image-static"  data-0="filter: alpha(opacity=1);opacity: 1;" data-1200="filter: alpha(opacity=0);opacity: 0;"></div>
-        <div id="logo-bar-image" data-0="filter: alpha(opacity=0);opacity: 0;" data-1000="filter: alpha(opacity=1);opacity: 1;"></div>
-      </div>
-    </a>
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbar-links">
-        <ul class="nav nav-justified">
-          <li class="active" id="li-4geeks">
-            <div class="viewport">
-              <a href="#section-4geeks">
-                <div class="links">
-                  <div class="links-front">
-                    Somos 4Geeks
-                  </div>
-                  <div class="links-bottom">
-                    Somos 4Geeks
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li  id="li-aliados">
-            <div class="viewport">
-              <a href="#section-aliados">
-                <div class="links">
-                  <div class="links-front">
-                   Aliados
-                  </div>
-                  <div class="links-bottom">
-                    Aliados
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li id="li-proyectos">
-            <div class="viewport">
-              <a href="#section-proyectos">
-                <div class="links">
-                  <div class="links-front">
-                    Proyectos
-                  </div>
-                  <div class="links-bottom">
-                    Proyectos
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li id="li-comunidad">
-             <div class="viewport">
-              <a href="#section-comunidad">
-                <div class="links">
-                  <div class="links-front">
-                    Comunidad
-                  </div>
-                  <div class="links-bottom">
-                    Comunidad
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li id="li-contacto">
-            <div class="viewport">
-              <a href="./contactanos.html">
-                <div class="links">
-                  <div class="links-front">
-                   Contáctanos
-                  </div>
-                  <div class="links-bottom">
-                     Contáctanos
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <section id="section-first">
-    <div class="row geeky-row">
-      <div class="col-lg-14">
-        <!-- Barra lateral -->
-        <div id="side-bar">
-          <a href="./redesdecontacto.html"><div class="sidesview">
-            <div class="sides">
-              <div id="redes" class="side-front"></div>
-              <div id="redes-bottom" class="side-bottom"><p class="text-sidebar-ml"> Redes de <br>contacto </p></div>
-            </div>
-          </div></a>
-          <a href="./lacarta.html"><div class="sidesview">
-            <div class="sides">
-              <div id="carta" class="side-front"></div>
-              <div id="carta-bottom" class="side-bottom"><p class="text-sidebar"> La carta </p></div>
-            </div>
-          </div></a>
-          <a href="./geeksfactory.html"><div class="sidesview">
-            <div class="sides">
-              <div id="factory"  class="side-front"></div>
-              <div id="factory-bottom" class="side-bottom"><p class="text-sidebar"> GeeksFactory </p></div>
-            </div>
-          </div></a>
-          <a href="./formacion.html"><div class="sidesview">
-            <div class="sides">
-              <div id="formacion"  class="side-front"></div>
-              <div id="formacion-bottom" class="side-bottom"><p class="text-sidebar"> Formación</p></div>
-            </div>
-          </div></a>
-          <a href="./techmeetup.html"><div class="sidesview">
-            <div class="sides">
-              <div id="meetup" class="side-front"></div>
-              <div id="meetup-bottom" class="side-bottom"><p class="text-sidebar"> Tech Meetup</p></div>
-            </div>
-          </div></a>
-          <a href="#"><div class="sidesview">
-            <div class="sides">
-              <div id="workshops" class="side-front"></div>
-              <div id="workshops-bottom" class="side-bottom"><p class="text-sidebar-ml"> Hack-a-tons <br> Workshops</p></div>
-            </div>
-          </div></a>
+  <div id="desktop-view">
+    <div class="navbar navbar-default navbar-fixed-top" id="navbar-top" role="navigation">
+      <a href="#slider">
+        <div class="navbar-brand" id="logo-bar-top">
+          <div id="logo-bar-image-static"  data-0="filter: alpha(opacity=1);opacity: 1;" data-1200="filter: alpha(opacity=0);opacity: 0;"></div>
+          <div id="logo-bar-image" data-0="filter: alpha(opacity=0);opacity: 0;" data-1000="filter: alpha(opacity=1);opacity: 1;"></div>
         </div>
-        <!-- Fin barra lateral -->
-        <div id="slider"  class="banner has-dots col-lg-12">
-          <div id="div-principal"></div>
-          <ul style="width: 400%; position: relative;">
-            <li id="carousel1-back" class="carousel">
-              <div id="carousel1-mid" class="carousel" data-0="background-position: center 250px;" data-800=" background-position: center 650px;">
-                <div id="carousel1-front" class="carousel"  data-0="background-position:center 300px;" data-800=" background-position: center -600px;">
-                 <div id="row">
-                  <div class="col-lg-offset-1 col-lg-6 content">
-                    <span style="font-size:79px; line-height:79px;">CAMBIANDO</span><br />
-                    <span style="font-size:94px;line-height: 94px;">EL MUNDO</span><br />
-                    <span style="font-size:31.4px;line-height: 31.4px;">UNA LÍNEA DE CÓDIGO A LA VEZ.</span><br />
-                    <span style="font-size:20.1px; line-height:20.1px;">MAS DE 2000 DESARROLLADORES Y 90 PROYECTOS</span><br />
-                    <span style="font-size:20.1px; line-height:20.1px;">REINVENTANDO 6 INDUSTRIAS.</span><br />
-                    <br>
-                    <a href="http://comunidad.4geeks.co/unete-a-la-comunidad/">
-                      <div class="col-md-offset-5 yellow-button">
-                        <p  class="one-line"><b>Únete</b> </p>
-                      </div>
-                    </a>
-                    <br>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </li>
-            <li id="carousel2-back" class="carousel">
-              <div id="carousel2-mid" class="carousel"  data-0="background-position:center -70px;" data-800=" background-position:center 50px;">
-                <div id="carousel2-front" class="carousel"  data-0="background-position:center 450px;" data-800=" background-position:center 350px;">
-                  <div id="row">
-                    <div class="col-lg-offset-1 col-lg-6 content">
-                      <span style="font-size:86px; line-height:86px;">MÁS DE 200</span><br />
-                      <span style="font-size:49px; line-height:49px;">DESARROLLADORES</span><br />
-                      <span style="font-size:46px; line-height:46px;">LATINOAMERICANOS</span><br />
-                      <span style="font-size:20.4px; line-height:20.4px;">ESPECIALIZADOS EN DESARROLLO WEB Y MÓVIL</span><br />
-                      <span style="font-size:19.4px; line-height:19.4px;">CREANDO APLICACIONES EN PYTHON, CSS3, HTML5,</span><br />
-                      <span style="font-size:19.4px; line-height:19.4px;">JAVASCRIPT Y RUBY.</span><br />
-                      <br>
-                      <a href="#section-proyectos">
-                        <div class="col-md-offset-5 yellow-button">
-                          <p class="one-line"><b>Nuestros proyectos.</b></p>
-                        </div>
-                      </a>
-                      <br>
+      </a>
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbar-links">
+          <ul class="nav nav-justified">
+            <li class="active" id="li-4geeks">
+              <div class="viewport">
+                <a href="#section-4geeks">
+                  <div class="links">
+                    <div class="links-front">
+                      Somos 4Geeks
+                    </div>
+                    <div class="links-bottom">
+                      Somos 4Geeks
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </li>
-            <li id="carousel3-back" class="carousel" data-0="background-position:0 0px;" data-800="background-position: 0px -1000px;">
-              <div id="carousel3-mid" class="carousel"  data-0="background-position:center 150px;" data-800="background-position: center -700px;">
-                <div id="carousel3-front" class="carousel"  data-0="background-position:center 550px;" data-800="background-position:center -500px;">
-                  <div id="row">
-                    <div class="col-lg-offset-1 col-lg-6 content">
-                      <span style="font-size:54.9px; line-height:54.9px;">UNA COMUNIDAD </span><br />
-                      <span style="font-size:69.5px; line-height:69.5px;">PARA SER MÁS</span><br />
-                      <span style="font-size:32.4px; line-height:32.4px;">Y MEJORES DESARROLLADORES</span><br />
-                      <span style="font-size:18.5px; line-height:18.5px;">CONOCE A OTROS DEVELOPERS, APRENDE, COLABORA,</span><br />
-                      <span style="font-size:18.5px; line-height:18.5px;">DESARROLLA.</span><br />
-                      <br>
-                      <a href="http://comunidad.4geeks.co/">
-                        <div class="col-md-offset-5 yellow-button">
-                          <p  class="one-line"><b>Visita La Comunidad</b></p>
-                        </div>
-                      </a>
-                      <br>
+            <li  id="li-aliados">
+              <div class="viewport">
+                <a href="#section-aliados">
+                  <div class="links">
+                    <div class="links-front">
+                      Aliados
+                    </div>
+                    <div class="links-bottom">
+                      Aliados
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </li>
-            <li id="carousel4-back" class="carousel">
-              <div id="carousel4-mid" class="carousel"  data-0="background-position: center 300px;" data-800="transition: all 0.05s ease;background-position: center 170px;">
-                <div id="carousel4-front" class="carousel"  data-0="background-position: center 20em;" data-800="transition: all 0.05s ease;background-position: center -20px;">
-                  <div id="row">
-                    <div class="col-lg-offset-1 col-lg-6 content">
-                      <span style="font-size:55.2px; line-height:55.2px;"> DESARROLLAMOS</span><br />
-                      <span style="font-size:77.6px; line-height:77.6px;"> PRODUCTOS</span><br />
-                      <span style="font-size:60.5px; line-height:60.5px;">TECNOLÓGICOS</span><br />
-                      <span style="font-size:17.4px; line-height:17.4px;">DE ALTO IMPACTO PARA EMPRESAS, EMPRENDEDORES Y</span><br />
-                      <span style="font-size:21.4px; line-height:21.4px;">STARTUPS. DESDE APLICACIONES WEB HASTA</span><br />
-                      <span style="font-size:21.4px; line-height:21.4px;">APLICACIONES MOVILES.</span><br />
-                      <br>
-                      <a href="http://localhost/4geeks/infografia.html#/slide1">
-                        <div class="col-md-offset-5 yellow-button">
-                          <p class="one-line">¿Que hacemos?</p>
-                        </div>
-                      </a>
-                      <br>
+            <li id="li-proyectos">
+              <div class="viewport">
+                <a href="#section-proyectos">
+                  <div class="links">
+                    <div class="links-front">
+                      Proyectos
+                    </div>
+                    <div class="links-bottom">
+                      Proyectos
                     </div>
                   </div>
-                </div>
+                </a>
+              </div>
+            </li>
+            <li id="li-comunidad">
+              <div class="viewport">
+                <a href="#section-comunidad">
+                  <div class="links">
+                    <div class="links-front">
+                      Comunidad
+                    </div>
+                    <div class="links-bottom">
+                      Comunidad
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li id="li-contacto">
+              <div class="viewport">
+                <a href="./contactanos.html">
+                  <div class="links">
+                    <div class="links-front">
+                      Contáctanos
+                    </div>
+                    <div class="links-bottom">
+                      Contáctanos
+                    </div>
+                  </div>
+                </a>
               </div>
             </li>
           </ul>
         </div>
       </div>
     </div>
-  </section>
-<div id="skrollr-body">  <section id="section-4geeks">
-    <div style="margin-left:50px">
-      <p class="header-slim"> ¿Que es 4Geeks?</p>
-    </div>
-    <div class="dark-line"></div><div class="dark-circle"></div>
-    <div class="row geeky-row" >
-      <div class="col-sm-12" style="padding-right:0; padding-left:0; margin-left:0;margin-right:0; position:relative">
-        <a id="link-infografia" href="./infografia.html" >
-          <div id="div-terminal" style="position:absolute" data-0= "opacity:0" data-839="opacity:0;"data-840="opacity:1;">
-
-            <span class="info-text"></span>
-           <!--  <p > Haz click aquí</p> -->
-            <div id="hazclick" class="col-xs-12">
-
-                    <div class="col-md-offset-0 white-button-alt" style="margin-right:auto; margin-left:auto; float:none">
-                      <p class="one-line"><b>Haz click aquí</b> </p>
-                    </div>
-
-            </div>
-
+    <section id="section-first">
+      <div class="row geeky-row">
+        <div class="col-lg-14">
+          <!-- Barra lateral -->
+          <div id="side-bar">
+            <a href="./redesdecontacto.html"><div class="sidesview">
+              <div class="sides">
+                <div id="redes" class="side-front"></div>
+                <div id="redes-bottom" class="side-bottom"><p class="text-sidebar-ml"> Redes de <br>contacto </p></div>
+              </div>
+            </div></a>
+            <a href="./lacarta.html"><div class="sidesview">
+              <div class="sides">
+                <div id="carta" class="side-front"></div>
+                <div id="carta-bottom" class="side-bottom"><p class="text-sidebar"> La carta </p></div>
+              </div>
+            </div></a>
+            <a href="./geeksfactory.html"><div class="sidesview">
+              <div class="sides">
+                <div id="factory"  class="side-front"></div>
+                <div id="factory-bottom" class="side-bottom"><p class="text-sidebar"> GeeksFactory </p></div>
+              </div>
+            </div></a>
+            <a href="./formacion.html"><div class="sidesview">
+              <div class="sides">
+                <div id="formacion"  class="side-front"></div>
+                <div id="formacion-bottom" class="side-bottom"><p class="text-sidebar"> Formación</p></div>
+              </div>
+            </div></a>
+            <a href="./techmeetup.html"><div class="sidesview">
+              <div class="sides">
+                <div id="meetup" class="side-front"></div>
+                <div id="meetup-bottom" class="side-bottom"><p class="text-sidebar"> Tech Meetup</p></div>
+              </div>
+            </div></a>
+            <a href="#"><div class="sidesview">
+              <div class="sides">
+                <div id="workshops" class="side-front"></div>
+                <div id="workshops-bottom" class="side-bottom"><p class="text-sidebar-ml"> Hack-a-tons <br> Workshops</p></div>
+              </div>
+            </div></a>
           </div>
-        </a>
-        <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/background.png"
-        data-740="opacity:0;" data-741="opacity:1;"/>
-        <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/header.png"
-        data-740="opacity:0;" data-741="opacity:1;"/>
-        <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/footer.png"/>
-        <img class="img-responsive" style="position:absolute; top:0; width:100%" src="./images/fase1.png"
-        data-740="opacity:1;" data-741="opacity:0;"/>
-        <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/fase2.png"
-        data-740="opacity:0;" data-741="opacity:1;" data-799="opacity:1;" data-800="opacity:0;"/>
-        <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/fase3.png"
-        data-799="opacity:0;" data-800="opacity:1;" data-839="opacity:1;" data-840="opacity:0;"/>
-        <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/fase4.png"
-        data-839="opacity:0;" data-840="opacity:1;"/>
-      </div>
-    </div>
-  </section>
-
-  <section id="section-aliados2">
-    <div id="section-aliados"></div>
-    <div style="margin-left:50px" >
-      <p class="header-slim"> Aliados </p>
-    </div>
-    <div class="dark-line"></div><div class="dark-circle"></div>
-    <p class="footer-p"> Para realizar grandes proyectos, contamos<br>con grandes amigos.</p>
-    <div class="row geeky-row input_wrapper" id="hojas-div" style="width:100%;position:relative">
-       <!-- Hojas -->
-          <img data-1700= "opacity:0; top:-60%;" data-1800="opacity:1; top:-65%;" class="img-responsive hoja" id="hoja1"  src="./images/hojas/hoja01.png"/>
-          <img data-1700= "opacity:0; top:-60%;" data-1800="opacity:1; top:-45%;" class="img-responsive hoja" id="hoja2"  src="./images/hojas/hoja02.png"/>
-          <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:-5%;" data-2200="top:-5%;" data-2600="top:-15%;" class="img-responsive hoja" id="hoja3" src="./images/hojas/hoja03.png"/>
-          <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:15%;" data-2200="top:15%;" data-2600="top:10%;" class="img-responsive hoja" id="hoja4"src="./images/hojas/hoja04.png"/>
-          <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:55%;" data-2300="top:55%;" data-3000="top:50%;" class="img-responsive hoja" id="hoja5"  src="./images/hojas/hoja05.png"/>
-          <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:35%;" data-2500="top:35%;" data-3300="top:30%;" class="img-responsive hoja" id="hoja6"  src="./images/hojas/hoja06.png"/>
-          <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:95%;" data-2500="top:95%;" data-3300="top:75%;"class="img-responsive hoja" id="hoja7" src="./images/hojas/hoja07.png"/>
-          <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:115%;" data-3300="top:115%;" data-3600="top:112%;" class="img-responsive hoja" id="hoja8" src="./images/hojas/hoja08.png"/>
-          <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:125%;" data-2800="top:125%;" data-3600="top:110%;" class="img-responsive hoja" id="hoja9" src="./images/hojas/hoja09.png"/>
-          <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:115%;" data-3300="top:115%;" data-3800="top:113%;" class="img-responsive hoja" id="hoja10"  src="./images/hojas/hoja10.png"/>
-          <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:125%;"  data-3300="top:125%;" data-3800="top:120%;" class="img-responsive hoja" id="hoja11"  src="./images/hojas/hoja11.png"/>
-      <!-- Fin hojas -->
-      <div class="col-lg-offset-5 col-lg-7" id="div-cels">
-        <!-- Celulares -->
-        <img data-1600= "opacity:1;" data-1700="opacity:0;"  class="img-responsive celphone" src="./images/cel1.png" />
-        <img data-1600= "opacity:0;" data-1625="opacity:1;"data-1750= "opacity:1;" data-1825="opacity:0;"class="img-responsive celphone" src="./images/cel2.png"/>
-        <img data-1750= "opacity:0;" data-1800="opacity:1;"data-1800= "opacity:1;" data-1875="opacity:0;" class="img-responsive celphone" src="./images/cel3.png"/>
-        <img data-1800= "opacity:0;" data-1810="opacity:1;" class="img-responsive celphone"  src="./images/cel4.png"/>
-        <!-- Fin celulares-->
-      </div>
-      <div class="container" style="padding-top:150px;">
-        <div class="col-md-offset-1 col-md-5">
-          <img class="logo-left" src="./images/logos/escuela.png"/>
-          <img class="logo-left" src="./images/logos/accede.png"/>
+          <!-- Fin barra lateral -->
+          <div id="slider"  class="banner has-dots col-xs-12">
+            <div id="div-principal"></div>
+            <ul style="width: 400%; position: relative;">
+              <li id="carousel1-back" class="carousel">
+                <div id="carousel1-mid" class="carousel" data-0="background-position: center 250px;" data-800=" background-position: center 650px;">
+                  <div id="carousel1-front" class="carousel"  data-0="background-position:center 300px;" data-800=" background-position: center -600px;">
+                    <div id="row">
+                      <div class="col-lg-offset-1 col-lg-6 content">
+                        <span style="font-size:79px; line-height:79px;">CAMBIANDO</span><br />
+                        <span style="font-size:94px;line-height: 94px;">EL MUNDO</span><br />
+                        <span style="font-size:31.4px;line-height: 31.4px;">UNA LÍNEA DE CÓDIGO A LA VEZ.</span><br />
+                        <span style="font-size:20.1px; line-height:20.1px;">MAS DE 2000 DESARROLLADORES Y 90 PROYECTOS</span><br />
+                        <span style="font-size:20.1px; line-height:20.1px;">REINVENTANDO 6 INDUSTRIAS.</span><br />
+                        <br>
+                        <a href="http://comunidad.4geeks.co/unete-a-la-comunidad/">
+                          <div class="col-md-offset-5 yellow-button">
+                            <p  class="one-line"><b>Únete</b> </p>
+                          </div>
+                        </a>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="carousel2-back" class="carousel">
+                <div id="carousel2-mid" class="carousel"  data-0="background-position:center -70px;" data-800=" background-position:center 50px;">
+                  <div id="carousel2-front" class="carousel"  data-0="background-position:center 450px;" data-800=" background-position:center 350px;">
+                    <div id="row">
+                      <div class="col-lg-offset-1 col-lg-6 content">
+                        <span style="font-size:86px; line-height:86px;">MÁS DE 200</span><br />
+                        <span style="font-size:49px; line-height:49px;">DESARROLLADORES</span><br />
+                        <span style="font-size:46px; line-height:46px;">LATINOAMERICANOS</span><br />
+                        <span style="font-size:20.4px; line-height:20.4px;">ESPECIALIZADOS EN DESARROLLO WEB Y MÓVIL</span><br />
+                        <span style="font-size:19.4px; line-height:19.4px;">CREANDO APLICACIONES EN PYTHON, CSS3, HTML5,</span><br />
+                        <span style="font-size:19.4px; line-height:19.4px;">JAVASCRIPT Y RUBY.</span><br />
+                        <br>
+                        <a href="#section-proyectos">
+                          <div class="col-md-offset-5 yellow-button">
+                            <p class="one-line"><b>Nuestros proyectos.</b></p>
+                          </div>
+                        </a>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="carousel3-back" class="carousel" data-0="background-position:0 0px;" data-800="background-position: 0px -1000px;">
+                <div id="carousel3-mid" class="carousel"  data-0="background-position:center 150px;" data-800="background-position: center -700px;">
+                  <div id="carousel3-front" class="carousel"  data-0="background-position:center 550px;" data-800="background-position:center -500px;">
+                    <div id="row">
+                      <div class="col-lg-offset-1 col-lg-6 content">
+                        <span style="font-size:54.9px; line-height:54.9px;">UNA COMUNIDAD </span><br />
+                        <span style="font-size:69.5px; line-height:69.5px;">PARA SER MÁS</span><br />
+                        <span style="font-size:32.4px; line-height:32.4px;">Y MEJORES DESARROLLADORES</span><br />
+                        <span style="font-size:18.5px; line-height:18.5px;">CONOCE A OTROS DEVELOPERS, APRENDE, COLABORA,</span><br />
+                        <span style="font-size:18.5px; line-height:18.5px;">DESARROLLA.</span><br />
+                        <br>
+                        <a href="http://comunidad.4geeks.co/">
+                          <div class="col-md-offset-5 yellow-button">
+                            <p  class="one-line"><b>Visita La Comunidad</b></p>
+                          </div>
+                        </a>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="carousel4-back" class="carousel">
+                <div id="carousel4-mid" class="carousel"  data-0="background-position: center 300px;" data-800="transition: all 0.05s ease;background-position: center 170px;">
+                  <div id="carousel4-front" class="carousel"  data-0="background-position: center 20em;" data-800="transition: all 0.05s ease;background-position: center -20px;">
+                    <div id="row">
+                      <div class="col-lg-offset-1 col-lg-6 content">
+                        <span style="font-size:55.2px; line-height:55.2px;"> DESARROLLAMOS</span><br />
+                        <span style="font-size:77.6px; line-height:77.6px;"> PRODUCTOS</span><br />
+                        <span style="font-size:60.5px; line-height:60.5px;">TECNOLÓGICOS</span><br />
+                        <span style="font-size:17.4px; line-height:17.4px;">DE ALTO IMPACTO PARA EMPRESAS, EMPRENDEDORES Y</span><br />
+                        <span style="font-size:21.4px; line-height:21.4px;">STARTUPS. DESDE APLICACIONES WEB HASTA</span><br />
+                        <span style="font-size:21.4px; line-height:21.4px;">APLICACIONES MOVILES.</span><br />
+                        <br>
+                        <a href="http://localhost/4geeks/infografia.html#/slide1">
+                          <div class="col-md-offset-5 yellow-button">
+                            <p class="one-line">¿Que hacemos?</p>
+                          </div>
+                        </a>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-offset-6 cold-md-5">
-          <img class="logo" src="./images/logos/wayra.png"/>
-          <img class="logo" src="./images/logos/ciudades.png"/>
-          <img class="logo" src="./images/logos/mood.png"/>
-        </div>
       </div>
-    </div>
-    <div id="div-aliados-footer"></div>
-  </section>
-  <section id="section-proyectos">
-    <!-- CARRUSEL -->
-    <div class="container" style="position:relative">
-      <div class="col-xs-12">
-        <img class="avion" style="left:0%; position:absolute;" class="img-responsive" src="./images/plane01.png"
-        data-3480="left:-25%; top:-500px" data-3540="left:0%; top:-500px" data-3620="left:25%; top:-500px" data-3660="left:50%; top:-500px"
-        data-3720="left:75%; top:-500px" data-3780="left:150%;top:-500px"/>
-      </div>
-    </div>
-    <div style="margin-bottom:500px; margin-top:-500px;">
+    </section>
+    <div id="skrollr-body">  <section id="section-4geeks">
       <div style="margin-left:50px">
-        <p class="header-slim"> Proyectos </p>
+        <p class="header-slim"> ¿Que es 4Geeks?</p>
       </div>
       <div class="dark-line"></div><div class="dark-circle"></div>
-      <!-- <div style="background:black; width:25px; height:25px; position:absolute; left:90%; top:25%"></div>
-      <div style="background:blue; width:25px; height:25px; position:absolute; left:5%; top:25%"></div> -->
-      <!-- <div id="arrowleft"></div>
-      <div id="arrowright"></div> -->
-      <button class="button  thumb" id="arrowleft" onClick="carrusel(this.id)"></button>
-      <button class="button  thumb" id="arrowright" onClick="carrusel(this.id)"></button>
-      <div class="row" id="geeky-row-carrusel">
-        <div class="col-md-offset-1 col-sm-3" style="margin-top:-300px; height:450px !important;">
-          <img class="img-responsive" src="./images/carousel/fronteraspecial.png" style="margin-right:auto; margin-left:auto; "/>
-          <p class="carousel-p"> Creativo diseño web para promocionar la nueva cosecha de vinos Frontera Specialties de la vinatería Concha y Toro. </p>
-        </div>
-        <div class="col-sm-6 col-sm-offset-1" style="position:relative;margin-top:-300px; height:450px !important;">
-          <img class="img-responsive" style=" height:450px !important;" src="./images/carousel/screenshots/frontera.png" />
+      <div class="row geeky-row" >
+        <div class="col-sm-12" style="padding-right:0; padding-left:0; margin-left:0;margin-right:0; position:relative">
+          <a id="link-infografia" href="./infografia.html" >
+            <div id="div-terminal" style="position:absolute" data-0= "opacity:0" data-839="opacity:0;"data-840="opacity:1;">
+
+              <span class="info-text"></span>
+              <!--  <p > Haz click aquí</p> -->
+              <div id="hazclick" class="col-xs-12">
+
+                <div class="col-md-offset-0 white-button-alt" style="margin-right:auto; margin-left:auto; float:none">
+                  <p class="one-line"><b>Haz click aquí</b> </p>
+                </div>
+
+              </div>
+
+            </div>
+          </a>
+          <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/background.png"
+          data-740="opacity:0;" data-741="opacity:1;"/>
+          <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/header.png"
+          data-740="opacity:0;" data-741="opacity:1;"/>
+          <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/footer.png"/>
+          <img class="img-responsive" style="position:absolute; top:0; width:100%" src="./images/fase1.png"
+          data-740="opacity:1;" data-741="opacity:0;"/>
+          <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/fase2.png"
+          data-740="opacity:0;" data-741="opacity:1;" data-799="opacity:1;" data-800="opacity:0;"/>
+          <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/fase3.png"
+          data-799="opacity:0;" data-800="opacity:1;" data-839="opacity:1;" data-840="opacity:0;"/>
+          <img class="img-responsive" style="position:absolute; top:0px; width:100%" src="./images/fase4.png"
+          data-839="opacity:0;" data-840="opacity:1;"/>
         </div>
       </div>
-      <div class="col-xs-12" style="background:#c0c0c0; height:100px; margin-top:12.5px; padding-top:15px; position:relative">
-        <div class="col-xs-offset-1 col-xs-2">
-          <button class="button thumb active" id="frontera" onClick="carrusel(this.id)"> </button>
+    </section>
+
+    <section id="section-aliados2">
+      <div id="section-aliados"></div>
+      <div style="margin-left:50px" >
+        <p class="header-slim"> Aliados </p>
+      </div>
+      <div class="dark-line"></div><div class="dark-circle"></div>
+      <p class="footer-p"> Para realizar grandes proyectos, contamos<br>con grandes amigos.</p>
+      <div class="row geeky-row input_wrapper" id="hojas-div" style="width:100%;position:relative">
+        <!-- Hojas -->
+        <img data-1700= "opacity:0; top:-60%;" data-1800="opacity:1; top:-65%;" class="img-responsive hoja" id="hoja1"  src="./images/hojas/hoja01.png"/>
+        <img data-1700= "opacity:0; top:-60%;" data-1800="opacity:1; top:-45%;" class="img-responsive hoja" id="hoja2"  src="./images/hojas/hoja02.png"/>
+        <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:-5%;" data-2200="top:-5%;" data-2600="top:-15%;" class="img-responsive hoja" id="hoja3" src="./images/hojas/hoja03.png"/>
+        <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:15%;" data-2200="top:15%;" data-2600="top:10%;" class="img-responsive hoja" id="hoja4"src="./images/hojas/hoja04.png"/>
+        <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:55%;" data-2300="top:55%;" data-3000="top:50%;" class="img-responsive hoja" id="hoja5"  src="./images/hojas/hoja05.png"/>
+        <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:35%;" data-2500="top:35%;" data-3300="top:30%;" class="img-responsive hoja" id="hoja6"  src="./images/hojas/hoja06.png"/>
+        <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:95%;" data-2500="top:95%;" data-3300="top:75%;"class="img-responsive hoja" id="hoja7" src="./images/hojas/hoja07.png"/>
+        <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:115%;" data-3300="top:115%;" data-3600="top:112%;" class="img-responsive hoja" id="hoja8" src="./images/hojas/hoja08.png"/>
+        <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:125%;" data-2800="top:125%;" data-3600="top:110%;" class="img-responsive hoja" id="hoja9" src="./images/hojas/hoja09.png"/>
+        <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:115%;" data-3300="top:115%;" data-3800="top:113%;" class="img-responsive hoja" id="hoja10"  src="./images/hojas/hoja10.png"/>
+        <img data-1700= "opacity:0; top:-60%;" data-1850="opacity:1; top:125%;"  data-3300="top:125%;" data-3800="top:120%;" class="img-responsive hoja" id="hoja11"  src="./images/hojas/hoja11.png"/>
+        <!-- Fin hojas -->
+        <div class="col-lg-offset-5 col-lg-7" id="div-cels">
+          <!-- Celulares -->
+          <img data-1600= "opacity:1;" data-1700="opacity:0;"  class="img-responsive celphone" src="./images/cel1.png" />
+          <img data-1600= "opacity:0;" data-1625="opacity:1;"data-1750= "opacity:1;" data-1825="opacity:0;"class="img-responsive celphone" src="./images/cel2.png"/>
+          <img data-1750= "opacity:0;" data-1800="opacity:1;"data-1800= "opacity:1;" data-1875="opacity:0;" class="img-responsive celphone" src="./images/cel3.png"/>
+          <img data-1800= "opacity:0;" data-1810="opacity:1;" class="img-responsive celphone"  src="./images/cel4.png"/>
+          <!-- Fin celulares-->
         </div>
-        <div class="col-xs-2">
-          <button class=" button thumb" id="cmo" onClick="carrusel(this.id)"></button>
-        </div>
-        <div class="col-xs-2">
-          <button class="button  thumb" id="catalog" onClick="carrusel(this.id)"></button>
-        </div>
-        <div class="col-xs-2">
-          <button class="button  thumb" id="quintodia" onClick="carrusel(this.id)"></button>
-        </div>
-        <div class="col-xs-2">
-          <button class=" button thumb" id="inmueble" onClick="carrusel(this.id)"></button>
+        <div class="container" style="padding-top:150px;">
+          <div class="col-md-offset-1 col-md-5">
+            <img class="logo-left" src="./images/logos/escuela.png"/>
+            <img class="logo-left" src="./images/logos/accede.png"/>
+          </div>
+          <div class="col-md-offset-6 cold-md-5">
+            <img class="logo" src="./images/logos/wayra.png"/>
+            <img class="logo" src="./images/logos/ciudades.png"/>
+            <img class="logo" src="./images/logos/mood.png"/>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="col-xs-12" style="position:relative">
-        <img class="avion" id="avion2" class="img-responsive" src="./images/plane02.png"
-        data-4400="margin-right:-50%; opacity:1; top:-400px" data-4500="margin-right:-25%; opacity:1; top:-350px" data-4600="margin-right:0%;opacity:1; top:-300px" data-4700="margin-right:25%;opacity:1;top:-250px" data-4800="margin-right:50%;opacity:1;top:-200px" data-4900="margin-right:75%; opacity:1;top:-150px" data-5000="margin-right:100%; opacity:1; top:-100px" data-5100="margin-right:125%; opacity:1;top:-50px" data-5200="margin-right:150%; opacity:0; top:0px"/>
-      </div>
-    </div>
-    <div id="container">
-      <div style="position:relative; padding-top:400px; margin-bottom:0px">
-        <div id="div-reunion-back" data-4500="bottom:190px;" data-5300="bottom:10px;"></div>
-        <div id="div-reunion-mid" data-4500="bottom:150px;" data-5300="bottom:50px;"></div>
-        <div id="div-reunion-front"></div>
-      </div>
-    </div>
-  </section>
-  <section id="section-comunidad">
-    <div class="row geeky-row">
-      <div id="div-miembros">
-        <div style="margin-left:50px; padding-bottom:100px">
-          <p class="header-slim-alt"> Comunidad</p>
-          <div class="dark-line-alt"></div><div class="dark-circle-alt"></div>
+      <div id="div-aliados-footer"></div>
+    </section>
+    <section id="section-proyectos">
+      <!-- CARRUSEL -->
+      <div class="container" style="position:relative">
+        <div class="col-xs-12">
+          <img class="avion" style="left:0%; position:absolute;" class="img-responsive" src="./images/plane01.png"
+          data-3480="left:-25%; top:-500px" data-3540="left:0%; top:-500px" data-3620="left:25%; top:-500px" data-3660="left:50%; top:-500px"
+          data-3720="left:75%; top:-500px" data-3780="left:150%;top:-500px"/>
         </div>
-        <div class="col-md-5 col-xs-offset-1">
-          <img class="img-responsive" style="margin-top:0px;" src="./images/comunidad.png"/>
+      </div>
+      <div style="margin-bottom:500px; margin-top:-500px;">
+        <div style="margin-left:50px">
+          <p class="header-slim"> Proyectos </p>
         </div>
-        <div class="col-md-5">
-          <div class="row">
-            <div class="col-xs-12">
-              <span id="meetup-text1" style="font-size:52px; font-weight:300;line-height:80px"  > Al ser <b>miembro</b> de </span>
-            </div>
-            <div class="col-xs-5">
-              <img style="padding-top: 15px" class="img-responsive" src="./images/meetup/4geeks.png"/>
-            </div>
-            <div class="col-xs-6" id="div-te-unes">
-              <span>
-                <p id="meetup-text25" style="font-size:50px; font-weight:200;line-height:20px"> te unes a </p><br>
-                <p id="meetup-text26" style="font-size:47px; font-weight:200;line-height:30px"> una de las</p>
-              </span>
-            </div>
-            <div class="col-xs-5" id="div-redes-de">
-              <span>
-                 <p id="meetup-text3" style="font-size:49px; font-weight:200;line-height:50px"> redes de <br></p>
-                 <p id="meetup-text4" style="font-size:24px; line-height:20px"><b>desarrolladores</b> </p>
-                 <div id="meetup-glasses"></div>
-              </span>
-            </div>
-            <div class="col-xs-5">
-              <img class="img-responsive" id="call-img-comunidad" src="./images/meetup/comunidad.png"/>
-            </div>
-            <div class="col-xs-12" id="div-mas-importantes">
-              <span style="font-size:65px; font-weight:200;line-height:40px">
-                <b id="meetup-text6" style="font-size:57px; line-height:30px"> más importantes </b>
-              </span>
-            </div>
-            <div class="col-xs-5">
-              <img class="img-responsive" style="margin-top:10px;" src="./images/meetup/america.png"/>
-            </div>
-            <div id="meetup-latam2" class="col-xs-6">
-              <span style="text-align:center">
-                <div id="meetup-latam"></div>
+        <div class="dark-line"></div><div class="dark-circle"></div>
+        <!-- <div style="background:black; width:25px; height:25px; position:absolute; left:90%; top:25%"></div>
+        <div style="background:blue; width:25px; height:25px; position:absolute; left:5%; top:25%"></div> -->
+        <!-- <div id="arrowleft"></div>
+        <div id="arrowright"></div> -->
+        <button class="button  thumb" id="arrowleft" onClick="carrusel(this.id)"></button>
+        <button class="button  thumb" id="arrowright" onClick="carrusel(this.id)"></button>
+        <div class="row" id="geeky-row-carrusel">
+          <div class="col-md-offset-1 col-sm-3" style="margin-top:-300px; height:450px !important;">
+            <img class="img-responsive" src="./images/carousel/fronteraspecial.png" style="margin-right:auto; margin-left:auto; "/>
+            <p class="carousel-p"> Creativo diseño web para promocionar la nueva cosecha de vinos Frontera Specialties de la vinatería Concha y Toro. </p>
+          </div>
+          <div class="col-sm-6 col-sm-offset-1" style="position:relative;margin-top:-300px; height:450px !important;">
+            <img class="img-responsive" style=" height:450px !important;" src="./images/carousel/screenshots/frontera.png" />
+          </div>
+        </div>
+        <div class="col-xs-12" style="background:#c0c0c0; height:100px; margin-top:12.5px; padding-top:15px; position:relative">
+          <div class="col-xs-offset-1 col-xs-2">
+            <button class="button thumb active" id="frontera" onClick="carrusel(this.id)"> </button>
+          </div>
+          <div class="col-xs-2">
+            <button class=" button thumb" id="cmo" onClick="carrusel(this.id)"></button>
+          </div>
+          <div class="col-xs-2">
+            <button class="button  thumb" id="catalog" onClick="carrusel(this.id)"></button>
+          </div>
+          <div class="col-xs-2">
+            <button class="button  thumb" id="quintodia" onClick="carrusel(this.id)"></button>
+          </div>
+          <div class="col-xs-2">
+            <button class=" button thumb" id="inmueble" onClick="carrusel(this.id)"></button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-xs-12" style="position:relative">
+          <img class="avion" id="avion2" class="img-responsive" src="./images/plane02.png"
+          data-4400="margin-right:-50%; opacity:1; top:-400px" data-4500="margin-right:-25%; opacity:1; top:-350px" data-4600="margin-right:0%;opacity:1; top:-300px" data-4700="margin-right:25%;opacity:1;top:-250px" data-4800="margin-right:50%;opacity:1;top:-200px" data-4900="margin-right:75%; opacity:1;top:-150px" data-5000="margin-right:100%; opacity:1; top:-100px" data-5100="margin-right:125%; opacity:1;top:-50px" data-5200="margin-right:150%; opacity:0; top:0px"/>
+        </div>
+      </div>
+      <div id="container">
+        <div style="position:relative; padding-top:400px; margin-bottom:0px">
+          <div id="div-reunion-back" data-4500="bottom:190px;" data-5300="bottom:10px;"></div>
+          <div id="div-reunion-mid" data-4500="bottom:150px;" data-5300="bottom:50px;"></div>
+          <div id="div-reunion-front"></div>
+        </div>
+      </div>
+    </section>
+    <section id="section-comunidad">
+      <div class="row geeky-row">
+        <div id="div-miembros">
+          <div style="margin-left:50px; padding-bottom:100px">
+            <p class="header-slim-alt"> Comunidad</p>
+            <div class="dark-line-alt"></div><div class="dark-circle-alt"></div>
+          </div>
+          <div class="col-md-5 col-xs-offset-1">
+            <img class="img-responsive" style="margin-top:0px;" src="./images/comunidad.png"/>
+          </div>
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col-xs-12">
+                <span id="meetup-text1" style="font-size:52px; font-weight:300;line-height:80px"  > Al ser <b>miembro</b> de </span>
+              </div>
+              <div class="col-xs-5">
+                <img style="padding-top: 15px" class="img-responsive" src="./images/meetup/4geeks.png"/>
+              </div>
+              <div class="col-xs-6" id="div-te-unes">
+                <span>
+                  <p id="meetup-text25" style="font-size:50px; font-weight:200;line-height:20px"> te unes a </p><br>
+                  <p id="meetup-text26" style="font-size:47px; font-weight:200;line-height:30px"> una de las</p>
+                </span>
+              </div>
+              <div class="col-xs-5" id="div-redes-de">
+                <span>
+                  <p id="meetup-text3" style="font-size:49px; font-weight:200;line-height:50px"> redes de <br></p>
+                  <p id="meetup-text4" style="font-size:24px; line-height:20px"><b>desarrolladores</b> </p>
+                  <div id="meetup-glasses"></div>
+                </span>
+              </div>
+              <div class="col-xs-5">
+                <img class="img-responsive" id="call-img-comunidad" src="./images/meetup/comunidad.png"/>
+              </div>
+              <div class="col-xs-12" id="div-mas-importantes">
+                <span style="font-size:65px; font-weight:200;line-height:40px">
+                  <b id="meetup-text6" style="font-size:57px; line-height:30px"> más importantes </b>
+                </span>
+              </div>
+              <div class="col-xs-5">
+                <img class="img-responsive" style="margin-top:10px;" src="./images/meetup/america.png"/>
+              </div>
+              <div id="meetup-latam2" class="col-xs-6">
+                <span style="text-align:center">
+                  <div id="meetup-latam"></div>
                   <p id="meetup-text20" style="font-size:23px;font-weight:200;line-height:20px"> de Latinoamérica</p> <br>
                   <p id="meetup-text21" style="font-size:54px;font-weight:200;line-height:0px">y tienes</p><br>
                   <p id="meetup-text5" style="font-size:60px;font-weight:200;line-height:40px"><b>acceso</b></p> <br>
                   <p id="meetup-text22" style="font-size:30px;font-weight:200;line-height:5px"> a cada una de </p> <br>
                   <p id="meetup-text23" style="font-size:48px;font-weight:200;line-height:5px"> nuestras <br></p>
                   <p id="meetup-text24" style="font-size:37px;font-weight:200;line-height:60px"> <b>iniciativas. </b> </p>
-              </span>
-            </div>
-            <div class="col-xs-12">
-              <a href="http://comunidad.4geeks.co/">
-                    <div class="col-md-offset-0 yellow-button-alt" id="button-forma-parte" style="margin-right:auto; margin-left:auto; float:none">
-                      <p class="one-line"><b>Forma parte</b> </p>
-                    </div>
-                  </a>
+                </span>
+              </div>
+              <div class="col-xs-12">
+                <a href="http://comunidad.4geeks.co/">
+                  <div class="col-md-offset-0 yellow-button-alt" id="button-forma-parte" style="margin-right:auto; margin-left:auto; float:none">
+                    <p class="one-line"><b>Forma parte</b> </p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="div-meetup">
-        <div class="col-md-5 col-md-offset-1" style="margin-top:100px">
-          <div class="row">
-            <div class="col-xs-12">
-              <img class="img-responsive" src="./images/meetup/meetuplogo1.png"/>
-            </div>
-            <div class="col-xs-9">
-              <img style="padding-top:15px;"class="img-responsive" src="./images/meetup/meetuplogo2.png"/>
-            </div>
-            <div class="col-xs-3" id="div-es-el">
-              <p id="meetup-text7" style="padding-top:15px;font-size:45px;font-weight:200;line-height:75px">, es el  </p>
-            </div>
-            <div class="col-xs-7">
-              <p id="meetup-text8" style="font-size:42px;font-weight:300;line-height:20px;padding-top:15px"> Primer Meetup</p> <br>
-              <p id="meetup-text9" style="font-size:75px;font-weight:200;line-height:25px">oficial de</p> <br>
-              <p id="meetup-text10" style="font-size:63px;font-weight:400;line-height:25px">Venezuela</p>
-            </div>
-            <div class="col-xs-5">
-              <img class="img-responsive" src="./images/meetup/vzla.png"/>
-            </div>
-            <div class="col-xs-12">
-              <p style="font-weight:300; text-align:justify; padding-top:20px; font-size:25px"> Queremos conectar, inspirar, educar y colaborar con los miembros de la comunidad tecnológica de la ciudad. Creemos que entre todos podemos compartir los recursos que permitan la construcción de compañías de tecnología exitosas y sustentables.
+        <div id="div-meetup">
+          <div class="col-md-5 col-md-offset-1" style="margin-top:100px">
+            <div class="row">
+              <div class="col-xs-12">
+                <img class="img-responsive" src="./images/meetup/meetuplogo1.png"/>
+              </div>
+              <div class="col-xs-9">
+                <img style="padding-top:15px;"class="img-responsive" src="./images/meetup/meetuplogo2.png"/>
+              </div>
+              <div class="col-xs-3" id="div-es-el">
+                <p id="meetup-text7" style="padding-top:15px;font-size:45px;font-weight:200;line-height:75px">, es el  </p>
+              </div>
+              <div class="col-xs-7">
+                <p id="meetup-text8" style="font-size:42px;font-weight:300;line-height:20px;padding-top:15px"> Primer Meetup</p> <br>
+                <p id="meetup-text9" style="font-size:75px;font-weight:200;line-height:25px">oficial de</p> <br>
+                <p id="meetup-text10" style="font-size:63px;font-weight:400;line-height:25px">Venezuela</p>
+              </div>
+              <div class="col-xs-5">
+                <img class="img-responsive" src="./images/meetup/vzla.png"/>
+              </div>
+              <div class="col-xs-12">
+                <p style="font-weight:300; text-align:justify; padding-top:20px; font-size:25px"> Queremos conectar, inspirar, educar y colaborar con los miembros de la comunidad tecnológica de la ciudad. Creemos que entre todos podemos compartir los recursos que permitan la construcción de compañías de tecnología exitosas y sustentables.
 
-              Este es un espacio para mostrar el trabajo de los desarrolladores y emprendedores, compartir conocimientos y conectar con la comunidad para encontrar socios, inspiración, inversionistas y dar a conocer el trabajo del emprendimiento y desarrollo en Caracas.</p>
+                  Este es un espacio para mostrar el trabajo de los desarrolladores y emprendedores, compartir conocimientos y conectar con la comunidad para encontrar socios, inspiración, inversionistas y dar a conocer el trabajo del emprendimiento y desarrollo en Caracas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 ">
+              <img class="img-responsive" style="margin-top:100px;" src="./images/meetup/meetup.png"/>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div id="div-ideas">
+            <div class="col-md-5 col-md-offset-1">
+              <!-- <img class="img-responsive" style="margin-top:10px;" src="./images/meetup/imagen1ideas.png"/> -->
+              <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+                <iframe src="//www.youtube.com/embed/HCu5NKFa0vw" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="row">
+                <div class="col-xs-8">
+                  <span id="meetup-text11" style="font-size:53px;font-weight:300;line-height:0px"> nos <b> encanta </b> </span><br>
+                  <span id="meetup-text12" style="font-size:80px;font-weight:300;line-height:70px"> escuchar </span> <br>
+                  <span id="meetup-text13" style="font-size:100px;font-weight:300;line-height:100px"> <b> IDEAS.</b></span>
+                </div>
+                <!--  <div class="col-xs-4"> -->
+                <div class="col-xs-3">
+                  <img id="bulb" class="img-responsive" src="./images/meetup/idea.png"/>
+                </div>
+                <div class="col-xs-12" id="meetup-ideas2">
+                  <span id="meetup-text14" style="font-size:55px;font-weight:300;line-height:20px"> Cuentanos la tuya </span>
+                </div>
+                <div class="col-xs-3">
+                  <img style="padding-top:45px" class="img-responsive" src="./images/meetup/cd.png"/>
+                </div>
+                <div class="col-xs-8">
+                  <span id="meetup-text15" style="font-size:57px;font-weight:300;line-height:54px"> y desarrolla </span><br>
+                  <span id="meetup-text16" style="font-size:54px;font-weight:200;line-height:63px"> <b> tu producto </b> </span><br>
+                  <span id="meetup-text17" style="font-size:120px;font-weight:200;line-height:70px"> con el </span><br>
+                  <span id="meetup-text18" style="font-size:110px;font-weight:300;line-height:30px"> apoyo </span><br>
+                </div>
+                <div class="col-xs-12" id="meetup-ideas3">
+                  <span id="meetup-text19" style="font-size:63px;font-weight:200;line-height:77px"> de la comunidad</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-5 ">
-          <img class="img-responsive" style="margin-top:100px;" src="./images/meetup/meetup.png"/>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-      <div id="div-ideas">
-        <div class="col-md-5 col-md-offset-1">
-          <!-- <img class="img-responsive" style="margin-top:10px;" src="./images/meetup/imagen1ideas.png"/> -->
-          <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
-            <iframe src="//www.youtube.com/embed/HCu5NKFa0vw" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="row">
-            <div class="col-xs-8">
-              <span id="meetup-text11" style="font-size:53px;font-weight:300;line-height:0px"> nos <b> encanta </b> </span><br>
-              <span id="meetup-text12" style="font-size:80px;font-weight:300;line-height:70px"> escuchar </span> <br>
-              <span id="meetup-text13" style="font-size:100px;font-weight:300;line-height:100px"> <b> IDEAS.</b></span>
-            </div>
-            <!--  <div class="col-xs-4"> -->
-            <div class="col-xs-3">
-              <img id="bulb" class="img-responsive" src="./images/meetup/idea.png"/>
-            </div>
-            <div class="col-xs-12" id="meetup-ideas2">
-              <span id="meetup-text14" style="font-size:55px;font-weight:300;line-height:20px"> Cuentanos la tuya </span>
-            </div>
-            <div class="col-xs-3">
-              <img style="padding-top:45px" class="img-responsive" src="./images/meetup/cd.png"/>
-            </div>
-            <div class="col-xs-8">
-              <span id="meetup-text15" style="font-size:57px;font-weight:300;line-height:54px"> y desarrolla </span><br>
-              <span id="meetup-text16" style="font-size:54px;font-weight:200;line-height:63px"> <b> tu producto </b> </span><br>
-              <span id="meetup-text17" style="font-size:120px;font-weight:200;line-height:70px"> con el </span><br>
-              <span id="meetup-text18" style="font-size:110px;font-weight:300;line-height:30px"> apoyo </span><br>
-            </div>
-            <div class="col-xs-12" id="meetup-ideas3">
-              <span id="meetup-text19" style="font-size:63px;font-weight:200;line-height:77px"> de la comunidad</span>
+      </section>
+      <section id="section-footer">
+        <div style="position:relative">
+          <div id="ciudad-back3" data-8200="bottom:100px;" data-8900="bottom:157px;"></div>
+          <div id="ciudad-back2" data-8200="bottom:110px;" data-8900="bottom:20px;" ></div>
+          <div id="ciudad-back1" data-8200="bottom:0px;" data-8900="bottom:-75px;"></div>
+          <div class="container">
+            <div class="col-xs-12">
+              <img class="aves" style=" bottom:400px; right:-25%; position:absolute;" class="img-responsive" src="./images/aves.png" data-7900="right:-50%; opacity:0;" data-8100="right:-25%; opacity:1" data-8300="right:0%; opacity:0" data-8400="right:25%; opacity:1" data-8500="right:50%; opacity:0;" data-8600="opacity:1; right:75%;" data-8700="opacity:0; right:100%" data-8800="opacity:0; right:125%"/>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="section-footer">
-    <div style="position:relative">
-      <div id="ciudad-back3" data-8200="bottom:100px;" data-8900="bottom:157px;"></div>
-      <div id="ciudad-back2" data-8200="bottom:110px;" data-8900="bottom:20px;" ></div>
-      <div id="ciudad-back1" data-8200="bottom:0px;" data-8900="bottom:-75px;"></div>
-      <div class="container">
-        <div class="col-xs-12">
-          <img class="aves" style=" bottom:400px; right:-25%; position:absolute;" class="img-responsive" src="./images/aves.png" data-7900="right:-50%; opacity:0;" data-8100="right:-25%; opacity:1" data-8300="right:0%; opacity:0" data-8400="right:25%; opacity:1" data-8500="right:50%; opacity:0;" data-8600="opacity:1; right:75%;" data-8700="opacity:0; right:100%" data-8800="opacity:0; right:125%"/>
-        </div>
-      </div>
-      <div class="container">
-        <div class="col-xs-12">
-          <img class="aves" style="bottom:400px;  right:0%; opacity:0; position:absolute;" class="img-responsive" src="./images/aves-alt.png"
-          data-7900="right:-50%; opacity:1;" data-8100="right:-25%; opacity:0" data-8300="right:0%; opacity:1" data-8400="right:25%; opacity:0" data-8500="right:50%; opacity:1;" data-8600="opacity:0; right:75%" data-8700="opacity:1; right:100%" data-8800="opacity:0; right:125%"/>
-        </div>
-      </div>
-      <div id="ciudad-front" ></div>
-    </div>
-    <div id="section-contacto" class="container footer-content" style="position:relative">
-      <div id="super-rigo"></div>
-      <div class="row" style="margin-left:6%; margin-bottom:25px">
-        <div class="footer-centered">
-          <a href="http://comunidad.4geeks.co/"><p class="footer-link" style="float:left;margin-right:6.75%">Comunidad</p></a>
-          <a href="./lacarta.html"><p class="footer-link" style="float:left;margin-right:4.5%">La Carta</p></a>
-          <a href="./formacion.html"><p class="footer-link" style="float:left;margin-right:5.5%">Formación</p></a>
-          <a href="./infografia.html"><p class="footer-link" style="float:left;margin-right:5.65%">¿4Geeks?</p></a>
-          <a href="#section-proyectos"><p class="footer-link" style="float:left;margin-right:5%">Portafolio</p></a>
-          <a href="./redesdecontacto.html"><p class="footer-link" style="float:left;margin-right:5%">Redes de Contacto</p></a>
-          <a href="./contactanos.html"><p class="footer-link" style="float:left">Contactanos</p></a>
-        </div>
-      </div>
-      <div class="row" style="margin-left:6%; margin-bottom:50px">
-        <div class="footer-centered">
-          <a href="./techmeetup.html"><p class="footer-link" style="float:left;margin-right:5.175%">TechMeetup</p></a>
-          <a href="./manifiesto.html"><p class="footer-link" style="float:left;margin-right:5.175%">Manifiesto</p></a>
-          <a href="./equipo.html"><p class="footer-link" style="float:left;margin-right:4.175%">Equipo</p></a>
-          <a href="./desarrollo.html#desarrolladores"><p class="footer-link" style="float:left;margin-right:3.175%">Desarrolladores</p></a>
-          <a href="./desarrollo.html#empresas"><p class="footer-link" style="float:left;margin-right:8.175%">Empresas</p></a>
-          <a href="./hackatones.html#hackatones-section"><p class="footer-link" style="float:left;margin-right:7.5%">Hackaton</p></a>
-          <a href="./geeksfactory.html"><p class="footer-link" style="float:left">GeeksFactory</p></a>
-         </div>
-      </div>
-      <div class="col-md-5 col-md-offset-1">
-        <button id="footer-logo" onclick="rigo()"></button>
-      </div>
-      <div class="col-md-4 col-md-offset-1">
-        <div class="row footer-images">
-          <div class="col-xs-3">
-            <a href="https://plus.google.com/u/0/b/116364229078975636616/116364229078975636616/posts"><div id="footer-gp"></div></a>
-          </div>
-          <div class="col-xs-3">
-            <a href=" https://twitter.com/4GeeksLA"><div id="footer-tw"></div></a>
-          </div>
-          <div class="col-xs-3">
-            <a href="https://www.facebook.com/4Geeks "><div id="footer-fb"></div></a>
-          </div>
-          <div class="col-xs-3">
-            <a href=" http://www.youtube.com/user/4GeeksLA"><div id="footer-yt"></div></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12">
-        <a href="#section-first">
-            <div id="backToTop">
-              <div id="backToTop1"></div>
-              <div id="backToTop2"></div>
+          <div class="container">
+            <div class="col-xs-12">
+              <img class="aves" style="bottom:400px;  right:0%; opacity:0; position:absolute;" class="img-responsive" src="./images/aves-alt.png"
+              data-7900="right:-50%; opacity:1;" data-8100="right:-25%; opacity:0" data-8300="right:0%; opacity:1" data-8400="right:25%; opacity:0" data-8500="right:50%; opacity:1;" data-8600="opacity:0; right:75%" data-8700="opacity:1; right:100%" data-8800="opacity:0; right:125%"/>
             </div>
-        </a>
-        <p style="text-align:center; font-size:15px;padding-top:25px; font-weight:700; color:#c5c5c5">Copyright ©
-          <script type="text/javascript">
+          </div>
+          <div id="ciudad-front" ></div>
+        </div>
+        <div id="section-contacto" class="container footer-content" style="position:relative">
+          <div id="super-rigo"></div>
+          <div class="row" style="margin-left:6%; margin-bottom:25px">
+            <div class="footer-centered">
+              <a href="http://comunidad.4geeks.co/"><p class="footer-link" style="float:left;margin-right:6.75%">Comunidad</p></a>
+              <a href="./lacarta.html"><p class="footer-link" style="float:left;margin-right:4.5%">La Carta</p></a>
+              <a href="./formacion.html"><p class="footer-link" style="float:left;margin-right:5.5%">Formación</p></a>
+              <a href="./infografia.html"><p class="footer-link" style="float:left;margin-right:5.65%">¿4Geeks?</p></a>
+              <a href="#section-proyectos"><p class="footer-link" style="float:left;margin-right:5%">Portafolio</p></a>
+              <a href="./redesdecontacto.html"><p class="footer-link" style="float:left;margin-right:5%">Redes de Contacto</p></a>
+              <a href="./contactanos.html"><p class="footer-link" style="float:left">Contactanos</p></a>
+            </div>
+          </div>
+          <div class="row" style="margin-left:6%; margin-bottom:50px">
+            <div class="footer-centered">
+              <a href="./techmeetup.html"><p class="footer-link" style="float:left;margin-right:5.175%">TechMeetup</p></a>
+              <a href="./manifiesto.html"><p class="footer-link" style="float:left;margin-right:5.175%">Manifiesto</p></a>
+              <a href="./equipo.html"><p class="footer-link" style="float:left;margin-right:4.175%">Equipo</p></a>
+              <a href="./desarrollo.html#desarrolladores"><p class="footer-link" style="float:left;margin-right:3.175%">Desarrolladores</p></a>
+              <a href="./desarrollo.html#empresas"><p class="footer-link" style="float:left;margin-right:8.175%">Empresas</p></a>
+              <a href="./hackatones.html#hackatones-section"><p class="footer-link" style="float:left;margin-right:7.5%">Hackaton</p></a>
+              <a href="./geeksfactory.html"><p class="footer-link" style="float:left">GeeksFactory</p></a>
+            </div>
+          </div>
+          <div class="col-md-5 col-md-offset-1">
+            <button id="footer-logo" onclick="rigo()"></button>
+          </div>
+          <div class="col-md-4 col-md-offset-1">
+            <div class="row footer-images">
+              <div class="col-xs-3">
+                <a href="https://plus.google.com/u/0/b/116364229078975636616/116364229078975636616/posts"><div id="footer-gp"></div></a>
+              </div>
+              <div class="col-xs-3">
+                <a href=" https://twitter.com/4GeeksLA"><div id="footer-tw"></div></a>
+              </div>
+              <div class="col-xs-3">
+                <a href="https://www.facebook.com/4Geeks "><div id="footer-fb"></div></a>
+              </div>
+              <div class="col-xs-3">
+                <a href=" http://www.youtube.com/user/4GeeksLA"><div id="footer-yt"></div></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <a href="#section-first">
+              <div id="backToTop">
+                <div id="backToTop1"></div>
+                <div id="backToTop2"></div>
+              </div>
+            </a>
+            <p style="text-align:center; font-size:15px;padding-top:25px; font-weight:700; color:#c5c5c5">Copyright ©
+            <script type="text/javascript">
             var d = new Date()
             document.write(d.getFullYear())
-          </script>
-          4Geeks
-        </p>
+            </script>
+            4Geeks
+          </p>
+        </div>
       </div>
-    </div>
-  </section></div>
+    </section></div>
+  </div>
   <!-- Preloading -->
   <div id="preload" style="width:0; height:0">
-   <img src="./images/carousel/screenshots/catalog.png" width="0" height="0" >
-   <img src="./images/carousel/screenshots/cmo.png" width="0" height="0" >
-   <img src="./images/carousel/screenshots/frontera.png" width="0" height="0" >
-   <img src="./images/carousel/screenshots/quintodia.png" width="0" height="0" >
-   <img src="./images/carousel/screenshots/todoinmueble.png" width="0" height="0" >
+    <img src="./images/carousel/screenshots/catalog.png" width="0" height="0" >
+    <img src="./images/carousel/screenshots/cmo.png" width="0" height="0" >
+    <img src="./images/carousel/screenshots/frontera.png" width="0" height="0" >
+    <img src="./images/carousel/screenshots/quintodia.png" width="0" height="0" >
+    <img src="./images/carousel/screenshots/todoinmueble.png" width="0" height="0" >
 
-   <img src="./images/carousel/catalog.png" width="0" height="0" >
-   <img src="./images/carousel/catalog_carrousel.png" width="0" height="0" >
-   <img src="./images/carousel/catalog_carrouselhover.png" width="0" height="0" >
+    <img src="./images/carousel/catalog.png" width="0" height="0" >
+    <img src="./images/carousel/catalog_carrousel.png" width="0" height="0" >
+    <img src="./images/carousel/catalog_carrouselhover.png" width="0" height="0" >
 
-   <img src="./images/carousel/cmo.png" width="0" height="0" >
-   <img src="./images/carousel/cmo_carrousel.png" width="0" height="0" >
-   <img src="./images/carousel/cmo_carrouselhover.png" width="0" height="0" >
+    <img src="./images/carousel/cmo.png" width="0" height="0" >
+    <img src="./images/carousel/cmo_carrousel.png" width="0" height="0" >
+    <img src="./images/carousel/cmo_carrouselhover.png" width="0" height="0" >
 
-   <img src="./images/carousel/fronteraspecial.png" width="0" height="0" >
-   <img src="./images/carousel/fronteraspecial_carrousel.png" width="0" height="0" >
-   <img src="./images/carousel/fronteraspecial_carrouselhover.png" width="0" height="0" >
+    <img src="./images/carousel/fronteraspecial.png" width="0" height="0" >
+    <img src="./images/carousel/fronteraspecial_carrousel.png" width="0" height="0" >
+    <img src="./images/carousel/fronteraspecial_carrouselhover.png" width="0" height="0" >
 
-   <img src="./images/carousel/quintodia.png" width="0" height="0" >
-   <img src="./images/carousel/quintodia_carrousel.png" width="0" height="0" >
-   <img src="./images/carousel/quintodia_carrouselhover.png" width="0" height="0" >
+    <img src="./images/carousel/quintodia.png" width="0" height="0" >
+    <img src="./images/carousel/quintodia_carrousel.png" width="0" height="0" >
+    <img src="./images/carousel/quintodia_carrouselhover.png" width="0" height="0" >
 
-   <img src="./images/carousel/todoinmueble.png" width="0" height="0" >
-   <img src="./images/carousel/todoinmueble_carrousel.png" width="0" height="0" >
-   <img src="./images/carousel/todoinmueble_carrouselhover.png" width="0" height="0" >
+    <img src="./images/carousel/todoinmueble.png" width="0" height="0" >
+    <img src="./images/carousel/todoinmueble_carrousel.png" width="0" height="0" >
+    <img src="./images/carousel/todoinmueble_carrouselhover.png" width="0" height="0" >
+  </div>
+  <div id="mobile-view">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class="img-responsive" id="logo-navbar-mobile" src="./images/logo_footer_black.png"/></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="http://comunidad.4geeks.co/">Comunidad</a></li>
+            <li><a href="./lacarta.html">La Carta</a></li>
+            <li><a href="./formacion.html">Formación</a></li>
+            <li><a href="./redesdecontacto.html">Redes de Contacto</a></li>
+            <li><a href="./contactanos.html">Contactanos</a></li>
+            <li><a href="./techmeetup.html">TechMeetup</a></li>
+            <li><a href="./manifiesto.html">Manifiesto</a></li>
+            <li><a href="./equipo.html">Equipo</a></li>
+            <li><a href="./desarrollo.html">Desarrollo</a></li>
+            <li><a href="./hackatones.html#hackatones-section">Hackaton</a></li>
+            <li><a href="./geeksfactory.html">GeeksFactory</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <div id="div-principal"></div>
+      <ol class="carousel-indicators" id="carousel-indicators-mobile">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="carrusel-mobile-item">
+            <p id="slide1-p1">CAMBIANDO</p>
+            <p id="slide1-p2">EL MUNDO</p>
+            <p id="slide1-p3">UNA LÍNEA DE CÓDIGO A LA VEZ.</p>
+            <p id="slide1-p4">MAS DE 2000 DESARROLLADORES</p>
+            <p id="slide1-p5"> Y 90 PROYECTOS</p>
+            <p id="slide1-p6">REINVENTANDO 6 INDUSTRIAS.</p>
+            <a href="http://comunidad.4geeks.co/unete-a-la-comunidad/">
+              <div class=" yellow-button" style="margin-right:auto;margin-left:auto; float:none; margin-top:25px">
+                <p  class="one-line"><b>Únete</b> </p>
+              </div>
+            </a>
+          </div>
+          <img class="img-responsive" src="./images/mobile/portrait1.png"/>
+
+        </div>
+        <div class="item">
+          <div class="carrusel-mobile-item">
+            <p id="slide2-p1">MÁS DE 200</p>
+            <p id="slide2-p2">DESARROLLADORES </br></p>
+            <p id="slide2-p3">LATINOAMERICANOS </br></p>
+            <!-- <p id="slide2-p4">ESPECIALIZADOS EN DESARROLLO</p>
+            <p id="slide2-p5"> WEB Y MÓVIL </br></p> -->
+            <p id="slide2-p6">CREANDO APLICACIONES EN </p>
+            <p id="slide2-p7">PYTHON, CSS3, HTML5, </br></p>
+            <p id="slide2-p8">JAVASCRIPT Y RUBY.</br></p>
+            <a href="#section-proyectos">
+              <div class=" yellow-button" style="margin-right:auto;margin-left:auto; float:none; margin-top:25px">
+                <p  class="one-line"><b>Nuestros proyectos</b> </p>
+              </div>
+            </a>
+          </div>
+          <img class="img-responsive" src="./images/mobile/portrait2.png"/>
+        </div>
+        <div class="item">
+          <div class="carrusel-mobile-item">
+            <p id="slide3-p1">UNA COMUNIDAD </p>
+            <p id="slide3-p2">PARA SER MÁS</p>
+            <p id="slide3-p3">Y MEJORES DESARROLLADORES</p>
+            <p id="slide3-p4">CONOCE A OTROS DEVELOPERS, </p>
+            <p id="slide3-p5">APRENDE, COLABORA, DESARROLLA.</p>
+            <a href="http://comunidad.4geeks.co">
+              <div class=" yellow-button" style="margin-right:auto;margin-left:auto; float:none; margin-top:25px">
+                <p  class="one-line"><b>Visita La Comunidad</b> </p>
+              </div>
+            </a>
+          </div>
+          <img class="img-responsive" src="./images/mobile/portrait3.png"/>
+        </div>
+        <div class="item">
+          <div class="carrusel-mobile-item">
+            <p id="slide4-p1">DESARROLLAMOS</p>
+            <p id="slide4-p2">PRODUCTOS</p>
+            <p id="slide4-p3">TECNOLÓGICOS</p>
+            <p id="slide4-p4">DE ALTO IMPACTO PARA EMPRESAS</p>
+            <p id="slide4-p5">EMPRENDEDORES Y STARTUPS.</p>
+            <p id="slide4-p6"> DESDE APLICACIONES WEB HASTA</p>
+            <p id="slide4-p7">APLICACIONES MOVILES.</p>
+            <a href="./infografia.html">
+              <div class=" yellow-button" style="margin-right:auto;margin-left:auto; float:none; margin-top:5px">
+                <p  class="one-line"><b>¿Que hacemos?</b> </p>
+              </div>
+            </a>
+          </div>
+          <img class="img-responsive" src="./images/mobile/portrait4.png"/>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-xs-12">
+        <img class="img-responsive"  style="width:120%" src="./images/mobile/portrait_info1.png"/>
+      </div>
+
   </div>
 </body>
+
 <footer>
   <script src="./bootstrap/js/bootstrap.js"></script>
   <script type="text/javascript" src="js/skrollr.min.js"></script>
-   <script type="text/javascript">
-    skrollr.init({
-      forceHeight: false,
-      smoothScrolling: true,
-      smoothScrollingDuration: 350,
-      mobileDeceleration: 0.004
-    });
-   </script>
+  <script type="text/javascript">
+    $('.carousel').carousel({
+      interval: 5000
+    })
+  skrollr.init({
+    forceHeight: false,
+    smoothScrolling: true,
+    smoothScrollingDuration: 350,
+    mobileDeceleration: 0.004
+  });
+  </script>
   <script type="application/javascript">
-    $('#slider').unslider({
-      fluid: true,
-      dots: true,
-      speed: 500
-    });
-    $('a[href^="#"]').click(function() {
-      var target = $($(this).attr('href'));
-      var pos = target.offset();
-      if(pos) {
-        $('html, body').animate({
-          scrollTop: pos.top,
-          scrollLeft: pos.left
-        }, 1000);
-      }
-      return false;
-    });
+  $('#slider').unslider({
+    fluid: true,
+    dots: true,
+    speed: 500
+  });
+  $('a[href^="#"]').click(function() {
+    var target = $($(this).attr('href'));
+    var pos = target.offset();
+    if(pos) {
+      $('html, body').animate({
+        scrollTop: pos.top,
+        scrollLeft: pos.left
+      }, 1000);
+    }
+    return false;
+  });
   </script>
   <script src="./js/typed.js"></script>
   <script>
-    onscroll = function(){
-      var distanceUntil = $('.info-text').offset().top - $(window).scrollTop();
-      if(distanceUntil<=335){
-            $(".info-text").typed({
-              strings: ["Mejor que solo leer es interactuar."],
-              typeSpeed: 35
-            });
-            setTimeout(function(){
-              document.getElementById("hazclick").className="active"
-            },3500);
-      }
-       var distanceUntilLogo = $('#footer-logo').offset().top - $(window).scrollTop();
-      if(distanceUntilLogo<=1600){
-            document.getElementById("footer-logo").className="active";
-      }
-      else{
-        document.getElementById("footer-logo").className="";
-      }
-    };
+  document.ontouchmove = function (event) {
+    event.preventDefault();
+};
+$(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });
+  onscroll = function(){
+    var distanceUntil = $('.info-text').offset().top - $(window).scrollTop();
+    if(distanceUntil<=335){
+      $(".info-text").typed({
+        strings: ["Mejor que solo leer es interactuar."],
+        typeSpeed: 35
+      });
+      setTimeout(function(){
+        document.getElementById("hazclick").className="active"
+      },3500);
+    }
+    var distanceUntilLogo = $('#footer-logo').offset().top - $(window).scrollTop();
+    if(distanceUntilLogo<=1600){
+      document.getElementById("footer-logo").className="active";
+    }
+    else{
+      document.getElementById("footer-logo").className="";
+    }
+  };
   </script>
   <script type="text/javascript">
-    $('.nav li .viewport a').on('click', function() {
-      $(this).parent().parent().parent().find('.active').removeClass('active');
-      $(this).parent().parent().addClass('active');
-    });
+  $('.nav li .viewport a').on('click', function() {
+    $(this).parent().parent().parent().find('.active').removeClass('active');
+    $(this).parent().parent().addClass('active');
+  });
   </script>
   <script>
-    function rigo(){
-      if(document.getElementById('flying-rigo-lefty') != null){
-        document.getElementById('flying-rigo-lefty').id='flying-rigo-righty';
-      }
-      else if(document.getElementById('flying-rigo-righty') != null){
-        document.getElementById('flying-rigo-righty').id='flying-rigo-lefty';
-      }
-      else if(document.getElementById('super-rigo') != null){
-        document.getElementById('super-rigo').id='flying-rigo-righty';
-      }
-    };
+  function rigo(){
+    if(document.getElementById('flying-rigo-lefty') != null){
+      document.getElementById('flying-rigo-lefty').id='flying-rigo-righty';
+    }
+    else if(document.getElementById('flying-rigo-righty') != null){
+      document.getElementById('flying-rigo-righty').id='flying-rigo-lefty';
+    }
+    else if(document.getElementById('super-rigo') != null){
+      document.getElementById('super-rigo').id='flying-rigo-righty';
+    }
+  };
   </script>
 </footer>
 </html>
